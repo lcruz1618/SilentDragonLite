@@ -6,7 +6,7 @@
     <message>
         <location filename="../src/addressbook.cpp" line="11"/>
         <source>Label</source>
-        <translation>Etiquette</translation>
+        <translation>Nom</translation>
     </message>
     <message>
         <location filename="../src/addressbook.cpp" line="11"/>
@@ -36,7 +36,7 @@
     <message>
         <location filename="../src/connection.ui" line="17"/>
         <source>SilentDragonLite</source>
-        <translation type="unfinished"></translation>
+        <translation>SilentDragonLite</translation>
     </message>
     <message>
         <location filename="../src/connection.ui" line="58"/>
@@ -49,29 +49,30 @@
     <message>
         <location filename="../src/controller.cpp" line="577"/>
         <source>Wallet Password</source>
-        <translation type="unfinished"></translation>
+        <translation>Mot de passe du wallet</translation>
     </message>
     <message>
         <location filename="../src/controller.cpp" line="578"/>
         <source>Your wallet is encrypted.
 Please enter your wallet password</source>
-        <translation type="unfinished"></translation>
+        <translation>Votre portefeuille est crypté.
+Veuillez entrer le mot de passe du wallet</translation>
     </message>
     <message>
         <location filename="../src/controller.cpp" line="581"/>
         <location filename="../src/controller.cpp" line="596"/>
         <source>Wallet Decryption Failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Échec du déchiffrement du portefeuille</translation>
     </message>
     <message>
         <location filename="../src/controller.cpp" line="582"/>
         <source>Please enter a valid password</source>
-        <translation type="unfinished"></translation>
+        <translation>Veuillez entrer un mot de passe valide</translation>
     </message>
     <message>
         <location filename="../src/controller.cpp" line="652"/>
         <source>Failed to unlock wallet</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossible de déverrouiller le wallet</translation>
     </message>
 </context>
 <context>
@@ -79,27 +80,27 @@ Please enter your wallet password</source>
     <message>
         <location filename="../src/newwallet.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Création / Restauration d&apos;un wallet</translation>
     </message>
     <message>
         <location filename="../src/newwallet.ui" line="32"/>
         <source>Restore wallet from seed</source>
-        <translation type="unfinished"></translation>
+        <translation>Restaurer le wallet de la phrase clé (graine)</translation>
     </message>
     <message>
         <location filename="../src/newwallet.ui" line="39"/>
         <source>Restore an existing wallet, using the 24-word seed. </source>
-        <translation type="unfinished"></translation>
+        <translation>Restaurez un wallet existant à l&apos;aide de la phrase clé de 24 mots. </translation>
     </message>
     <message>
         <location filename="../src/newwallet.ui" line="64"/>
         <source>Create a new Wallet</source>
-        <translation type="unfinished"></translation>
+        <translation>Créer un nouveau wallet</translation>
     </message>
     <message>
         <location filename="../src/newwallet.ui" line="71"/>
         <source>Create a new wallet with a randomly generated seed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Créer un nouveau wallet avec une graine générée aléatoirement.</translation>
     </message>
 </context>
 <context>
@@ -126,7 +127,7 @@ Please enter your wallet password</source>
     <message>
         <location filename="../src/mainwindow.ui" line="95"/>
         <source>Notarized</source>
-        <translation type="unfinished"></translation>
+        <translation>Notarizé</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="127"/>
@@ -141,22 +142,22 @@ Please enter your wallet password</source>
     <message>
         <location filename="../src/mainwindow.ui" line="195"/>
         <source>Your node is still syncing, balances may not be updated.</source>
-        <translation type="unfinished"></translation>
+        <translation>Votre nœud est toujours en cours de synchronisation, les soldes peuvent ne pas être mis à jour.</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="214"/>
         <source>Some transactions are not yet confirmed. Balances may change.</source>
-        <translation type="unfinished"></translation>
+        <translation>Certaines transactions ne sont pas encore confirmées. Les soldes peuvent changer.</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="334"/>
         <source>Total notarized funds available:</source>
-        <translation type="unfinished"></translation>
+        <translation>Total des fonds notariés disponibles:</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="888"/>
         <source>Your node is still syncing, balances may not be updated</source>
-        <translation type="unfinished"></translation>
+        <translation>Votre nœud est toujours en cours de synchronisation, les soldes peuvent ne pas être mis à jour</translation>
     </message>
     <message>
         <source>Some transactions are not yet confirmed</source>
@@ -235,17 +236,17 @@ Please enter your wallet password</source>
     <message>
         <location filename="../src/mainwindow.ui" line="591"/>
         <source>Recurring payment</source>
-        <translation type="unfinished"></translation>
+        <translation>Paiement récurrent</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="598"/>
         <source>Every month, starting 12-May-2012, for 6 payments</source>
-        <translation type="unfinished"></translation>
+        <translation>Chaque mois, à partir du 12 mai 2012, pour 6 paiements</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="605"/>
         <source>Edit Schedule</source>
-        <translation type="unfinished"></translation>
+        <translation>Modifier la programmation</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="635"/>
@@ -277,62 +278,62 @@ Please enter your wallet password</source>
     <message>
         <location filename="../src/mainwindow.ui" line="951"/>
         <source>Hush Daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>Daemon Hush</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="981"/>
         <source>This is a Lightwallet, you cant mine with it!</source>
-        <translation type="unfinished"></translation>
+        <translation>Ceci est un Lightwallet, vous ne pouvez pas miner avec cette application !</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1008"/>
         <source>blockHeight</source>
-        <translation type="unfinished"></translation>
+        <translation>Hauteur du block</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1022"/>
         <source>Version hushlightd</source>
-        <translation type="unfinished"></translation>
+        <translation>Version de hushlightd</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1171"/>
         <source>&amp;Send DenioD Feedback</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Envoyer des commentaires à DenioD</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1204"/>
         <source>&amp;Export seed phrase</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Exporter la phrase clé (graine)</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1242"/>
         <source>Encrypt Wallet</source>
-        <translation type="unfinished"></translation>
+        <translation>Chiffrer le portefeuille</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1247"/>
         <source>Remove Wallet Encryption</source>
-        <translation type="unfinished"></translation>
+        <translation>Supprimer le chiffrement de portefeuille</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1252"/>
         <source>Rescan</source>
-        <translation type="unfinished"></translation>
+        <translation>Re-scanner</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1176"/>
         <source>&amp;Hush Discord</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Discord Hush</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="14"/>
         <source>SilentDragonLite</source>
-        <translation type="unfinished"></translation>
+        <translation>SilentDragonLite</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1181"/>
         <source>&amp;Hush Website</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Site Internet Hush</translation>
     </message>
     <message>
         <source>z-Addr(Sapling)</source>
@@ -385,12 +386,12 @@ Please enter your wallet password</source>
     <message>
         <location filename="../src/mainwindow.ui" line="736"/>
         <source>z-Addr</source>
-        <translation type="unfinished"></translation>
+        <translation>z-Add</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="780"/>
         <source>View All Addresses</source>
-        <translation type="unfinished"></translation>
+        <translation>Voir toutes les adresses</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="931"/>
@@ -529,32 +530,32 @@ Please enter your wallet password</source>
     <message>
         <location filename="../src/mainwindow.ui" line="1214"/>
         <source>Pay hush &amp;URI...</source>
-        <translation>PAyer une URI hush</translation>
+        <translation>Payer une &amp;URI Hush...</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1219"/>
         <source>Connect mobile &amp;app</source>
-        <translation type="unfinished"></translation>
+        <translation>Connexion à l&apos;&amp;application Mobile</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1222"/>
         <source>Ctrl+M</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+M</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1227"/>
         <source>&amp;Recurring Payments</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Paiements récurrents</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1232"/>
         <source>Request hush...</source>
-        <translation type="unfinished"></translation>
+        <translation>Demande de Hush...</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1237"/>
         <source>File a bug...</source>
-        <translation type="unfinished"></translation>
+        <translation>Déclarer un bug ...</translation>
     </message>
     <message>
         <source>Tor configuration is available only when running an embedded hushd.</source>
@@ -611,12 +612,12 @@ Please enter your wallet password</source>
     <message>
         <location filename="../src/mainwindow.cpp" line="386"/>
         <source>View tx on block explorer</source>
-        <translation type="unfinished"></translation>
+        <translation>Voir la tx sur l&apos;explorateur de blocs</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="391"/>
         <source>Refresh</source>
-        <translation type="unfinished"></translation>
+        <translation>Rafraîchir</translation>
     </message>
     <message>
         <source>Error paying hush URI</source>
@@ -655,7 +656,7 @@ Please enter your wallet password</source>
     <message>
         <location filename="../src/mainwindow.cpp" line="707"/>
         <source>Error exporting transactions, file was not saved</source>
-        <translation>Erreur lors de l&apos;exportation des transactions. Le fichier n&apos;a pas été sauvegardé.</translation>
+        <translation>Erreur lors de l&apos;exportation des transactions. Le fichier n&apos;a pas été sauvegardé</translation>
     </message>
     <message>
         <source>No wallet.dat</source>
@@ -704,97 +705,99 @@ Please enter your wallet password</source>
     <message>
         <location filename="../src/mainwindow.cpp" line="246"/>
         <source>Wallet is already encrypted</source>
-        <translation type="unfinished"></translation>
+        <translation>Votre wallet est maintenant crypté</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="247"/>
         <source>Your wallet is already encrypted with a password.
 Please use &apos;Remove Wallet Encryption&apos; if you want to remove the wallet encryption.</source>
-        <translation type="unfinished"></translation>
+        <translation>Votre portefeuille est déjà crypté avec un mot de passe.
+Veuillez utiliser &quot;Supprimer le chiffrement du wallet&quot; si vous souhaitez supprimer le chiffrement du portefeuille.</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="265"/>
         <source>Passwords don&apos;t match</source>
-        <translation type="unfinished"></translation>
+        <translation>Les mots de passe ne correspondent pas</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="278"/>
         <source>Error was:
 </source>
-        <translation type="unfinished"></translation>
+        <translation>L&apos;erreur est la suivante :
+</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="289"/>
         <source>Wallet Encrypted</source>
-        <translation type="unfinished"></translation>
+        <translation>wallet  crypté</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="290"/>
         <source>Your wallet was successfully encrypted! The password will be needed to send funds or export private keys.</source>
-        <translation type="unfinished"></translation>
+        <translation>Votre portefeuille a été crypté avec succès! Le mot de passe sera nécessaire pour envoyer des fonds ou exporter des clés privées.</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="294"/>
         <location filename="../src/mainwindow.cpp" line="301"/>
         <source>Wallet Encryption Failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Échec du chiffrement du wallet</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="311"/>
         <source>Wallet is not encrypted</source>
-        <translation type="unfinished"></translation>
+        <translation>Votre wallet n&apos;est pas crypté</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="312"/>
         <source>Your wallet is not encrypted with a password.</source>
-        <translation type="unfinished"></translation>
+        <translation>Votre wallet n&apos;est pas crypté avec un mot de passe.</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="319"/>
         <source>Wallet Password</source>
-        <translation type="unfinished"></translation>
+        <translation>Mot de passe du wallet</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="320"/>
         <source>Please enter your wallet password</source>
-        <translation type="unfinished"></translation>
+        <translation>Veuillez entrer votre mot de passe portefeuille</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="328"/>
         <location filename="../src/mainwindow.cpp" line="345"/>
         <location filename="../src/mainwindow.cpp" line="355"/>
         <source>Wallet Decryption Failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Échec du déchiffrement du wallet</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="329"/>
         <source>Please enter a password to decrypt your wallet!</source>
-        <translation type="unfinished"></translation>
+        <translation>Veuillez entrer un mot de passe pour décrypter votre wallet!</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="340"/>
         <source>Wallet Encryption Removed</source>
-        <translation type="unfinished"></translation>
+        <translation>Cryptage du wallet supprimé</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="341"/>
         <source>Your wallet was successfully decrypted! You will no longer need a password to send funds or export private keys.</source>
-        <translation type="unfinished"></translation>
+        <translation>Votre portefeuille a été déchiffré avec succès! Vous n&apos;aurez plus besoin d&apos;un mot de passe pour envoyer des fonds ou exporter des clés privées.</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="447"/>
         <source>Currency Change</source>
-        <translation type="unfinished"></translation>
+        <translation>Changement de la devise</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="447"/>
         <source>Please restart SilentDragonLite to have new currencies apply</source>
-        <translation type="unfinished"></translation>
+        <translation>Veuillez redémarrer SilentDragonLite pour appliquer les nouvelles devises.</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="740"/>
         <source>This is your wallet seed. Please back it up carefully and safely.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ceci est la graine de wallet. Veuillez le sauvegarder avec soin et en toute sécurité.</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="748"/>
@@ -805,12 +808,12 @@ Please use &apos;Remove Wallet Encryption&apos; if you want to remove the wallet
     <message>
         <location filename="../src/mainwindow.cpp" line="777"/>
         <source>Error getting private keys</source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur lors de l&apos;obtention des clés privées</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="778"/>
         <source>Error loading private keys: </source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur lors du chargement des clés privées: </translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="853"/>
@@ -853,42 +856,42 @@ Please use &apos;Remove Wallet Encryption&apos; if you want to remove the wallet
     <message>
         <location filename="../src/mainwindow.cpp" line="435"/>
         <source>Restart</source>
-        <translation type="unfinished"></translation>
+        <translation>Redémarrer</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="435"/>
         <source>Please restart Silentdragonlite to have the theme apply</source>
-        <translation type="unfinished"></translation>
+        <translation>Veuillez redémarrer SilentDragonLite pour aplliqué le thème.</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="527"/>
         <source>Some feedback about SilentDragonlite or Hush...</source>
-        <translation type="unfinished"></translation>
+        <translation>Quelques commentaires sur SilentDragonlite ou Hush ...</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="529"/>
         <source>Send Duke some private and shielded feedback about</source>
-        <translation type="unfinished"></translation>
+        <translation>Envoyez à Duke des commentaires privés et protégés sur</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="529"/>
         <source> or SilentDragonLite</source>
-        <translation type="unfinished"></translation>
+        <translation> ou SilentDragonLite</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="610"/>
         <source>Paste HUSH URI</source>
-        <translation type="unfinished"></translation>
+        <translation>Coller l&apos;URI Hush</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="622"/>
         <source>Error paying HUSH URI</source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur lors du paiement de l&apos;URI Hush</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="925"/>
         <source>View Payment Request</source>
-        <translation type="unfinished"></translation>
+        <translation>Afficher la demande de paiement</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="932"/>
@@ -908,17 +911,17 @@ Please use &apos;Remove Wallet Encryption&apos; if you want to remove the wallet
     <message>
         <location filename="../src/mainwindow.cpp" line="1083"/>
         <source>Copy Address</source>
-        <translation type="unfinished"></translation>
+        <translation>Copier l&apos;adresse</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="1172"/>
         <source>Address has been previously used</source>
-        <translation>L&apos;adresse a été utilisée précédemment.</translation>
+        <translation>L&apos;adresse a été utilisée précédemment</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="1174"/>
         <source>Address is unused</source>
-        <translation>L&apos;adresse est inutilisée.</translation>
+        <translation>L&apos;adresse est inutilisée</translation>
     </message>
     <message>
         <location filename="../src/sendtab.cpp" line="228"/>
@@ -952,17 +955,17 @@ Cette adresse ne semble pas être de type adresse-z</translation>
     <message>
         <location filename="../src/sendtab.cpp" line="836"/>
         <source>Please wait...</source>
-        <translation type="unfinished"></translation>
+        <translation>Veuillez patienter...</translation>
     </message>
     <message>
         <location filename="../src/sendtab.cpp" line="837"/>
         <source>Computing your transaction</source>
-        <translation type="unfinished"></translation>
+        <translation>Calcul de votre transaction</translation>
     </message>
     <message>
         <location filename="../src/sendtab.cpp" line="846"/>
         <source>Done!</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminé!</translation>
     </message>
     <message>
         <location filename="../src/sendtab.cpp" line="917"/>
@@ -972,7 +975,12 @@ Have: %1
 Need: %2
 
 Note: Funds need 5 confirmations before they can be spent</source>
-        <translation type="unfinished"></translation>
+        <translation>Vous n&apos;avez pas assez de fonds disponibles pour envoyer cette transaction
+
+Ont:%1
+Besoin:%2
+
+Remarque: Les fonds nécessitent 5 confirmations avant de pouvoir être dépensés</translation>
     </message>
     <message>
         <source>Reply to</source>
@@ -981,12 +989,12 @@ Note: Funds need 5 confirmations before they can be spent</source>
     <message>
         <location filename="../src/sendtab.cpp" line="181"/>
         <source>Cannot support multiple addresses</source>
-        <translation type="unfinished"></translation>
+        <translation>Ne peut pas supporter plusieurs adresses</translation>
     </message>
     <message>
         <location filename="../src/sendtab.cpp" line="182"/>
         <source>Recurring payments doesn&apos;t currently support multiple addresses</source>
-        <translation type="unfinished"></translation>
+        <translation>Les paiements récurrents ne prennent pas en charge plusieurs adresses pour le moment</translation>
     </message>
     <message>
         <source>Change from </source>
@@ -1022,7 +1030,7 @@ Note: Funds need 5 confirmations before they can be spent</source>
     <message>
         <location filename="../src/sendtab.cpp" line="907"/>
         <source>Amount for address &apos;%1&apos; is invalid!</source>
-        <translation type="unfinished"></translation>
+        <translation>Le montant pour l&apos;adresse &apos;%1&apos; est invalide!</translation>
     </message>
     <message>
         <source>Amount &apos;%1&apos; is invalid!</source>
@@ -1048,7 +1056,7 @@ Note: Funds need 5 confirmations before they can be spent</source>
     <message>
         <location filename="../src/memoedit.cpp" line="51"/>
         <source>Reply to</source>
-        <translation type="unfinished">Répondre à</translation>
+        <translation>Répondre à</translation>
     </message>
 </context>
 <context>
@@ -1056,32 +1064,32 @@ Note: Funds need 5 confirmations before they can be spent</source>
     <message>
         <location filename="../src/migration.ui" line="14"/>
         <source>Migration Turnstile</source>
-        <translation type="unfinished"></translation>
+        <translation>Tourniquet de migration</translation>
     </message>
     <message>
         <location filename="../src/migration.ui" line="30"/>
         <source>Migration History</source>
-        <translation type="unfinished"></translation>
+        <translation>Histoire de la migration</translation>
     </message>
     <message>
         <location filename="../src/migration.ui" line="36"/>
         <source>Migrated Amount</source>
-        <translation type="unfinished"></translation>
+        <translation>Montant migré</translation>
     </message>
     <message>
         <location filename="../src/migration.ui" line="50"/>
         <source>Unmigrated Amount</source>
-        <translation type="unfinished"></translation>
+        <translation>Quantité non migrée</translation>
     </message>
     <message>
         <location filename="../src/migration.ui" line="74"/>
         <source>Sprout -&gt; Sapling migration enabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Sprout -&gt; Migration du sapling activée</translation>
     </message>
     <message>
         <location filename="../src/migration.ui" line="81"/>
         <source>If enabled, hushd will slowly migrate your Sprout shielded funds to your Sapling address. </source>
-        <translation type="unfinished"></translation>
+        <translation>Si cette option est activée, hushd migrera lentement vos fonds protégés Sprout vers votre adresse Sapling. </translation>
     </message>
 </context>
 <context>
@@ -1089,53 +1097,53 @@ Note: Funds need 5 confirmations before they can be spent</source>
     <message>
         <location filename="../src/mobileappconnector.ui" line="14"/>
         <source>Connect Mobile App</source>
-        <translation type="unfinished"></translation>
+        <translation>Connexion à l&apos;application Mobile</translation>
     </message>
     <message>
         <location filename="../src/mobileappconnector.ui" line="43"/>
         <source>QR Code</source>
-        <translation type="unfinished"></translation>
+        <translation>QR Code</translation>
     </message>
     <message>
         <location filename="../src/mobileappconnector.ui" line="49"/>
         <source>Connection String</source>
-        <translation type="unfinished"></translation>
+        <translation>Chaîne de connexion</translation>
     </message>
     <message>
         <location filename="../src/mobileappconnector.ui" line="84"/>
         <source>Allow connections over the internet via silentdragon wormhole</source>
-        <translation type="unfinished"></translation>
+        <translation>Autoriser les connexions sur Internet à l&apos;aide de SilentDragon Wormhole</translation>
     </message>
     <message>
         <location filename="../src/mobileappconnector.ui" line="36"/>
         <source>Scan this QRCode from your silentdragon companion app to connect your phone</source>
-        <translation type="unfinished"></translation>
+        <translation>Scannez ce code QR à partir de votre application mobile SilentDragon pour connecter votre téléphone</translation>
     </message>
     <message>
         <location filename="../src/mobileappconnector.ui" line="94"/>
         <source>silentdragon Companion App</source>
-        <translation type="unfinished"></translation>
+        <translation>SilentDragon Mobile Application</translation>
     </message>
     <message>
         <location filename="../src/mobileappconnector.ui" line="106"/>
         <source>Disconnect</source>
-        <translation type="unfinished"></translation>
+        <translation>Déconnecter</translation>
     </message>
     <message>
         <location filename="../src/mobileappconnector.ui" line="126"/>
         <location filename="../src/mobileappconnector.ui" line="160"/>
         <source>TextLabel</source>
-        <translation type="unfinished"></translation>
+        <translation>TextLabel</translation>
     </message>
     <message>
         <location filename="../src/mobileappconnector.ui" line="136"/>
         <source>Last seen:</source>
-        <translation type="unfinished"></translation>
+        <translation>Vue pour la derniére fois :</translation>
     </message>
     <message>
         <location filename="../src/mobileappconnector.ui" line="153"/>
         <source>Connection type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Type de connection :</translation>
     </message>
 </context>
 <context>
@@ -1143,17 +1151,17 @@ Note: Funds need 5 confirmations before they can be spent</source>
     <message>
         <location filename="../src/newseed.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Graine</translation>
     </message>
     <message>
         <location filename="../src/newseed.ui" line="20"/>
         <source>This is your new wallet&apos;s seed phrase. PLEASE BACK IT UP SECURELY.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ceci est la phrase clé de votre nouveau wallet. VEUILLEZ LE GARDER EN TOUTE SECURITE.</translation>
     </message>
     <message>
         <location filename="../src/newseed.ui" line="30"/>
         <source>The seed phrase is the only way to restore the wallet. If you forget the seed phrase, THERE IS NO WAY TO RESTORE YOUR WALLET AND THE FUNDS in it</source>
-        <translation type="unfinished"></translation>
+        <translation>La phrase clé (graine) est le seul moyen de restaurer le wallet. Si vous oubliez la phrase clé, IL N&apos;Y A AUCUN MOYEN DE RESTAURER VOTRE WALLET ET LES FONDS</translation>
     </message>
 </context>
 <context>
@@ -1161,17 +1169,17 @@ Note: Funds need 5 confirmations before they can be spent</source>
     <message>
         <location filename="../src/firsttimewizard.cpp" line="89"/>
         <source>Error creating a wallet</source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur lors de la création du wallet</translation>
     </message>
     <message>
         <location filename="../src/firsttimewizard.cpp" line="104"/>
         <source>Failed to save wallet</source>
-        <translation type="unfinished"></translation>
+        <translation>Échec lors de la sauvvegarde du wallet</translation>
     </message>
     <message>
         <location filename="../src/firsttimewizard.cpp" line="105"/>
         <source>Couldn&apos;t save the wallet</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossible d&apos;enregister le wallet</translation>
     </message>
 </context>
 <context>
@@ -1183,7 +1191,7 @@ Note: Funds need 5 confirmations before they can be spent</source>
     <message>
         <location filename="../src/privkey.ui" line="14"/>
         <source>Private Keys</source>
-        <translation type="unfinished"></translation>
+        <translation>Clés privées</translation>
     </message>
 </context>
 <context>
@@ -1337,7 +1345,9 @@ Not starting embedded hushd because --no-embedded was passed</source>
         <source>A new release v%1 is available! You have v%2.
 
 Would you like to visit the releases page?</source>
-        <translation>Voulez-vous visiter la page des nouvelles versions ?</translation>
+        <translation>Une nouvelle version v%1 est disponible! Vous avez la version v%2.
+
+Voulez-vous visiter la page des nouvelles versions ?</translation>
     </message>
     <message>
         <location filename="../src/controller.cpp" line="716"/>
@@ -1352,7 +1362,7 @@ Would you like to visit the releases page?</source>
     <message>
         <location filename="../src/controller.cpp" line="891"/>
         <source>Please wait for SilentDragonLite to exit</source>
-        <translation type="unfinished"></translation>
+        <translation>Merci d&apos;attendre la fermeture de SilentDragonLite</translation>
     </message>
     <message>
         <source>Please wait for silentdragon to exit</source>
@@ -1398,17 +1408,17 @@ Veuillez configurer l&apos;hôte/port et utilisateur/mot de passe dans le menu E
     <message>
         <location filename="../src/connection.cpp" line="49"/>
         <source>Attempting to initialize library with </source>
-        <translation type="unfinished"></translation>
+        <translation>Tentative d’initialisation de la bibliothèque avec </translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="53"/>
         <source>Using existing wallet.</source>
-        <translation type="unfinished"></translation>
+        <translation>Utiliser le wallet existant.</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="62"/>
         <source>Create/restore wallet.</source>
-        <translation type="unfinished"></translation>
+        <translation>Créer / restaurer un wallet.</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="153"/>
@@ -1442,12 +1452,12 @@ Veuillez configurer l&apos;hôte/port et utilisateur/mot de passe dans le menu E
     <message>
         <location filename="../src/addressbook.cpp" line="128"/>
         <source>Address or Label Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur dans l&apos;adresse ou le libellé</translation>
     </message>
     <message>
         <location filename="../src/addressbook.cpp" line="129"/>
         <source>Address or Label cannot be empty</source>
-        <translation type="unfinished"></translation>
+        <translation>L&apos;adresse ou le libellé ne peuvent pas être vide</translation>
     </message>
     <message>
         <location filename="../src/addressbook.cpp" line="134"/>
@@ -1461,17 +1471,17 @@ Veuillez configurer l&apos;hôte/port et utilisateur/mot de passe dans le menu E
     <message>
         <location filename="../src/addressbook.cpp" line="135"/>
         <source>%1 doesn&apos;t seem to be a valid hush address.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 ne semble pas être une adresse Hush valide.</translation>
     </message>
     <message>
         <location filename="../src/addressbook.cpp" line="143"/>
         <source>Label Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur sur le libellé</translation>
     </message>
     <message>
         <location filename="../src/addressbook.cpp" line="144"/>
         <source>The label &apos;%1&apos; already exists. Please remove the existing label.</source>
-        <translation type="unfinished"></translation>
+        <translation>Le libellé &apos;%1&apos; existe déjà. Veuillez supprimer l&apos;étiquette existante.</translation>
     </message>
     <message>
         <location filename="../src/addressbook.cpp" line="156"/>
@@ -1491,7 +1501,7 @@ Veuillez configurer l&apos;hôte/port et utilisateur/mot de passe dans le menu E
     <message>
         <location filename="../src/addressbook.cpp" line="184"/>
         <source>Imported %1 new Address book entries</source>
-        <translation>%1 nouvelle(s) entrée(s) importée(s) dans le carnet d&apos;adresses.</translation>
+        <translation>%1 nouvelle(s) entrée(s) importée(s) dans le carnet d&apos;adresses</translation>
     </message>
     <message>
         <location filename="../src/addressbook.cpp" line="224"/>
@@ -1550,58 +1560,58 @@ Vous avez soit des fonds non confirmés soit le solde est trop petit pour une mi
     <message>
         <location filename="../src/txtablemodel.cpp" line="7"/>
         <source>Confirmations</source>
-        <translation type="unfinished"></translation>
+        <translation>Confirmations</translation>
     </message>
     <message>
         <location filename="../src/websockets.cpp" line="355"/>
         <source>Connected directly</source>
-        <translation type="unfinished"></translation>
+        <translation>Connecté directement</translation>
     </message>
     <message>
         <location filename="../src/websockets.cpp" line="358"/>
         <source>Connected over the internet via silentdragon wormhole service</source>
-        <translation type="unfinished"></translation>
+        <translation>Connecté sur Internet via le service Wormhole de SilentDragon</translation>
     </message>
     <message>
         <location filename="../src/websockets.cpp" line="651"/>
         <source>Node is still syncing.</source>
-        <translation type="unfinished"></translation>
+        <translation>Le nœud est toujours en cours de synchronisation.</translation>
     </message>
     <message>
         <location filename="../src/websockets.cpp" line="675"/>
         <source>No sapling or transparent addresses with enough balance to spend.</source>
-        <translation type="unfinished"></translation>
+        <translation>Il n&apos;y a pas d&apos;adresse de type Sapling ou d&apos;adresses transparentes avec un solde suffisant à dépenser.</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="542"/>
         <source>No hush price was available to convert from USD</source>
-        <translation type="unfinished"></translation>
+        <translation>Aucun prix de Hush n&apos;est pour convertir à partir de USD</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="648"/>
         <source>View on block explorer</source>
-        <translation type="unfinished">Voir dans l&apos;explorateur de block</translation>
+        <translation>Voir dans l&apos;explorateur de block</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="661"/>
         <source>View Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Voir l&apos;erreur</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="662"/>
         <source>Reported Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur signalée</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="699"/>
         <location filename="../src/recurring.cpp" line="700"/>
         <source>Are you sure you want to delete the recurring payment?</source>
-        <translation type="unfinished"></translation>
+        <translation>Êtes-vous sûr de vouloir supprimer le paiement récurrent?</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="701"/>
         <source>All future payments will be cancelled.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tous les paiements futurs seront annulés.</translation>
     </message>
 </context>
 <context>
@@ -1609,17 +1619,17 @@ Vous avez soit des fonds non confirmés soit le solde est trop petit pour une mi
     <message>
         <location filename="../src/recurringdialog.ui" line="14"/>
         <source>Dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Dialogue</translation>
     </message>
     <message>
         <location filename="../src/recurringdialog.ui" line="35"/>
         <source>View</source>
-        <translation type="unfinished"></translation>
+        <translation>Voir</translation>
     </message>
     <message>
         <location filename="../src/recurringdialog.ui" line="42"/>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Supprimer</translation>
     </message>
 </context>
 <context>
@@ -1627,37 +1637,37 @@ Vous avez soit des fonds non confirmés soit le solde est trop petit pour une mi
     <message>
         <location filename="../src/recurring.cpp" line="723"/>
         <source>Amount</source>
-        <translation type="unfinished">Montant</translation>
+        <translation>Montant</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="723"/>
         <source>Schedule</source>
-        <translation type="unfinished"></translation>
+        <translation>Liste</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="723"/>
         <source>Payments Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Payments Left</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="724"/>
         <source>Next Payment</source>
-        <translation type="unfinished"></translation>
+        <translation>Prochain paiement</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="724"/>
         <source>To</source>
-        <translation type="unfinished">À</translation>
+        <translation>À</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="741"/>
         <source>Every </source>
-        <translation type="unfinished"></translation>
+        <translation>Chaque </translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="745"/>
         <source>None</source>
-        <translation type="unfinished"></translation>
+        <translation>Aucun</translation>
     </message>
 </context>
 <context>
@@ -1665,7 +1675,7 @@ Vous avez soit des fonds non confirmés soit le solde est trop petit pour une mi
     <message>
         <location filename="../src/recurringpayments.ui" line="14"/>
         <source>Payments</source>
-        <translation type="unfinished"></translation>
+        <translation>Paiements</translation>
     </message>
 </context>
 <context>
@@ -1673,48 +1683,48 @@ Vous avez soit des fonds non confirmés soit le solde est trop petit pour une mi
     <message>
         <location filename="../src/recurring.cpp" line="774"/>
         <source>Date</source>
-        <translation type="unfinished"></translation>
+        <translation>Date</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="774"/>
         <source>Status</source>
-        <translation type="unfinished"></translation>
+        <translation>Statut</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="774"/>
         <source>Txid</source>
-        <translation type="unfinished"></translation>
+        <translation>Txid</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="794"/>
         <source>Not due yet</source>
-        <translation type="unfinished"></translation>
+        <translation>Pas encore dû</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="795"/>
         <source>Pending</source>
-        <translation type="unfinished"></translation>
+        <translation>En attente</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="796"/>
         <source>Skipped</source>
-        <translation type="unfinished"></translation>
+        <translation>Suivant</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="797"/>
         <source>Paid</source>
-        <translation type="unfinished"></translation>
+        <translation>Payé</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="798"/>
         <source>Error</source>
-        <translation type="unfinished">Erreur</translation>
+        <translation>Erreur</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="799"/>
         <location filename="../src/recurring.cpp" line="800"/>
         <source>Unknown</source>
-        <translation type="unfinished"></translation>
+        <translation>Inconnu</translation>
     </message>
 </context>
 <context>
@@ -1722,62 +1732,62 @@ Vous avez soit des fonds non confirmés soit le solde est trop petit pour une mi
     <message>
         <location filename="../src/recurringmultiple.ui" line="14"/>
         <source>Dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Paiements récurrents</translation>
     </message>
     <message>
         <location filename="../src/recurringmultiple.ui" line="20"/>
         <source>No payments will be processed. You can manually pay them from the Recurring Payments Dialog box</source>
-        <translation type="unfinished"></translation>
+        <translation>Aucun paiement ne sera traité. Vous pouvez les payer manuellement à partir de la boîte de dialogue &quot;Paiements récurrents&quot;</translation>
     </message>
     <message>
         <location filename="../src/recurringmultiple.ui" line="37"/>
         <source>Schedule</source>
-        <translation type="unfinished"></translation>
+        <translation>Liste</translation>
     </message>
     <message>
         <location filename="../src/recurringmultiple.ui" line="44"/>
         <source>How should silentdragon proceed?</source>
-        <translation type="unfinished"></translation>
+        <translation>Comment doit procéder SilentDragon?</translation>
     </message>
     <message>
         <location filename="../src/recurringmultiple.ui" line="51"/>
         <source>Pay All in 1 Tx</source>
-        <translation type="unfinished"></translation>
+        <translation>Uout payer en 1 Tx</translation>
     </message>
     <message>
         <location filename="../src/recurringmultiple.ui" line="58"/>
         <source>Only the latest pending payment will be processed. All previous pending payments will be skipped</source>
-        <translation type="unfinished"></translation>
+        <translation>Seul le dernier paiement en attente sera traité. Tous les paiements en attente antérieurs seront ignorés</translation>
     </message>
     <message>
         <location filename="../src/recurringmultiple.ui" line="68"/>
         <source>Pay Latest Only</source>
-        <translation type="unfinished"></translation>
+        <translation>Payer le dernier seulement</translation>
     </message>
     <message>
         <location filename="../src/recurringmultiple.ui" line="75"/>
         <source>Pay None</source>
-        <translation type="unfinished"></translation>
+        <translation>Payez aucun</translation>
     </message>
     <message>
         <location filename="../src/recurringmultiple.ui" line="96"/>
         <source>All pending payments collected, added up and paid in a single transaction</source>
-        <translation type="unfinished"></translation>
+        <translation>Tous les paiements en attente sont collectés, additionnés et payés en une seule transaction</translation>
     </message>
     <message>
         <location filename="../src/recurringmultiple.ui" line="116"/>
         <source>Description</source>
-        <translation type="unfinished"></translation>
+        <translation>Description</translation>
     </message>
     <message>
         <location filename="../src/recurringmultiple.ui" line="123"/>
         <source>To</source>
-        <translation type="unfinished">À</translation>
+        <translation>à</translation>
     </message>
     <message>
         <location filename="../src/recurringmultiple.ui" line="137"/>
         <source>The following recurring payment has multiple payments pending</source>
-        <translation type="unfinished"></translation>
+        <translation>Le paiement récurrent ci&apos;dessous à plusieurs paiements en attente</translation>
     </message>
 </context>
 <context>
@@ -1785,92 +1795,92 @@ Vous avez soit des fonds non confirmés soit le solde est trop petit pour une mi
     <message>
         <location filename="../src/requestdialog.ui" line="14"/>
         <source>Payment Request</source>
-        <translation type="unfinished"></translation>
+        <translation>Demande de paiement</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.ui" line="38"/>
         <source>AddressBook</source>
-        <translation type="unfinished"></translation>
+        <translation>Carnet d&apos;adresses</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.ui" line="54"/>
         <source>Request From</source>
-        <translation type="unfinished"></translation>
+        <translation>Demande de</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.ui" line="61"/>
         <source>My Address</source>
-        <translation type="unfinished"></translation>
+        <translation>Mon adresse</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.ui" line="78"/>
         <source>Amount in </source>
-        <translation type="unfinished"></translation>
+        <translation>Montant en </translation>
     </message>
     <message>
         <location filename="../src/requestdialog.ui" line="118"/>
         <source>z address</source>
-        <translation type="unfinished"></translation>
+        <translation>z address</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.ui" line="145"/>
         <source>Amount</source>
-        <translation type="unfinished">Montant</translation>
+        <translation>Montant</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.ui" line="159"/>
         <source>The recipient will see this address in the &quot;to&quot; field when they pay your request.</source>
-        <translation type="unfinished"></translation>
+        <translation>Le destinataire verra cette adresse dans le champ &quot;à&quot; lorsqu&apos;il paiera votre demande.</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.ui" line="179"/>
         <source>Amount USD</source>
-        <translation type="unfinished"></translation>
+        <translation>Montant en USD</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.ui" line="202"/>
         <source>Memo</source>
-        <translation type="unfinished">Mémo</translation>
+        <translation>Mémo</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.ui" line="209"/>
         <source>TextLabel</source>
-        <translation type="unfinished"></translation>
+        <translation>TextLabel</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.ui" line="219"/>
         <source>Request payment from a Sapling address. You&apos;ll send a hush 0.0001 transaction to the address with a hush payment URI. The memo will be included in the transaction when the address pays you.</source>
-        <translation type="unfinished"></translation>
+        <translation>Demander le paiement à une adresse de type Sapling. Vous enverrez une transaction de 0.0001 Hush à l&apos;adresse avec un URI de paiement Hush. Le mémo sera inclus dans la transaction lorsque l&apos;adresse vous payera.</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.cpp" line="50"/>
         <source>Error paying hush URI</source>
-        <translation type="unfinished">Erreur lors du payement du URI hush</translation>
+        <translation>Erreur lors du paiement du URI Hush</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.cpp" line="51"/>
         <source>URI should be of the form &apos;hush:&lt;addr&gt;?amt=x&amp;memo=y</source>
-        <translation type="unfinished">Le format URI doit être comme suit: &apos;hush:&lt;addr&gt;?amt=x&amp;memo=y</translation>
+        <translation>Le format URI doit être comme suit: &apos;hush:&lt;addr&gt;?amt=x&amp;memo=y</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.cpp" line="65"/>
         <source>Pay To</source>
-        <translation type="unfinished"></translation>
+        <translation>Payer à</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.cpp" line="85"/>
         <source>Pay</source>
-        <translation type="unfinished"></translation>
+        <translation>Payer</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.cpp" line="87"/>
         <source>You are paying a payment request. Your address will not be visible to the person requesting this payment.</source>
-        <translation type="unfinished"></translation>
+        <translation>Vous payez une demande de paiement. Votre adresse ne sera pas visible pour la personne qui demande ce paiement.</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.cpp" line="106"/>
         <source>Can only request from Sapling addresses</source>
-        <translation type="unfinished"></translation>
+        <translation>Ne peut demander qu&apos;aux adresses de type Sapling</translation>
     </message>
 </context>
 <context>
@@ -1878,32 +1888,32 @@ Vous avez soit des fonds non confirmés soit le solde est trop petit pour une mi
     <message>
         <location filename="../src/restoreseed.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Graine</translation>
     </message>
     <message>
         <location filename="../src/restoreseed.ui" line="20"/>
         <source>Please enter your 24-word seed below</source>
-        <translation type="unfinished"></translation>
+        <translation>Veuillez entrer votre graine de 24 mots ci-dessous</translation>
     </message>
     <message>
         <location filename="../src/restoreseed.ui" line="42"/>
         <source>Wallet Seed</source>
-        <translation type="unfinished"></translation>
+        <translation>Graine du wallet</translation>
     </message>
     <message>
         <location filename="../src/restoreseed.ui" line="56"/>
         <source>Wallet Birthday</source>
-        <translation type="unfinished"></translation>
+        <translation>Anniversaire du wallet</translation>
     </message>
     <message>
         <location filename="../src/restoreseed.ui" line="63"/>
         <source>0</source>
-        <translation type="unfinished">0</translation>
+        <translation>0</translation>
     </message>
     <message>
         <location filename="../src/restoreseed.ui" line="75"/>
         <source>Wallet birthday is the block height at which the wallet had the first transaction. If you don&apos;t know this, you can leave it as &quot;0&quot; (It&apos;ll take longer to rescan)</source>
-        <translation type="unfinished"></translation>
+        <translation>L&apos;anniversaire du wallet correspond à la hauteur de bloc à laquelle le portefeuille a effectué la première transaction. Si vous ne le savez pas, vous pouvez le laisser comme &quot;0&quot; (il faudra plus de temps pour numériser à nouveau)</translation>
     </message>
 </context>
 <context>
@@ -1912,37 +1922,37 @@ Vous avez soit des fonds non confirmés soit le solde est trop petit pour une mi
         <location filename="../src/firsttimewizard.cpp" line="132"/>
         <location filename="../src/firsttimewizard.cpp" line="156"/>
         <source>Failed to restore wallet</source>
-        <translation type="unfinished"></translation>
+        <translation>Échec de la restoration du wallet</translation>
     </message>
     <message>
         <location filename="../src/firsttimewizard.cpp" line="133"/>
         <source>SilentDragonLite needs 24 words to restore wallet</source>
-        <translation type="unfinished"></translation>
+        <translation>SilentDragonLite a besoin de 24 mots pour restaurer son wallet</translation>
     </message>
     <message>
         <location filename="../src/firsttimewizard.cpp" line="143"/>
         <source>Failed to parse wallet birthday</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossible d&apos;analyser l&apos;anniversaire du wallet</translation>
     </message>
     <message>
         <location filename="../src/firsttimewizard.cpp" line="144"/>
         <source>Couldn&apos;t understand wallet birthday. This should be a block height from where to rescan the wallet. You can leave it as &apos;0&apos; if you don&apos;t know what it should be.</source>
-        <translation type="unfinished"></translation>
+        <translation>L&apos;anniversaire du wallet n&apos;est pas reconnue. Cela devrait être une hauteur de bloc à partir de laquelle numériser à nouveau le portefeuille. Vous pouvez laisser «0» si vous ne savez pas ce que cela devrait être.</translation>
     </message>
     <message>
         <location filename="../src/firsttimewizard.cpp" line="157"/>
         <source>Couldn&apos;t restore the wallet</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossible de restaurer le wallet</translation>
     </message>
     <message>
         <location filename="../src/firsttimewizard.cpp" line="170"/>
         <source>Failed to save wallet</source>
-        <translation type="unfinished"></translation>
+        <translation>Échec de la sauvegarde du wallet</translation>
     </message>
     <message>
         <location filename="../src/firsttimewizard.cpp" line="171"/>
         <source>Couldn&apos;t save the wallet</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossible d&apos;enregister  le wallet</translation>
     </message>
 </context>
 <context>
@@ -1950,7 +1960,7 @@ Vous avez soit des fonds non confirmés soit le solde est trop petit pour une mi
     <message>
         <location filename="../src/settings.ui" line="14"/>
         <source>Settings</source>
-        <translation>Préférences</translation>
+        <translation>Paramétres</translation>
     </message>
     <message>
         <source>hushd connection</source>
@@ -1980,7 +1990,7 @@ Vous avez soit des fonds non confirmés soit le solde est trop petit pour une mi
     <message>
         <location filename="../src/settings.ui" line="142"/>
         <source>Check github for updates at startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Rechercher les mises à jour sur GitHub au démarrage</translation>
     </message>
     <message>
         <source>Connect to the Tor network via SOCKS proxy running on 127.0.0.1:9050. Please note that you&apos;ll have to install and run the Tor service externally.</source>
@@ -1997,102 +2007,102 @@ Vous avez soit des fonds non confirmés soit le solde est trop petit pour une mi
     <message>
         <location filename="../src/settings.ui" line="155"/>
         <source>Connect to github on startup to check for updates</source>
-        <translation type="unfinished"></translation>
+        <translation>Connexion à GitHub au démarragede l&apos;application  pour rechercher les mises à jour</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="209"/>
         <source>Connect to the internet to fetch hush prices</source>
-        <translation type="unfinished"></translation>
+        <translation>Connexion  à Internet pour obtenir des prix de Hush</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="174"/>
         <source>Theme</source>
-        <translation type="unfinished"></translation>
+        <translation>Thème</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="49"/>
         <source>Lightwallet Server</source>
-        <translation type="unfinished"></translation>
+        <translation>Serveur Lightwallet</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="100"/>
         <source>default</source>
-        <translation type="unfinished"></translation>
+        <translation>Standard</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="27"/>
         <source>Connection</source>
-        <translation type="unfinished"></translation>
+        <translation>Connexion</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="105"/>
         <source>blue</source>
-        <translation type="unfinished"></translation>
+        <translation>Bleu</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="110"/>
         <source>light</source>
-        <translation type="unfinished"></translation>
+        <translation>Light</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="115"/>
         <source>dark</source>
-        <translation type="unfinished"></translation>
+        <translation>Dark</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="129"/>
         <source>Fetch hush prices</source>
-        <translation type="unfinished"></translation>
+        <translation>Récupérer les prix de Hush</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="228"/>
         <source>Currency</source>
-        <translation type="unfinished"></translation>
+        <translation>Devise</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="251"/>
         <source>AUD</source>
-        <translation type="unfinished"></translation>
+        <translation>AUD</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="256"/>
         <source>BTC</source>
-        <translation type="unfinished"></translation>
+        <translation>BTC</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="261"/>
         <source>CAD</source>
-        <translation type="unfinished"></translation>
+        <translation>CAD</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="266"/>
         <source>CHF</source>
-        <translation type="unfinished"></translation>
+        <translation>CHF</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="271"/>
         <source>CNY</source>
-        <translation type="unfinished"></translation>
+        <translation>CNY</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="276"/>
         <source>EUR</source>
-        <translation type="unfinished"></translation>
+        <translation>EUR</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="281"/>
         <source>GBP</source>
-        <translation type="unfinished"></translation>
+        <translation>GBP</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="286"/>
         <source>INR</source>
-        <translation type="unfinished"></translation>
+        <translation>INR</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="291"/>
         <source>USD</source>
-        <translation type="unfinished"></translation>
+        <translation>USD</translation>
     </message>
     <message>
         <source>Clear History</source>
@@ -2186,12 +2196,12 @@ Vous avez soit des fonds non confirmés soit le solde est trop petit pour une mi
     <message>
         <location filename="../src/viewalladdresses.ui" line="14"/>
         <source>All Addresses</source>
-        <translation type="unfinished"></translation>
+        <translation>Toutes les adresses</translation>
     </message>
     <message>
         <location filename="../src/viewalladdresses.ui" line="30"/>
         <source>Export All Keys</source>
-        <translation type="unfinished"></translation>
+        <translation>Exporter toutes les clés</translation>
     </message>
 </context>
 <context>
@@ -2199,12 +2209,12 @@ Vous avez soit des fonds non confirmés soit le solde est trop petit pour une mi
     <message>
         <location filename="../src/viewalladdresses.cpp" line="7"/>
         <source>Address</source>
-        <translation type="unfinished">Adresse</translation>
+        <translation>Adresse</translation>
     </message>
     <message>
         <location filename="../src/viewalladdresses.cpp" line="7"/>
         <source>Balance (%1)</source>
-        <translation type="unfinished"></translation>
+        <translation>Solde (%1)</translation>
     </message>
 </context>
 <context>
@@ -2267,12 +2277,12 @@ Vous avez soit des fonds non confirmés soit le solde est trop petit pour une mi
     <message>
         <location filename="../src/confirm.ui" line="132"/>
         <source>Recurring Payment</source>
-        <translation type="unfinished"></translation>
+        <translation>Paiement récurrent</translation>
     </message>
     <message>
         <location filename="../src/confirm.ui" line="138"/>
         <source>TextLabel</source>
-        <translation type="unfinished"></translation>
+        <translation>TextLabel</translation>
     </message>
     <message>
         <source>hushd doesn&apos;t seem to have any peers. You might not be connected to the internet, so this Transaction might not work.</source>
@@ -2293,62 +2303,62 @@ Vous avez soit des fonds non confirmés soit le solde est trop petit pour une mi
     <message>
         <location filename="../src/createhushconfdialog.ui" line="14"/>
         <source>Configure hush.conf</source>
-        <translation type="unfinished"></translation>
+        <translation>Configuration de hush.conf</translation>
     </message>
     <message>
         <location filename="../src/createhushconfdialog.ui" line="42"/>
         <source>Show Advanced Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Afficher la configuration avancée</translation>
     </message>
     <message>
         <location filename="../src/createhushconfdialog.ui" line="20"/>
         <source>Your hush node will be configured for you automatically</source>
-        <translation type="unfinished"></translation>
+        <translation>Votre nœud hush sera automatiquement.configuré pour vous</translation>
     </message>
     <message>
         <location filename="../src/createhushconfdialog.ui" line="30"/>
         <source>Enable Fast Sync</source>
-        <translation type="unfinished"></translation>
+        <translation>Activer la synchronisation rapide</translation>
     </message>
     <message>
         <location filename="../src/createhushconfdialog.ui" line="119"/>
         <source>Use custom datadir</source>
-        <translation type="unfinished"></translation>
+        <translation>Utiliser un repertoire  personnalisé</translation>
     </message>
     <message>
         <location filename="../src/createhushconfdialog.ui" line="164"/>
         <source>Connect to the internet for updates and price feeds</source>
-        <translation type="unfinished"></translation>
+        <translation>Se connecter à Internet pour obtenir les mises à jour et les flux de prix</translation>
     </message>
     <message>
         <location filename="../src/createhushconfdialog.ui" line="174"/>
         <source>Please choose a directory to store your wallet.dat and blockchain</source>
-        <translation type="unfinished"></translation>
+        <translation>Veuillez choisir un répertoire pour stocker votre wallet.dat et votre blockchain</translation>
     </message>
     <message>
         <location filename="../src/createhushconfdialog.ui" line="205"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Skips the most expensive checks during the initial block download. &lt;a href=&quot;https://docs.silentdragon.co/using-silentdragon/#fastsync&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Learn More&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Ignore les vérifications les plus coûteuses lors du téléchargement du bloc initial. &lt;a href=&quot;https://docs.silentdragon.co/using-silentdragon/#fastsync&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Learn More&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/createhushconfdialog.ui" line="128"/>
         <source>Choose directory</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisir un répertoire</translation>
     </message>
     <message>
         <location filename="../src/createhushconfdialog.ui" line="112"/>
         <source>Allow connections to the internet to check for updates, get hush prices etc...</source>
-        <translation type="unfinished"></translation>
+        <translation>Autoriser les connexions à Internet pour vérifier les mises à jour, obtenir les prix de Hush, etc...</translation>
     </message>
     <message>
         <location filename="../src/createhushconfdialog.ui" line="181"/>
         <source>Connect over Tor</source>
-        <translation type="unfinished"></translation>
+        <translation>Connecter sur Tor</translation>
     </message>
     <message>
         <location filename="../src/createhushconfdialog.ui" line="157"/>
         <source>Please note that you&apos;ll need to already have a Tor service configured on port 9050</source>
-        <translation type="unfinished"></translation>
+        <translation>Veuillez noter que vous devez déjà avoir un service Tor configuré sur le port 9050</translation>
     </message>
 </context>
 <context>
@@ -2356,27 +2366,27 @@ Vous avez soit des fonds non confirmés soit le solde est trop petit pour une mi
     <message>
         <location filename="../src/encryption.ui" line="14"/>
         <source>Encrypt Your Wallet</source>
-        <translation type="unfinished"></translation>
+        <translation>Cryptez votre wallet</translation>
     </message>
     <message>
         <location filename="../src/encryption.ui" line="27"/>
         <source>Encryption Password:</source>
-        <translation type="unfinished"></translation>
+        <translation>Mot de passe du cryptage:</translation>
     </message>
     <message>
         <location filename="../src/encryption.ui" line="34"/>
         <source>Confirm Password:</source>
-        <translation type="unfinished"></translation>
+        <translation>Confirmez le mot de passe:</translation>
     </message>
     <message>
         <location filename="../src/encryption.ui" line="51"/>
         <source>Passwords don&apos;t match</source>
-        <translation type="unfinished"></translation>
+        <translation>Les mots de passe ne correspondent pas</translation>
     </message>
     <message>
         <location filename="../src/encryption.ui" line="75"/>
         <source>WARNING: If you forget your password, the only way to recover the wallet is from the seed phrase.</source>
-        <translation type="unfinished"></translation>
+        <translation>AVERTISSEMENT: Si vous oubliez votre mot de passe, le seul moyen de récupérer le portefeuille consiste à utiliser la phrase clé.</translation>
     </message>
 </context>
 <context>
@@ -2384,47 +2394,47 @@ Vous avez soit des fonds non confirmés soit le solde est trop petit pour une mi
     <message>
         <location filename="../src/newrecurring.ui" line="14"/>
         <source>Edit Schedule</source>
-        <translation type="unfinished"></translation>
+        <translation>Modifier la liste</translation>
     </message>
     <message>
         <location filename="../src/newrecurring.ui" line="54"/>
         <source>Schedule</source>
-        <translation type="unfinished"></translation>
+        <translation>Liste</translation>
     </message>
     <message>
         <location filename="../src/newrecurring.ui" line="20"/>
         <source>Payment Description</source>
-        <translation type="unfinished"></translation>
+        <translation>Description du paiement</translation>
     </message>
     <message>
         <location filename="../src/newrecurring.ui" line="142"/>
         <source>From</source>
-        <translation type="unfinished">De</translation>
+        <translation>De</translation>
     </message>
     <message>
         <location filename="../src/newrecurring.ui" line="166"/>
         <source>Number of payments</source>
-        <translation type="unfinished"></translation>
+        <translation>Nombre de paiement</translation>
     </message>
     <message>
         <location filename="../src/newrecurring.ui" line="75"/>
         <source>Amount</source>
-        <translation type="unfinished">Montant</translation>
+        <translation>Montant</translation>
     </message>
     <message>
         <location filename="../src/newrecurring.ui" line="68"/>
         <source>Next Payment</source>
-        <translation type="unfinished"></translation>
+        <translation>Prochain paiement</translation>
     </message>
     <message>
         <location filename="../src/newrecurring.ui" line="135"/>
         <source>To</source>
-        <translation type="unfinished">À</translation>
+        <translation>À</translation>
     </message>
     <message>
         <location filename="../src/newrecurring.ui" line="121"/>
         <source>Memo</source>
-        <translation type="unfinished">Mémo</translation>
+        <translation>Mémo</translation>
     </message>
 </context>
 <context>
