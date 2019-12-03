@@ -17,6 +17,16 @@ case $key in
     shift # past argument
     shift # past value
     ;;
+    -u|--username)
+    APPLE_USERNAME="$2"
+    shift # past argument
+    shift # past value
+    ;;
+    -p|--password)
+    APPLE_PASSWORD="$2"
+    shift # past argument
+    shift # past value
+    ;;
     -v|--version)
     APP_VERSION="$2"
     shift # past argument
@@ -35,8 +45,18 @@ if [ -z $QT_PATH ]; then
     exit 1; 
 fi
 
-if [ -z $CERTIFICATE ]; then 
+if [ -z "$CERTIFICATE" ]; then  
     echo "CERTIFICATE is not set. Please set it the name of the MacOS developer certificate to sign the binary with"; 
+    exit 1; 
+fi
+
+if [ -z "$APPLE_USERNAME" ]; then 
+    echo "APPLE_USERNAME is not set. Please set it the name of the MacOS developer login email to submit the binary for Apple for notarization"; 
+    exit 1; 
+fi
+
+if [ -z "$APPLE_PASSWORD" ]; then 
+    echo "APPLE_PASSWORD is not set. Please set it the name of the MacOS developer Application password to submit the binary for Apple for notarization"; 
     exit 1; 
 fi
 
@@ -76,7 +96,7 @@ mkdir artifacts >/dev/null 2>&1
 rm -f artifcats/SilentDragonLite.dmg >/dev/null 2>&1
 rm -f artifacts/rw* >/dev/null 2>&1
 $QT_PATH/bin/macdeployqt SilentDragonLite.app 
-codesign --deep --force --verify --verbose -s "$CERTIFICATE" --options runtime --timestamp SilentDragonLite.app/
+codesign --deep --force --verify --verbose -s "$CERTIFICATE" --options runtime --timestamp SilentDragonLite.app
 echo "[OK]"
 
 
@@ -89,3 +109,8 @@ if [ ! -f artifacts/macOS-SilentDragonLite-v$APP_VERSION.dmg ]; then
     exit 1
 fi
 echo  "[OK]"
+
+# Submit to Apple for notarization
+echo -n "Apple notarization....."
+xcrun altool --notarize-app -t osx -f artifacts/macOS-SilentDragonLite-v$APP_VERSION.dmg --primary-bundle-id="com.yourcompany.SilentDragonLite" -u "$APPLE_USERNAME" -p "$APPLE_PASSWORD" 
+echo  "[OK]" 
