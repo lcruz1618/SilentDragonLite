@@ -137,6 +137,13 @@ void LiteInterface::fetchInfo(const std::function<void(json)>& cb,
     conn->doRPC("info", "", cb, err);
 }
 
+void LiteInterface::fetchSupply(const std::function<void(json)>& cb) {
+    if (conn == nullptr)
+        return;
+
+    conn->doRPCWithDefaultErrorHandling("coinsupply", "", cb);
+}
+
 
 void LiteInterface::fetchLatestBlock(const std::function<void(json)>& cb, 
                         const std::function<void(QString)>& err) {

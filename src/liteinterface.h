@@ -45,6 +45,8 @@ public:
     void fetchInfo(const std::function<void(json)>& cb, 
                     const std::function<void(QString)>& err);
 
+
+
     void fetchLatestBlock(const std::function<void(json)>& cb, 
                         const std::function<void(QString)>& err);
     
@@ -62,6 +64,7 @@ public:
     void clearWallet(const std::function<void(json)>& cb);
 
     void fetchWalletEncryptionStatus(const std::function<void(json)>& cb);
+    void fetchSupply(const std::function<void(json)>& cb);
     void encryptWallet(QString password, const std::function<void(json)>& cb);
     void unlockWallet(QString password, const std::function<void(json)>& cb);
     void removeWalletEncryption(QString password, const std::function<void(json)>& cb);

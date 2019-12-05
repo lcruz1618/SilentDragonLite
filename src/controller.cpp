@@ -254,6 +254,16 @@ void Controller::getInfoThenRefresh(bool force) {
             model->setEncryptionStatus(isEncrypted, isLocked);
         });
 
+        zrpc->fetchSupply([=] (const json& reply) {   
+        
+        int supply  = reply["supply"].get<json::number_integer_t>();
+        ui->supply_taddr->setText(QString::number(supply));
+        int zfunds = reply["zfunds"].get<json::number_integer_t>();
+        ui->supply_zaddr->setText(QString::number(zfunds));
+        int total = reply["total"].get<json::number_integer_t>();
+        ui->supply_total->setText(QString::number(total));
+     });
+
         if ( doUpdate ) {
             // Something changed, so refresh everything.
             refreshBalances();        
