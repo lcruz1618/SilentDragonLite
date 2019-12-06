@@ -13,7 +13,7 @@ sudo apt install bash bison bzip2 flex gettext git gperf intltool libc6-dev-i386
 
 ```
 # Download openssl 1.0.2
-https://www.openssl.org/source/openssl-1.0.2t.tar.gz
+wget https://www.openssl.org/source/openssl-1.0.2t.tar.gz
 cd openssl-1.0.2t.tar.gz
 ./Configure linux-x86_64
 make -j$(nproc)
