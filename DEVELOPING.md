@@ -9,6 +9,18 @@ sudo apt install clang g++ build-essential make mingw-w64 git pkg-config libc6-d
 sudo apt install bash bison bzip2 flex gettext git gperf intltool libc6-dev-i386 libgdk-pixbuf2.0-dev libltdl-dev libtool-bin libxml-parser-perl make openssl p7zip-full patch perl pkg-config python ruby sed unzip wget xz-utils
 
 ```
+## more dependencies 
+```
+
+apt-get -y update && apt-get install -y \
+    curl libdbus-1-3 libexpat1 \
+    libgl1-mesa-dev libglu1-mesa-dev libfontconfig1-dev libssl-dev  \
+    libfreetype6 libgl1-mesa-glx libglib2.0-0 \
+    libx11-6 libx11-xcb1 \
+    g++ build-essential cmake wget git clang++-6.0 \
+    software-properties-common  \
+    autoconf automake autopoint bison flex gperf libtool libtool-bin intltool lzip python ruby unzip p7zip-full libgdk-pixbuf2.0-dev libltdl-dev
+```
 # Compile OpenSSL
 
 ```
