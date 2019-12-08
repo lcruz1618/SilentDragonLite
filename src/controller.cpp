@@ -189,11 +189,11 @@ void Controller::getInfoThenRefresh(bool force) {
         ui->longestchain->setText(QLocale(QLocale::German).toString(longestchain));
         ui->difficulty->setText(QLocale(QLocale::German).toString(difficulty));}
 
-        else 
+        else {
         ui->blockHeight->setText(QLocale(QLocale::English).toString(curBlock));
         ui->last_notarized->setText(QLocale(QLocale::English).toString(notarized));
         ui->longestchain->setText(QLocale(QLocale::English).toString(longestchain));
-        ui->difficulty->setText(QLocale(QLocale::English).toString(difficulty));
+        ui->difficulty->setText(QLocale(QLocale::English).toString(difficulty));}
 
         
         ui->halvingTime->setText( QString::number(blocks_until_halving) % " blocks, " % QString::fromStdString(halving_days)  % " days" );
@@ -272,7 +272,7 @@ void Controller::getInfoThenRefresh(bool force) {
         double price = Settings::getInstance()->getCHFPrice();
         double volume = Settings::getInstance()->getCHFVolume();
         double cap =  Settings::getInstance()->getCHFCAP();
-        main->statusLabel->setText(" HUSH/CHF= " + (QLocale(QLocale::German).toString(price,'f', 2))+ "CHF");
+        main->statusLabel->setText(" HUSH/CHF= " + (QLocale(QLocale::German).toString(price,'f', 2))+ " CHF");
         ui->volumeExchange->setText(QLocale(QLocale::German).toString(volume,'f', 2)+ " CHF");
         ui->marketcapTab->setText(QLocale(QLocale::German).toString(cap,'f', 2)+ " CHF");
 
@@ -340,10 +340,10 @@ void Controller::getInfoThenRefresh(bool force) {
         ui->supply_zaddr->setText((QLocale(QLocale::German).toString(zfunds)));
         ui->supply_total->setText((QLocale(QLocale::German).toString(total)));}
 
-        else 
+        else{
         ui->supply_taddr->setText((QLocale(QLocale::English).toString(supply)));
         ui->supply_zaddr->setText((QLocale(QLocale::English).toString(zfunds)));
-        ui->supply_total->setText((QLocale(QLocale::English).toString(total)));
+        ui->supply_total->setText((QLocale(QLocale::English).toString(total)));}
 
     
      });
