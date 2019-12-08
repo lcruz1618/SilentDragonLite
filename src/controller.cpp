@@ -166,37 +166,28 @@ void Controller::getInfoThenRefresh(bool force) {
         int notarized = reply["notarized"].get<json::number_integer_t>();
         int difficulty = reply["difficulty"].get<json::number_integer_t>();
         int blocks_until_halving= 340000 - curBlock;
-        char halving_days[8];
-        sprintf(halving_days, "%.2f", (double) (blocks_until_halving * 150) / (60*60*24) );
+        int halving_days =
+         (blocks_until_halving * 150) / (60*60*24) ;
         bool doUpdate = force || (model->getLatestBlock() != curBlock);
         model->setLatestBlock(curBlock);
 
-        if (Settings::getInstance()->get_currency_name() == "EUR") {
-        ui->blockHeight->setText(QLocale(QLocale::German).toString(curBlock));
-        ui->last_notarized->setText(QLocale(QLocale::German).toString(notarized));
-        ui->longestchain->setText(QLocale(QLocale::German).toString(longestchain));
-        ui->difficulty->setText(QLocale(QLocale::German).toString(difficulty));}
-
-        else if (Settings::getInstance()->get_currency_name() == "CHF") {
-        ui->blockHeight->setText(QLocale(QLocale::German).toString(curBlock));
-        ui->last_notarized->setText(QLocale(QLocale::German).toString(notarized));
-        ui->longestchain->setText(QLocale(QLocale::German).toString(longestchain));
-        ui->difficulty->setText(QLocale(QLocale::German).toString(difficulty));}
-
-        else if (Settings::getInstance()->get_currency_name() == "RUB") {
-        ui->blockHeight->setText(QLocale(QLocale::German).toString(curBlock));
-        ui->last_notarized->setText(QLocale(QLocale::German).toString(notarized));
-        ui->longestchain->setText(QLocale(QLocale::German).toString(longestchain));
-        ui->difficulty->setText(QLocale(QLocale::German).toString(difficulty));}
-
+        if (Settings::getInstance()->get_currency_name() == "EUR" || Settings::getInstance()->get_currency_name() == "CHF" || Settings::getInstance()->get_currency_name() == "RUB") {
+        ui->blockHeight->setText("Block: " + QLocale(QLocale::German).toString(curBlock));
+        ui->last_notarized->setText("Block: " + QLocale(QLocale::German).toString(notarized));
+        ui->longestchain->setText("Block: " + QLocale(QLocale::German).toString(longestchain));
+        ui->difficulty->setText(QLocale(QLocale::German).toString(difficulty));
+        ui->halvingTime->setText((QLocale(QLocale::German).toString(blocks_until_halving)) + " Blocks or , " + (QLocale(QLocale::German).toString(halving_days)  + " days" ));
+        }
         else {
-        ui->blockHeight->setText(QLocale(QLocale::English).toString(curBlock));
-        ui->last_notarized->setText(QLocale(QLocale::English).toString(notarized));
-        ui->longestchain->setText(QLocale(QLocale::English).toString(longestchain));
-        ui->difficulty->setText(QLocale(QLocale::English).toString(difficulty));}
+        ui->blockHeight->setText("Block: " + QLocale(QLocale::English).toString(curBlock));
+        ui->last_notarized->setText("Block: " + QLocale(QLocale::English).toString(notarized));
+        ui->longestchain->setText("Block: " + QLocale(QLocale::English).toString(longestchain));
+        ui->difficulty->setText(QLocale(QLocale::English).toString(difficulty));
+        ui->halvingTime->setText((QLocale(QLocale::English).toString(blocks_until_halving)) + " Blocks or , " + (QLocale(QLocale::English).toString(halving_days)  + " days" ));
+
+        }
 
         
-        ui->halvingTime->setText( QString::number(blocks_until_halving) % " blocks, " % QString::fromStdString(halving_days)  % " days" );
         ui->Version->setText(QString::fromStdString(reply["version"].get<json::string_t>())); 
         ui->Vendor->setText(QString::fromStdString(reply["vendor"].get<json::string_t>()));
         
@@ -325,25 +316,14 @@ void Controller::getInfoThenRefresh(bool force) {
         int zfunds = reply["zfunds"].get<json::number_integer_t>();
         int total = reply["total"].get<json::number_integer_t>();
 
-        if (Settings::getInstance()->get_currency_name() == "EUR") {
-        ui->supply_taddr->setText((QLocale(QLocale::German).toString(supply)));
-        ui->supply_zaddr->setText((QLocale(QLocale::German).toString(zfunds)));
-        ui->supply_total->setText((QLocale(QLocale::German).toString(total)));}
-
-        else if (Settings::getInstance()->get_currency_name() == "CHF") {
-        ui->supply_taddr->setText((QLocale(QLocale::German).toString(supply)));
-        ui->supply_zaddr->setText((QLocale(QLocale::German).toString(zfunds)));
-        ui->supply_total->setText((QLocale(QLocale::German).toString(total)));}
-
-        else if (Settings::getInstance()->get_currency_name() == "RUB") {
-        ui->supply_taddr->setText((QLocale(QLocale::German).toString(supply)));
-        ui->supply_zaddr->setText((QLocale(QLocale::German).toString(zfunds)));
-        ui->supply_total->setText((QLocale(QLocale::German).toString(total)));}
-
+        if (Settings::getInstance()->get_currency_name() == "EUR" || Settings::getInstance()->get_currency_name() == "CHF" || Settings::getInstance()->get_currency_name() == "RUB") {
+        ui->supply_taddr->setText((QLocale(QLocale::German).toString(supply)+ " Hush"));
+        ui->supply_zaddr->setText((QLocale(QLocale::German).toString(zfunds)+ " Hush"));
+        ui->supply_total->setText((QLocale(QLocale::German).toString(total)+ " Hush"));}
         else{
-        ui->supply_taddr->setText((QLocale(QLocale::English).toString(supply)));
-        ui->supply_zaddr->setText((QLocale(QLocale::English).toString(zfunds)));
-        ui->supply_total->setText((QLocale(QLocale::English).toString(total)));}
+        ui->supply_taddr->setText("Hush " + (QLocale(QLocale::English).toString(supply)));
+        ui->supply_zaddr->setText("Hush " +(QLocale(QLocale::English).toString(zfunds)));
+        ui->supply_total->setText("Hush " +(QLocale(QLocale::English).toString(total)));}
 
     
      });

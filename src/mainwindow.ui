@@ -1010,7 +1010,7 @@
              <item row="2" column="1">
               <widget class="QLabel" name="label_20">
                <property name="text">
-                <string>|</string>
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;|&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                </property>
               </widget>
              </item>
@@ -1024,7 +1024,7 @@
              <item row="9" column="1">
               <widget class="QLabel" name="label_38">
                <property name="text">
-                <string>|</string>
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;|&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                </property>
               </widget>
              </item>
@@ -1045,7 +1045,7 @@
              <item row="6" column="1">
               <widget class="QLabel" name="label_18">
                <property name="text">
-                <string>|</string>
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;|&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                </property>
               </widget>
              </item>
@@ -1094,14 +1094,14 @@
              <item row="5" column="1">
               <widget class="QLabel" name="label_28">
                <property name="text">
-                <string>|</string>
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;|&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                </property>
               </widget>
              </item>
              <item row="8" column="1">
               <widget class="QLabel" name="label_34">
                <property name="text">
-                <string>|</string>
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;|&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                </property>
               </widget>
              </item>
@@ -1115,7 +1115,7 @@
              <item row="0" column="1">
               <widget class="QLabel" name="label_23">
                <property name="text">
-                <string>|</string>
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;|&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                </property>
               </widget>
              </item>
@@ -1136,7 +1136,7 @@
              <item row="4" column="1">
               <widget class="QLabel" name="label_26">
                <property name="text">
-                <string>|</string>
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;|&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                </property>
               </widget>
              </item>
@@ -1150,7 +1150,7 @@
              <item row="3" column="1">
               <widget class="QLabel" name="label_13">
                <property name="text">
-                <string>|</string>
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;|&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                </property>
               </widget>
              </item>
@@ -1164,7 +1164,7 @@
              <item row="7" column="1">
               <widget class="QLabel" name="label_29">
                <property name="text">
-                <string>|</string>
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;|&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                </property>
               </widget>
              </item>
@@ -1192,7 +1192,7 @@
              <item row="1" column="1">
               <widget class="QLabel" name="label_22">
                <property name="text">
-                <string>|</string>
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;|&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                </property>
               </widget>
              </item>
@@ -1264,7 +1264,7 @@
              <item row="1" column="1">
               <widget class="QLabel" name="label_9">
                <property name="text">
-                <string>|</string>
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;|&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                </property>
               </widget>
              </item>
@@ -1285,7 +1285,7 @@
              <item row="0" column="1">
               <widget class="QLabel" name="label_11">
                <property name="text">
-                <string>|</string>
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;|&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                </property>
               </widget>
              </item>
