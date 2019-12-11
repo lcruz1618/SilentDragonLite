@@ -287,6 +287,11 @@
         </property>
        </item>
        <item>
+       <property name="text">
+         <string>RUB</string>
+        </property>
+       </item>
+       <item>
         <property name="text">
          <string>USD</string>
         </property>
