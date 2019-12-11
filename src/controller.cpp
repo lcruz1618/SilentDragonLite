@@ -148,8 +148,8 @@ void Controller::processInfo(const json& info) {
     Settings::getInstance()->sethushdVersion(version);
 
     // Recurring pamynets are testnet only
-    if (!Settings::getInstance()->isTestnet())
-        main->disableRecurring();
+    //if (!Settings::getInstance()->isTestnet())
+      //  main->disableRecurring();
 }
 
 void Controller::getInfoThenRefresh(bool force) {

@@ -106,6 +106,8 @@ QString RecurringPaymentInfo::getAmountPretty() const {
   } else if (Settings::getInstance()->get_currency_name() == "AUD") {
     return currency == "AUD" ? amount.toDecimalAUDString() : amount.toDecimalhushString();
 }
+else 
+return currency == "USD" ? amount.toDecimalUSDString() : amount.toDecimalhushString();
 }
 
 QString RecurringPaymentInfo::getScheduleDescription() const {
@@ -151,9 +153,42 @@ RecurringPaymentInfo* Recurring::getNewRecurringFromTx(QWidget* parent, MainWind
     if (!tx.fromAddr.isEmpty()) {
         ui.lblFrom->setText(tx.fromAddr);
     }
-
-    ui.cmbCurrency->addItem("USD");
-    ui.cmbCurrency->addItem(Settings::getTokenName());
+    
+    if (Settings::getInstance()->get_currency_name() == "USD") {
+        ui.cmbCurrency->addItem("USD");
+        ui.cmbCurrency->addItem(Settings::getTokenName());
+     } else if (Settings::getInstance()->get_currency_name() == "EUR") {
+         ui.cmbCurrency->addItem("EUR");
+         ui.cmbCurrency->addItem(Settings::getTokenName());
+     } else if (Settings::getInstance()->get_currency_name() == "BTC") {
+         ui.cmbCurrency->addItem("BTC");
+         ui.cmbCurrency->addItem(Settings::getTokenName());
+     } else if (Settings::getInstance()->get_currency_name() == "CNY") {
+         ui.cmbCurrency->addItem("CNY");
+         ui.cmbCurrency->addItem(Settings::getTokenName());
+     } else if (Settings::getInstance()->get_currency_name() == "RUB") {
+        ui.cmbCurrency->addItem("RUB");
+         ui.cmbCurrency->addItem(Settings::getTokenName());
+     } else if (Settings::getInstance()->get_currency_name() == "CAD") {
+         ui.cmbCurrency->addItem("CAD");
+         ui.cmbCurrency->addItem(Settings::getTokenName());
+     } else if (Settings::getInstance()->get_currency_name() == "SGD") {
+         ui.cmbCurrency->addItem("SGD");
+         ui.cmbCurrency->addItem(Settings::getTokenName());
+     } else if (Settings::getInstance()->get_currency_name() == "CHF") {
+         ui.cmbCurrency->addItem("CHF");
+         ui.cmbCurrency->addItem(Settings::getTokenName());
+     } else if (Settings::getInstance()->get_currency_name() == "INR") {
+        ui.cmbCurrency->addItem("INR");
+         ui.cmbCurrency->addItem(Settings::getTokenName());
+     } else if (Settings::getInstance()->get_currency_name() == "GBP") {
+       ui.cmbCurrency->addItem("GBP");
+         ui.cmbCurrency->addItem(Settings::getTokenName());
+     } else if (Settings::getInstance()->get_currency_name() == "AUD") {
+        ui.cmbCurrency->addItem("AUD");
+         ui.cmbCurrency->addItem(Settings::getTokenName());
+        
+         }
 
     if (tx.toAddrs.length() > 0) {
         ui.lblTo->setText(tx.toAddrs[0].addr);
@@ -277,6 +312,47 @@ void Recurring::updateInfoWithTx(RecurringPaymentInfo* r, Tx tx) {
     if (r->currency.isEmpty() || r->currency == "USD") {
         r->currency = "USD";
         r->amt = tx.toAddrs[0].amount.toqint64() * Settings::getInstance()->getZECPrice();
+    }
+    
+     else if(r->currency.isEmpty() || r->currency == "EUR") {
+        r->currency = "EUR";
+        r->amt = tx.toAddrs[0].amount.toqint64() * Settings::getInstance()->getEURPrice();
+    }
+    else if (r->currency.isEmpty() || r->currency == "BTC") {
+        r->currency = "BTC";
+        r->amt = tx.toAddrs[0].amount.toqint64() * Settings::getInstance()->getBTCPrice();
+    }
+    else if(r->currency.isEmpty() || r->currency == "CNY") {
+        r->currency = "CNY";
+        r->amt = tx.toAddrs[0].amount.toqint64() * Settings::getInstance()->getCNYPrice();
+    }
+    else if(r->currency.isEmpty() || r->currency == "RUB") {
+        r->currency = "RUB";
+        r->amt = tx.toAddrs[0].amount.toqint64() * Settings::getInstance()->getRUBPrice();
+    }
+    else if(r->currency.isEmpty() || r->currency == "SGD") {
+        r->currency = "SGD";
+        r->amt = tx.toAddrs[0].amount.toqint64() * Settings::getInstance()->getSGDPrice();
+    }
+    else if(r->currency.isEmpty() || r->currency == "CHF") {
+        r->currency = "CHF";
+        r->amt = tx.toAddrs[0].amount.toqint64() * Settings::getInstance()->getCHFPrice();
+    }
+    else if(r->currency.isEmpty() || r->currency == "CAD") {
+        r->currency = "CAD";
+        r->amt = tx.toAddrs[0].amount.toqint64() * Settings::getInstance()->getCADPrice();
+    }
+    else if(r->currency.isEmpty() || r->currency == "INR") {
+        r->currency = "INR";
+        r->amt = tx.toAddrs[0].amount.toqint64() * Settings::getInstance()->getINRPrice();
+    }
+    else if(r->currency.isEmpty() || r->currency == "GBP") {
+        r->currency = "GBP";
+        r->amt = tx.toAddrs[0].amount.toqint64() * Settings::getInstance()->getGBPPrice();
+    }
+   else if (r->currency.isEmpty() || r->currency == "AUD") {
+        r->currency = "AUD";
+        r->amt = tx.toAddrs[0].amount.toqint64() * Settings::getInstance()->getAUDPrice();
     }
     else {
         r->currency = Settings::getTokenName();
@@ -423,11 +499,11 @@ Recurring* Recurring::instance = nullptr;
  */
 void Recurring::processPending(MainWindow* main) {
     // Refuse to run on mainnet
-    if (!Settings::getInstance()->isTestnet())
-        return;
+    //if (!Settings::getInstance()->isTestnet())
+      //  return;
 
-    if (!main->isPaymentsReady())
-        return;
+    //if (!main->isPaymentsReady())
+      //  return;
 
     // For each recurring payment
     for (auto rpi: payments.values()) {
@@ -549,6 +625,167 @@ void Recurring::executeRecurringPayment(MainWindow* main, RecurringPaymentInfo r
         
         // Translate it into hush
         amount = rpi.amt / Settings::getInstance()->getZECPrice();
+    }
+    
+    if (rpi.currency == "EUR") {
+        // If there is no price, then fail the payment
+        if (Settings::getInstance()->getEURPrice() == 0) {
+            for (auto paymentNumber: paymentNumbers) {
+                updatePaymentItem(rpi.getHash(), paymentNumber,
+                    "", QObject::tr("No hush price was available to convert from EUR"),
+                    PaymentStatus::ERROR);
+            }
+            return;
+        
+      
+        }
+        
+        // Translate it into hush
+        amount = rpi.amt / Settings::getInstance()->getEURPrice();
+    }
+    if (rpi.currency == "BTC") {
+        // If there is no price, then fail the payment
+        if (Settings::getInstance()->getBTCPrice() == 0) {
+            for (auto paymentNumber: paymentNumbers) {
+                updatePaymentItem(rpi.getHash(), paymentNumber,
+                    "", QObject::tr("No hush price was available to convert from BTC"),
+                    PaymentStatus::ERROR);
+            }
+            return;
+        
+      
+        }
+        
+        // Translate it into hush
+        amount = rpi.amt / Settings::getInstance()->getBTCPrice();
+    }
+    if (rpi.currency == "CNY") {
+        // If there is no price, then fail the payment
+        if (Settings::getInstance()->getCNYPrice() == 0) {
+            for (auto paymentNumber: paymentNumbers) {
+                updatePaymentItem(rpi.getHash(), paymentNumber,
+                    "", QObject::tr("No hush price was available to convert from CNY"),
+                    PaymentStatus::ERROR);
+            }
+            return;
+        
+      
+        }
+        
+        // Translate it into hush
+        amount = rpi.amt / Settings::getInstance()->getCNYPrice();
+    }
+    if (rpi.currency == "RUB") {
+        // If there is no price, then fail the payment
+        if (Settings::getInstance()->getRUBPrice() == 0) {
+            for (auto paymentNumber: paymentNumbers) {
+                updatePaymentItem(rpi.getHash(), paymentNumber,
+                    "", QObject::tr("No hush price was available to convert from RUB"),
+                    PaymentStatus::ERROR);
+            }
+            return;
+        
+      
+        }
+        
+        // Translate it into hush
+        amount = rpi.amt / Settings::getInstance()->getRUBPrice();
+    }
+    if (rpi.currency == "CAD") {
+        // If there is no price, then fail the payment
+        if (Settings::getInstance()->getCADPrice() == 0) {
+            for (auto paymentNumber: paymentNumbers) {
+                updatePaymentItem(rpi.getHash(), paymentNumber,
+                    "", QObject::tr("No hush price was available to convert from CAD"),
+                    PaymentStatus::ERROR);
+            }
+            return;
+        
+      
+        }
+        
+        // Translate it into hush
+        amount = rpi.amt / Settings::getInstance()->getCADPrice();
+    }
+    if (rpi.currency == "SGD") {
+        // If there is no price, then fail the payment
+        if (Settings::getInstance()->getSGDPrice() == 0) {
+            for (auto paymentNumber: paymentNumbers) {
+                updatePaymentItem(rpi.getHash(), paymentNumber,
+                    "", QObject::tr("No hush price was available to convert from SGD"),
+                    PaymentStatus::ERROR);
+            }
+            return;
+        
+      
+        }
+        
+        // Translate it into hush
+        amount = rpi.amt / Settings::getInstance()->getSGDPrice();
+    }
+    if (rpi.currency == "CHF") {
+        // If there is no price, then fail the payment
+        if (Settings::getInstance()->getCHFPrice() == 0) {
+            for (auto paymentNumber: paymentNumbers) {
+                updatePaymentItem(rpi.getHash(), paymentNumber,
+                    "", QObject::tr("No hush price was available to convert from CHF"),
+                    PaymentStatus::ERROR);
+            }
+            return;
+        
+      
+        }
+        
+        // Translate it into hush
+        amount = rpi.amt / Settings::getInstance()->getCHFPrice();
+    }
+    if (rpi.currency == "INR") {
+        // If there is no price, then fail the payment
+        if (Settings::getInstance()->getINRPrice() == 0) {
+            for (auto paymentNumber: paymentNumbers) {
+                updatePaymentItem(rpi.getHash(), paymentNumber,
+                    "", QObject::tr("No hush price was available to convert from INR"),
+                    PaymentStatus::ERROR);
+            }
+            return;
+        
+      
+        }
+        
+        // Translate it into hush
+        amount = rpi.amt / Settings::getInstance()->getINRPrice();
+    }
+    if (rpi.currency == "GBP") {
+        // If there is no price, then fail the payment
+        if (Settings::getInstance()->getGBPPrice() == 0) {
+            for (auto paymentNumber: paymentNumbers) {
+                updatePaymentItem(rpi.getHash(), paymentNumber,
+                    "", QObject::tr("No hush price was available to convert from GBP"),
+                    PaymentStatus::ERROR);
+            }
+            return;
+        
+      
+        }
+        
+        // Translate it into hush
+        amount = rpi.amt / Settings::getInstance()->getGBPPrice();
+    }
+    if (rpi.currency == "AUD") {
+        // If there is no price, then fail the payment
+        if (Settings::getInstance()->getAUDPrice() == 0) {
+            for (auto paymentNumber: paymentNumbers) {
+                updatePaymentItem(rpi.getHash(), paymentNumber,
+                    "", QObject::tr("No hush price was available to convert from AUD"),
+                    PaymentStatus::ERROR);
+            }
+            return;
+        
+      
+        }
+        
+        // Translate it into hush
+        amount = rpi.amt / Settings::getInstance()->getAUDPrice();
     }
 
     // Build a Tx
