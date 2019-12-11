@@ -134,7 +134,7 @@
         <rect>
          <x>9</x>
          <y>9</y>
-         <width>267</width>
+         <width>571</width>
          <height>23</height>
         </rect>
        </property>
@@ -147,7 +147,7 @@
         <rect>
          <x>9</x>
          <y>38</y>
-         <width>340</width>
+         <width>641</width>
          <height>17</height>
         </rect>
        </property>
@@ -287,7 +287,7 @@
         </property>
        </item>
        <item>
-       <property name="text">
+        <property name="text">
          <string>RUB</string>
         </property>
        </item>
