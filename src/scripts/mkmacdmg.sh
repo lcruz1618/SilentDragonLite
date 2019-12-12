@@ -112,5 +112,5 @@ echo  "[OK]"
 
 # Submit to Apple for notarization
 echo -n "Apple notarization....."
-xcrun altool --notarize-app -t osx -f artifacts/macOS-SilentDragonLite-v$APP_VERSION.dmg --primary-bundle-id="com.yourcompany.SilentDragonLite" -u "$APPLE_USERNAME" -p "$APPLE_PASSWORD" 
+xcrun altool --notarize-app -t osx -f artifacts/macOS-SilentDragonLite-v$APP_VERSION.dmg --primary-bundle-id="com.MyHush.SilentDragonLite" -u "$APPLE_USERNAME" -p "$APPLE_PASSWORD" 
 echo  "[OK]" 
