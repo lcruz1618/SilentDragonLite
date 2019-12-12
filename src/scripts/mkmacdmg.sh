@@ -102,7 +102,7 @@ echo "[OK]"
 
 echo -n "Building dmg..........."
 mv SilentDragonLite.app SilentDragonLite.app
-create-dmg --volname "SilentDragonLite-v$APP_VERSION" --volicon "res/logo.icns" --window-pos 200 120 --icon "SilentDragonLite.app" 200 190  --app-drop-link 600 185 --hide-extension "SilentDragonLite.app"  --window-size 800 400 --hdiutil-quiet --background res/dmgbg.png  artifacts/macOS-SilentDragonLite-v$APP_VERSION.dmg SilentDragonLite.app >/dev/null 2>&1
+create-dmg --volname "SilentDragonLite-v$APP_VERSION" --volicon "res/logo.icns" --window-pos 200 120 --icon "SilentDragonLite.app" 200 190 --icon-size 100 --app-drop-link 600 185 --hide-extension "SilentDragonLite.app"  --window-size 800 400 --hdiutil-quiet --background res/dmgbg.png  artifacts/macOS-SilentDragonLite-v$APP_VERSION.dmg SilentDragonLite.app >/dev/null 2>&1
 
 if [ ! -f artifacts/macOS-SilentDragonLite-v$APP_VERSION.dmg ]; then
     echo "[ERROR]"
