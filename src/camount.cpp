@@ -44,7 +44,7 @@ QString CAmount::toDecimalEURString() const {
     double dblAmount = static_cast<double>(this->amount) / COIN;
     double price = Settings::getInstance()->getEURPrice();
 
-    return QLocale(QLocale::English).toString(dblAmount*price, 'f', 2) + " €";
+    return QLocale(QLocale::German).toString(dblAmount*price, 'f', 2) + " €";
 }
 QString CAmount::toDecimalBTCString() const {
     double dblAmount = static_cast<double>(this->amount) / COIN;
@@ -80,7 +80,7 @@ QString CAmount::toDecimalCHFString() const {
     double dblAmount = static_cast<double>(this->amount) / COIN;
     double price = Settings::getInstance()->getCHFPrice();
 
-    return "CHF " + QLocale(QLocale::English).toString(dblAmount*price, 'f', 2);
+    return "CHF " + QLocale(QLocale::German).toString(dblAmount*price, 'f', 2);
 }
 QString CAmount::toDecimalINRString() const {
     double dblAmount = static_cast<double>(this->amount) / COIN;

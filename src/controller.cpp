@@ -166,18 +166,31 @@ void Controller::getInfoThenRefresh(bool force) {
         int notarized = reply["notarized"].get<json::number_integer_t>();
         int difficulty = reply["difficulty"].get<json::number_integer_t>();
         int blocks_until_halving= 340000 - curBlock;
-        char halving_days[8];
-        sprintf(halving_days, "%.2f", (double) (blocks_until_halving * 150) / (60*60*24) );
+        int halving_days =
+         (blocks_until_halving * 150) / (60*60*24) ;
         bool doUpdate = force || (model->getLatestBlock() != curBlock);
         model->setLatestBlock(curBlock);
-        ui->blockHeight->setText(QString::number(curBlock));
-        ui->last_notarized->setText(QString::number(notarized));
-        ui->longestchain->setText(QString::number(longestchain));
-        ui->difficulty->setText(QString::number(difficulty));
-        ui->halvingTime->setText( QString::number(blocks_until_halving) % " blocks, " % QString::fromStdString(halving_days)  % " days" );
+
+        if (Settings::getInstance()->get_currency_name() == "EUR" || Settings::getInstance()->get_currency_name() == "CHF" || Settings::getInstance()->get_currency_name() == "RUB") {
+        ui->blockHeight->setText("Block: " + QLocale(QLocale::German).toString(curBlock));
+        ui->last_notarized->setText("Block: " + QLocale(QLocale::German).toString(notarized));
+        ui->longestchain->setText("Block: " + QLocale(QLocale::German).toString(longestchain));
+        ui->difficulty->setText(QLocale(QLocale::German).toString(difficulty));
+        ui->halvingTime->setText((QLocale(QLocale::German).toString(blocks_until_halving)) + " Blocks or , " + (QLocale(QLocale::German).toString(halving_days)  + " days" ));
+        }
+        else {
+        ui->blockHeight->setText("Block: " + QLocale(QLocale::English).toString(curBlock));
+        ui->last_notarized->setText("Block: " + QLocale(QLocale::English).toString(notarized));
+        ui->longestchain->setText("Block: " + QLocale(QLocale::English).toString(longestchain));
+        ui->difficulty->setText(QLocale(QLocale::English).toString(difficulty));
+        ui->halvingTime->setText((QLocale(QLocale::English).toString(blocks_until_halving)) + " Blocks or , " + (QLocale(QLocale::English).toString(halving_days)  + " days" ));
+
+        }
+
+        
         ui->Version->setText(QString::fromStdString(reply["version"].get<json::string_t>())); 
         ui->Vendor->setText(QString::fromStdString(reply["vendor"].get<json::string_t>()));
-        ui->volumeExchange->setText(" BTC " + QString::number((double)  Settings::getInstance()->getBTCVolume() ,'f',8));
+        
 
         main->logger->write(QString("Refresh. curblock ") % QString::number(curBlock) % ", update=" % (doUpdate ? "true" : "false") );
 
@@ -191,49 +204,92 @@ void Controller::getInfoThenRefresh(bool force) {
         // use currency ComboBox as input 
 
         if (Settings::getInstance()->get_currency_name() == "USD") {
-        main->statusLabel->setText(" HUSH/USD=$ " + QString::number( (double) Settings::getInstance()->getZECPrice() ,'f',2));
-        ui->volumeExchange->setText(" $ " + QString::number((double)  Settings::getInstance()->getUSDVolume() ,'f',2));
-        ui->marketcapTab->setText(" $ " + QString::number((double)  Settings::getInstance()->getUSDCAP() ,'f',2));
+        double price = Settings::getInstance()->getZECPrice();
+        double volume = Settings::getInstance()->getUSDVolume();
+        double cap =  Settings::getInstance()->getUSDCAP();
+        main->statusLabel->setText(" HUSH/USD=$ " + (QLocale(QLocale::English).toString(price,'f', 2)));
+        ui->volumeExchange->setText(" $ " + (QLocale(QLocale::English).toString(volume,'f', 2)));
+        ui->marketcapTab->setText(" $ " + (QLocale(QLocale::English).toString(cap,'f', 2)));
+
     }   else if (Settings::getInstance()->get_currency_name() == "EUR") {
-        main->statusLabel->setText(" HUSH/EUR= " + QString::number( (double) Settings::getInstance()->getEURPrice() ,'f',2) + " €");
-        ui->volumeExchange->setText(QString::number((double)  Settings::getInstance()->getEURVolume() ,'f',2) + " €");
-        ui->marketcapTab->setText(QString::number((double)  Settings::getInstance()->getEURCAP() ,'f',2)+ " €");
+        double price = Settings::getInstance()->getEURPrice();
+        double volume = Settings::getInstance()->getEURVolume();
+        double cap =  Settings::getInstance()->getEURCAP();
+        main->statusLabel->setText("HUSH/EUR "+(QLocale(QLocale::German).toString(price,'f', 2))+ " €");
+        ui->volumeExchange->setText(QLocale(QLocale::German).toString(volume,'f', 2)+ " €");
+        ui->marketcapTab->setText(QLocale(QLocale::German).toString(cap,'f', 2)+ " €");
+
     }   else if  (Settings::getInstance()->get_currency_name() == "BTC") {
-        main->statusLabel->setText(" HUSH/BTC=BTC " + QString::number((double)  Settings::getInstance()->getBTCPrice() ,'f',8));
-        ui->volumeExchange->setText(" BTC " + QString::number((double)  Settings::getInstance()->getBTCVolume() ,'f',8));
-          ui->marketcapTab->setText(" BTC " + QString::number((double)  Settings::getInstance()->getBTCCAP() ,'f',8));
+        double price = Settings::getInstance()->getBTCPrice();
+        double volume = Settings::getInstance()->getBTCVolume();
+        double cap =  Settings::getInstance()->getBTCCAP();
+        main->statusLabel->setText(" HUSH/BTC=BTC " + (QLocale(QLocale::English).toString(price, 'f',8)));
+        ui->volumeExchange->setText(" BTC " + (QLocale(QLocale::English).toString(volume, 'f',8)));
+        ui->marketcapTab->setText(" BTC " + (QLocale(QLocale::English).toString(cap, 'f',8)));
+
     }   else if (Settings::getInstance()->get_currency_name() == "CNY") {
-        main->statusLabel->setText(" HUSH/CNY=¥ /元 " + QString::number( (double) Settings::getInstance()->getCNYPrice() ,'f',2));
-        ui->volumeExchange->setText(" ¥ /元  " + QString::number((double)  Settings::getInstance()->getCNYVolume() ,'f',2));
-        ui->marketcapTab->setText(" ¥ /元  " + QString::number((double)  Settings::getInstance()->getCNYCAP() ,'f',2));
+        double price = Settings::getInstance()->getCNYPrice();
+        double volume = Settings::getInstance()->getCNYVolume();
+        double cap =  Settings::getInstance()->getCNYCAP();
+        main->statusLabel->setText(" HUSH/CNY=¥ /元 " + (QLocale(QLocale::Chinese).toString(price,'f', 2)));
+        ui->volumeExchange->setText(" ¥ /元  " + (QLocale(QLocale::Chinese).toString(volume,'f', 2)));
+        ui->marketcapTab->setText(" ¥ /元  " + (QLocale(QLocale::Chinese).toString(cap,'f', 2)));
+
     }   else if  (Settings::getInstance()->get_currency_name() == "RUB") {
-        main->statusLabel->setText(" HUSH/RUB=₽ " + QString::number((double)  Settings::getInstance()->getRUBPrice() ,'f',2));
-        ui->volumeExchange->setText(" ₽  " + QString::number((double)  Settings::getInstance()->getRUBVolume() ,'f',2));
-        ui->marketcapTab->setText(" ₽  " + QString::number((double)  Settings::getInstance()->getRUBCAP() ,'f',2));
+        double price = Settings::getInstance()->getRUBPrice();
+        double volume = Settings::getInstance()->getRUBVolume();
+        double cap =  Settings::getInstance()->getRUBCAP();
+        main->statusLabel->setText(" HUSH/RUB=₽ " + (QLocale(QLocale::German).toString(price,'f', 2)));
+        ui->volumeExchange->setText(" ₽  " + (QLocale(QLocale::German).toString(volume,'f', 2)));
+        ui->marketcapTab->setText(" ₽  " + (QLocale(QLocale::German).toString(cap,'f', 2)));
+
     }   else if (Settings::getInstance()->get_currency_name() == "CAD") {
-        main->statusLabel->setText(" HUSH/CAD=$ " + QString::number( (double) Settings::getInstance()->getCADPrice() ,'f',2));
-        ui->volumeExchange->setText(" $  " + QString::number((double)  Settings::getInstance()->getCADVolume() ,'f',2));
-        ui->marketcapTab->setText(" $  " + QString::number((double)  Settings::getInstance()->getCADCAP() ,'f',2));
+        double price = Settings::getInstance()->getCADPrice();
+        double volume = Settings::getInstance()->getCADVolume();
+        double cap =  Settings::getInstance()->getCADCAP();
+        main->statusLabel->setText(" HUSH/CAD=$ " + (QLocale(QLocale::English).toString(price,'f', 2)));
+        ui->volumeExchange->setText(" $ " + (QLocale(QLocale::English).toString(volume,'f', 2)));
+        ui->marketcapTab->setText(" $ " + (QLocale(QLocale::English).toString(cap,'f', 2)));
+
     }   else if  (Settings::getInstance()->get_currency_name() == "SGD") {
-        main->statusLabel->setText(" HUSH/SGD=$ " + QString::number((double)  Settings::getInstance()->getSGDPrice() ,'f',2));
-        ui->volumeExchange->setText(" $  " + QString::number((double)  Settings::getInstance()->getSGDVolume() ,'f',2));
-        ui->marketcapTab->setText(" $  " + QString::number((double)  Settings::getInstance()->getSGDCAP() ,'f',2));
+        double price = Settings::getInstance()->getSGDPrice();
+        double volume = Settings::getInstance()->getSGDVolume();
+        double cap =  Settings::getInstance()->getSGDCAP();
+        main->statusLabel->setText(" HUSH/SGD=$ " + (QLocale(QLocale::English).toString(price,'f', 2)));
+        ui->volumeExchange->setText(" $ " + (QLocale(QLocale::English).toString(volume,'f', 2)));
+        ui->marketcapTab->setText(" $ " + (QLocale(QLocale::English).toString(cap,'f', 2)));
+
     }   else if  (Settings::getInstance()->get_currency_name() == "CHF") {
-        main->statusLabel->setText(" HUSH/CHF=CHF " + QString::number((double)  Settings::getInstance()->getCHFPrice() ,'f',2));
-        ui->volumeExchange->setText(" CHF  " + QString::number((double)  Settings::getInstance()->getCHFVolume() ,'f',2));
-        ui->marketcapTab->setText(" CHF  " + QString::number((double)  Settings::getInstance()->getCHFCAP() ,'f',2));
+        double price = Settings::getInstance()->getCHFPrice();
+        double volume = Settings::getInstance()->getCHFVolume();
+        double cap =  Settings::getInstance()->getCHFCAP();
+        main->statusLabel->setText(" HUSH/CHF= " + (QLocale(QLocale::German).toString(price,'f', 2))+ " CHF");
+        ui->volumeExchange->setText(QLocale(QLocale::German).toString(volume,'f', 2)+ " CHF");
+        ui->marketcapTab->setText(QLocale(QLocale::German).toString(cap,'f', 2)+ " CHF");
+
     }   else if (Settings::getInstance()->get_currency_name() == "INR") {
-        main->statusLabel->setText(" HUSH/INR=₹ " + QString::number( (double) Settings::getInstance()->getINRPrice() ,'f',2));
-        ui->volumeExchange->setText(" ₹  " + QString::number((double)  Settings::getInstance()->getINRVolume() ,'f',2));
-        ui->marketcapTab->setText(" ₹  " + QString::number((double)  Settings::getInstance()->getINRCAP() ,'f',2));
+        double price = Settings::getInstance()->getINRPrice();
+        double volume = Settings::getInstance()->getINRVolume();
+        double cap =  Settings::getInstance()->getINRCAP();
+        main->statusLabel->setText(" HUSH/INR=₹ " + (QLocale(QLocale::English).toString(price,'f', 2)));
+        ui->volumeExchange->setText(" ₹  " + (QLocale(QLocale::English).toString(volume,'f', 2)));
+        ui->marketcapTab->setText(" ₹  " + (QLocale(QLocale::English).toString(cap,'f', 2)));
+
     }   else if  (Settings::getInstance()->get_currency_name() == "GBP") {
-        main->statusLabel->setText(" HUSH/GBP=£ " + QString::number((double)  Settings::getInstance()->getGBPPrice() ,'f',2));
-        ui->volumeExchange->setText(" £  " + QString::number((double)  Settings::getInstance()->getGBPVolume() ,'f',2));
-        ui->marketcapTab->setText(" £  " + QString::number((double)  Settings::getInstance()->getRUBCAP() ,'f',2));
+        double price = Settings::getInstance()->getGBPPrice();
+        double volume = Settings::getInstance()->getGBPVolume();
+        double cap =  Settings::getInstance()->getGBPCAP();
+        main->statusLabel->setText(" HUSH/GBP=£ " + (QLocale(QLocale::English).toString(price,'f', 2)));
+        ui->volumeExchange->setText(" £  " + (QLocale(QLocale::English).toString(volume,'f', 2)));
+        ui->marketcapTab->setText(" £  " + (QLocale(QLocale::English).toString(cap,'f', 2)));
+
         }else if  (Settings::getInstance()->get_currency_name() == "AUD") {
-        main->statusLabel->setText(" HUSH/AUD=$ " + QString::number((double)  Settings::getInstance()->getAUDPrice() ,'f',2));
-        ui->volumeExchange->setText(" $  " + QString::number((double)  Settings::getInstance()->getAUDVolume() ,'f',2));
-        ui->marketcapTab->setText(" $  " + QString::number((double)  Settings::getInstance()->getAUDCAP() ,'f',2));
+        double price = Settings::getInstance()->getAUDPrice();
+        double volume = Settings::getInstance()->getAUDVolume();
+        double cap =  Settings::getInstance()->getAUDCAP();
+        main->statusLabel->setText(" HUSH/AUD=$ " + (QLocale(QLocale::English).toString(price,'f', 2)));
+        ui->volumeExchange->setText(" $ " + (QLocale(QLocale::English).toString(volume,'f', 2)));
+        ui->marketcapTab->setText(" $ " + (QLocale(QLocale::English).toString(cap,'f', 2)));
         
     } else {
     main->statusLabel->setText(" HUSH/USD=$" + QString::number(Settings::getInstance()->getZECPrice(),'f',2 ));
@@ -253,6 +309,24 @@ void Controller::getInfoThenRefresh(bool force) {
 
             model->setEncryptionStatus(isEncrypted, isLocked);
         });
+          // Get the total supply and render it with thousand decimal
+        zrpc->fetchSupply([=] (const json& reply) {   
+        
+        int supply  = reply["supply"].get<json::number_integer_t>();
+        int zfunds = reply["zfunds"].get<json::number_integer_t>();
+        int total = reply["total"].get<json::number_integer_t>();
+
+        if (Settings::getInstance()->get_currency_name() == "EUR" || Settings::getInstance()->get_currency_name() == "CHF" || Settings::getInstance()->get_currency_name() == "RUB") {
+        ui->supply_taddr->setText((QLocale(QLocale::German).toString(supply)+ " Hush"));
+        ui->supply_zaddr->setText((QLocale(QLocale::German).toString(zfunds)+ " Hush"));
+        ui->supply_total->setText((QLocale(QLocale::German).toString(total)+ " Hush"));}
+        else{
+        ui->supply_taddr->setText("Hush " + (QLocale(QLocale::English).toString(supply)));
+        ui->supply_zaddr->setText("Hush " +(QLocale(QLocale::English).toString(zfunds)));
+        ui->supply_total->setText("Hush " +(QLocale(QLocale::English).toString(total)));}
+
+    
+     });
 
         if ( doUpdate ) {
             // Something changed, so refresh everything.
