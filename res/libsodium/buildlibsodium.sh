@@ -10,10 +10,10 @@ echo "Building libsodium"
 # Go into the lib sodium directory
 cd res/libsodium
 if [ ! -f libsodium-1.0.16.tar.gz ]; then
-    curl -LO https://download.libsodium.org/libsodium/releases/old/libsodium-1.0.16.tar.gz
+    curl -LO  https://github.com/MyHush/libsodium/releases/download/1.0.16/libsodium-1.0.16.tar.gz
 fi
 
-if [ ! -d libsodium-1.0.16 ]; then
+if [ ! -d 1.0.16 ]; then
     tar xf libsodium-1.0.16.tar.gz
 fi
 
