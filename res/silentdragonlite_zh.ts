@@ -17,12 +17,12 @@
 <context>
     <name>BalancesTableModel</name>
     <message>
-        <location filename="../src/balancestablemodel.cpp" line="136"/>
+        <location filename="../src/balancestablemodel.cpp" line="141"/>
         <source>Address</source>
         <translation>地址</translation>
     </message>
     <message>
-        <location filename="../src/balancestablemodel.cpp" line="137"/>
+        <location filename="../src/balancestablemodel.cpp" line="142"/>
         <source>Amount</source>
         <translation>金额</translation>
     </message>
@@ -47,29 +47,29 @@
 <context>
     <name>Controller</name>
     <message>
-        <location filename="../src/controller.cpp" line="577"/>
+        <location filename="../src/controller.cpp" line="690"/>
         <source>Wallet Password</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/controller.cpp" line="578"/>
+        <location filename="../src/controller.cpp" line="691"/>
         <source>Your wallet is encrypted.
 Please enter your wallet password</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/controller.cpp" line="581"/>
-        <location filename="../src/controller.cpp" line="596"/>
+        <location filename="../src/controller.cpp" line="694"/>
+        <location filename="../src/controller.cpp" line="709"/>
         <source>Wallet Decryption Failed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/controller.cpp" line="582"/>
+        <location filename="../src/controller.cpp" line="695"/>
         <source>Please enter a valid password</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/controller.cpp" line="652"/>
+        <location filename="../src/controller.cpp" line="765"/>
         <source>Failed to unlock wallet</source>
         <translation type="unfinished"></translation>
     </message>
@@ -154,6 +154,11 @@ Please enter your wallet password</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../src/mainwindow.ui" line="773"/>
+        <source>Next Address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/mainwindow.ui" line="888"/>
         <source>Your node is still syncing, balances may not be updated</source>
         <translation>您的节点仍在同步，余额可能没有更新</translation>
@@ -226,8 +231,8 @@ Please enter your wallet password</source>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="499"/>
-        <location filename="../src/mainwindow.cpp" line="885"/>
-        <location filename="../src/mainwindow.cpp" line="933"/>
+        <location filename="../src/mainwindow.cpp" line="888"/>
+        <location filename="../src/mainwindow.cpp" line="937"/>
         <location filename="../src/sendtab.cpp" line="291"/>
         <source>Memo</source>
         <translation>备注</translation>
@@ -289,9 +294,59 @@ Please enter your wallet password</source>
         <translation>非隐蔽地址(t-Addr)</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="773"/>
+        <location filename="../src/mainwindow.ui" line="951"/>
+        <source>Information about Hush</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.ui" line="1009"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Hush Blockchain Information&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.ui" line="1025"/>
+        <location filename="../src/mainwindow.ui" line="1039"/>
+        <location filename="../src/mainwindow.ui" line="1060"/>
+        <location filename="../src/mainwindow.ui" line="1109"/>
+        <location filename="../src/mainwindow.ui" line="1116"/>
+        <location filename="../src/mainwindow.ui" line="1130"/>
+        <location filename="../src/mainwindow.ui" line="1151"/>
+        <location filename="../src/mainwindow.ui" line="1165"/>
+        <location filename="../src/mainwindow.ui" line="1179"/>
+        <location filename="../src/mainwindow.ui" line="1207"/>
+        <location filename="../src/mainwindow.ui" line="1279"/>
+        <location filename="../src/mainwindow.ui" line="1300"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;|&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.ui" line="1046"/>
+        <source>Next Halving</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.ui" line="1123"/>
+        <source>Difficulty</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.ui" line="1137"/>
+        <source>Last Notarized Block</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.ui" line="1158"/>
+        <source>Total Supply</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.ui" line="1172"/>
+        <source>Longestchain</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>New Address</source>
-        <translation>创建新地址</translation>
+        <translation type="vanished">创建新地址</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="780"/>
@@ -320,7 +375,7 @@ Please enter your wallet password</source>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="851"/>
-        <location filename="../src/mainwindow.cpp" line="1077"/>
+        <location filename="../src/mainwindow.cpp" line="1088"/>
         <source>Export Private Key</source>
         <translation>导出私钥</translation>
     </message>
@@ -330,42 +385,67 @@ Please enter your wallet password</source>
         <translation>交易</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="951"/>
-        <source>Hush Daemon</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/mainwindow.ui" line="1008"/>
-        <source>blockHeight</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/mainwindow.ui" line="1022"/>
+        <location filename="../src/mainwindow.ui" line="1186"/>
         <source>Version hushlightd</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1171"/>
+        <location filename="../src/mainwindow.ui" line="1193"/>
+        <source>BlockHeight</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.ui" line="1200"/>
+        <source>Supply zAddr</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.ui" line="1228"/>
+        <source>Supply tAddr</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.ui" line="1249"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Hush Market Information&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.ui" line="1272"/>
+        <source>Market Cap</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.ui" line="1293"/>
+        <source>Volume on Exchanges</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.ui" line="1316"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;This is a Lightwallet, you cant mine with it!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.ui" line="1421"/>
         <source>&amp;Send DenioD Feedback</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1204"/>
+        <location filename="../src/mainwindow.ui" line="1454"/>
         <source>&amp;Export seed phrase</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1242"/>
+        <location filename="../src/mainwindow.ui" line="1492"/>
         <source>Encrypt Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1247"/>
+        <location filename="../src/mainwindow.ui" line="1497"/>
         <source>Remove Wallet Encryption</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1252"/>
+        <location filename="../src/mainwindow.ui" line="1502"/>
         <source>Rescan</source>
         <translation type="unfinished">重新扫描</translation>
     </message>
@@ -374,17 +454,12 @@ Please enter your wallet password</source>
         <translation type="vanished">节点</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="981"/>
-        <source>This is a Lightwallet, you cant mine with it!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/mainwindow.ui" line="1176"/>
+        <location filename="../src/mainwindow.ui" line="1426"/>
         <source>&amp;Hush Discord</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1181"/>
+        <location filename="../src/mainwindow.ui" line="1431"/>
         <source>&amp;Hush Website</source>
         <translation type="unfinished"></translation>
     </message>
@@ -393,9 +468,18 @@ Please enter your wallet password</source>
         <translation type="vanished">您目前没有在挖矿</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1001"/>
-        <location filename="../src/mainwindow.ui" line="1015"/>
-        <location filename="../src/mainwindow.ui" line="1036"/>
+        <location filename="../src/mainwindow.ui" line="1032"/>
+        <location filename="../src/mainwindow.ui" line="1053"/>
+        <location filename="../src/mainwindow.ui" line="1067"/>
+        <location filename="../src/mainwindow.ui" line="1081"/>
+        <location filename="../src/mainwindow.ui" line="1088"/>
+        <location filename="../src/mainwindow.ui" line="1095"/>
+        <location filename="../src/mainwindow.ui" line="1102"/>
+        <location filename="../src/mainwindow.ui" line="1144"/>
+        <location filename="../src/mainwindow.ui" line="1214"/>
+        <location filename="../src/mainwindow.ui" line="1221"/>
+        <location filename="../src/mainwindow.ui" line="1265"/>
+        <location filename="../src/mainwindow.ui" line="1286"/>
         <source>Loading...</source>
         <translation>加载中...</translation>
     </message>
@@ -408,54 +492,51 @@ Please enter your wallet password</source>
         <translation type="vanished">全网算力</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1029"/>
+        <location filename="../src/mainwindow.ui" line="1074"/>
         <source>Vendor</source>
         <translation>连接数</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1063"/>
-        <location filename="../src/mainwindow.ui" line="1070"/>
-        <location filename="../src/mainwindow.ui" line="1077"/>
         <source>|</source>
-        <translation>|</translation>
+        <translation type="vanished">|</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1103"/>
+        <location filename="../src/mainwindow.ui" line="1353"/>
         <source>&amp;File</source>
         <translation>&amp;文件</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1117"/>
+        <location filename="../src/mainwindow.ui" line="1367"/>
         <source>&amp;Help</source>
         <translation>&amp;帮助</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1128"/>
+        <location filename="../src/mainwindow.ui" line="1378"/>
         <source>&amp;Apps</source>
         <translation>&amp;应用</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1134"/>
+        <location filename="../src/mainwindow.ui" line="1384"/>
         <source>&amp;Edit</source>
         <translation>&amp;编辑</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1153"/>
+        <location filename="../src/mainwindow.ui" line="1403"/>
         <source>E&amp;xit</source>
         <translation>&amp;退出</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1158"/>
+        <location filename="../src/mainwindow.ui" line="1408"/>
         <source>&amp;About</source>
         <translation>&amp;关于</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1163"/>
+        <location filename="../src/mainwindow.ui" line="1413"/>
         <source>&amp;Settings</source>
         <translation>&amp;设置</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1166"/>
+        <location filename="../src/mainwindow.ui" line="1416"/>
         <source>Ctrl+P</source>
         <translation>Ctrl+P</translation>
     </message>
@@ -464,7 +545,7 @@ Please enter your wallet password</source>
         <translation type="vanished">&amp;捐赠</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1186"/>
+        <location filename="../src/mainwindow.ui" line="1436"/>
         <source>Check github.com for &amp;updates</source>
         <translation>检查github.com获取和&amp;更新</translation>
     </message>
@@ -481,7 +562,7 @@ Please enter your wallet password</source>
         <translation type="vanished">&amp;导入私钥</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1191"/>
+        <location filename="../src/mainwindow.ui" line="1441"/>
         <source>&amp;Export all private keys</source>
         <translation>&amp;导出所有私钥</translation>
     </message>
@@ -494,12 +575,12 @@ Please enter your wallet password</source>
         <translation type="vanished">Ctrl+A, Ctrl+Z</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1196"/>
+        <location filename="../src/mainwindow.ui" line="1446"/>
         <source>Address &amp;book</source>
         <translation>&amp;地址簿</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1199"/>
+        <location filename="../src/mainwindow.ui" line="1449"/>
         <source>Ctrl+B</source>
         <translation>Ctrl+B</translation>
     </message>
@@ -508,38 +589,38 @@ Please enter your wallet password</source>
         <translation type="vanished">&amp;备份 wallet.dat</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1209"/>
-        <location filename="../src/mainwindow.cpp" line="700"/>
+        <location filename="../src/mainwindow.ui" line="1459"/>
+        <location filename="../src/mainwindow.cpp" line="703"/>
         <source>Export transactions</source>
         <translation>导出交易</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1214"/>
+        <location filename="../src/mainwindow.ui" line="1464"/>
         <source>Pay hush &amp;URI...</source>
         <translation>支付hush &amp;URI ...</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1219"/>
+        <location filename="../src/mainwindow.ui" line="1469"/>
         <source>Connect mobile &amp;app</source>
         <translation>连接移动&amp;App</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1222"/>
+        <location filename="../src/mainwindow.ui" line="1472"/>
         <source>Ctrl+M</source>
         <translation>Ctrl+M</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1227"/>
+        <location filename="../src/mainwindow.ui" line="1477"/>
         <source>&amp;Recurring Payments</source>
         <translation>&amp;定期付款</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1232"/>
+        <location filename="../src/mainwindow.ui" line="1482"/>
         <source>Request hush...</source>
         <translation>请求 hush...</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1237"/>
+        <location filename="../src/mainwindow.ui" line="1487"/>
         <source>File a bug...</source>
         <translation>提交错误...</translation>
     </message>
@@ -634,7 +715,7 @@ Please enter your wallet password</source>
         <translation type="vanished">支付hush URI时出错</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="623"/>
+        <location filename="../src/mainwindow.cpp" line="626"/>
         <source>URI should be of the form &apos;hush:&lt;addr&gt;?amt=x&amp;memo=y</source>
         <translation>URI的格式应为 &apos;hush:&lt;addr&gt;?amt=x&amp;memo=y&apos;</translation>
     </message>
@@ -651,12 +732,12 @@ Please enter your wallet password</source>
         <translation type="vanished">钥匙是导入的。 重新扫描区块链可能需要几分钟时间。 在此之前，功能可能会受到限制</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="706"/>
+        <location filename="../src/mainwindow.cpp" line="709"/>
         <source>Error</source>
         <translation>错误</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="707"/>
+        <location filename="../src/mainwindow.cpp" line="710"/>
         <source>Error exporting transactions, file was not saved</source>
         <translation>导出交易时出错，文件未保存</translation>
     </message>
@@ -689,18 +770,18 @@ Please enter your wallet password</source>
         <translation type="vanished">您需要手动备份它。</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="798"/>
+        <location filename="../src/mainwindow.cpp" line="801"/>
         <source>These are all the private keys for all the addresses in your wallet</source>
         <translation>这些都是钱包中所有地址的私钥</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="800"/>
+        <location filename="../src/mainwindow.cpp" line="803"/>
         <source>Private key for </source>
         <translation>私钥 </translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="744"/>
-        <location filename="../src/mainwindow.cpp" line="805"/>
+        <location filename="../src/mainwindow.cpp" line="747"/>
+        <location filename="../src/mainwindow.cpp" line="808"/>
         <source>Save File</source>
         <translation>保存文件</translation>
     </message>
@@ -785,51 +866,46 @@ Please use &apos;Remove Wallet Encryption&apos; if you want to remove the wallet
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="447"/>
+        <location filename="../src/mainwindow.cpp" line="450"/>
         <source>Currency Change</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="447"/>
-        <source>Please restart SilentDragonLite to have new currencies apply</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/mainwindow.cpp" line="740"/>
+        <location filename="../src/mainwindow.cpp" line="743"/>
         <source>This is your wallet seed. Please back it up carefully and safely.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="748"/>
-        <location filename="../src/mainwindow.cpp" line="809"/>
+        <location filename="../src/mainwindow.cpp" line="751"/>
+        <location filename="../src/mainwindow.cpp" line="812"/>
         <source>Unable to open file</source>
         <translation>无法打开文件</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="777"/>
+        <location filename="../src/mainwindow.cpp" line="780"/>
         <source>Error getting private keys</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="778"/>
+        <location filename="../src/mainwindow.cpp" line="781"/>
         <source>Error loading private keys: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="853"/>
-        <location filename="../src/mainwindow.cpp" line="913"/>
+        <location filename="../src/mainwindow.cpp" line="856"/>
+        <location filename="../src/mainwindow.cpp" line="917"/>
         <source>Copy address</source>
         <translation>复制成功</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="856"/>
-        <location filename="../src/mainwindow.cpp" line="909"/>
-        <location filename="../src/mainwindow.cpp" line="915"/>
+        <location filename="../src/mainwindow.cpp" line="859"/>
+        <location filename="../src/mainwindow.cpp" line="913"/>
+        <location filename="../src/mainwindow.cpp" line="919"/>
         <source>Copied to clipboard</source>
         <translation>复制到剪贴板</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="859"/>
+        <location filename="../src/mainwindow.cpp" line="862"/>
         <source>Get private key</source>
         <translation>获取私钥</translation>
     </message>
@@ -838,8 +914,8 @@ Please use &apos;Remove Wallet Encryption&apos; if you want to remove the wallet
         <translation type="vanished">屏蔽余额到Sapling地址</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="865"/>
-        <location filename="../src/mainwindow.cpp" line="919"/>
+        <location filename="../src/mainwindow.cpp" line="868"/>
+        <location filename="../src/mainwindow.cpp" line="923"/>
         <source>View on block explorer</source>
         <translation>从区块浏览器中查看</translation>
     </message>
@@ -849,77 +925,82 @@ Please use &apos;Remove Wallet Encryption&apos; if you want to remove the wallet
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="383"/>
-        <location filename="../src/mainwindow.cpp" line="907"/>
+        <location filename="../src/mainwindow.cpp" line="911"/>
         <source>Copy txid</source>
         <translation>复制交易ID</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="435"/>
+        <location filename="../src/mainwindow.cpp" line="437"/>
         <source>Restart</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="435"/>
+        <location filename="../src/mainwindow.cpp" line="437"/>
         <source>Please restart Silentdragonlite to have the theme apply</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="527"/>
+        <location filename="../src/mainwindow.cpp" line="450"/>
+        <source>This change can take a few seconds.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="530"/>
         <source>Some feedback about SilentDragonlite or Hush...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="529"/>
-        <source>Send Duke some private and shielded feedback about</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/mainwindow.cpp" line="529"/>
+        <location filename="../src/mainwindow.cpp" line="532"/>
         <source> or SilentDragonLite</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="610"/>
+        <location filename="../src/mainwindow.cpp" line="532"/>
+        <source>Send DenioD some private and shielded feedback about</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="613"/>
         <source>Paste HUSH URI</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="622"/>
+        <location filename="../src/mainwindow.cpp" line="625"/>
         <source>Error paying HUSH URI</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="925"/>
+        <location filename="../src/mainwindow.cpp" line="929"/>
         <source>View Payment Request</source>
         <translation>查看付款申请</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="932"/>
+        <location filename="../src/mainwindow.cpp" line="936"/>
         <source>View Memo</source>
         <translation>查看备注</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="946"/>
+        <location filename="../src/mainwindow.cpp" line="951"/>
         <source>Reply to </source>
         <translation>回复给 </translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1033"/>
+        <location filename="../src/mainwindow.cpp" line="1038"/>
         <source>Created new t-Addr</source>
         <translation>创建了新的t-Addr</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1083"/>
+        <location filename="../src/mainwindow.cpp" line="1094"/>
         <source>Copy Address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1172"/>
+        <location filename="../src/mainwindow.cpp" line="1197"/>
         <source>Address has been previously used</source>
         <translation>该地址以前使用过</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1174"/>
+        <location filename="../src/mainwindow.cpp" line="1199"/>
         <source>Address is unused</source>
         <translation>地址未使用</translation>
     </message>
@@ -1407,13 +1488,13 @@ Please set the host/port and user/password in the Edit-&gt;Settings menu.</sourc
     </message>
     <message>
         <location filename="../src/connection.cpp" line="153"/>
-        <location filename="../src/controller.cpp" line="236"/>
+        <location filename="../src/controller.cpp" line="345"/>
         <source>Connection Error</source>
         <translation>连接错误</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="251"/>
-        <location filename="../src/controller.cpp" line="624"/>
+        <location filename="../src/controller.cpp" line="737"/>
         <location filename="../src/sendtab.cpp" line="888"/>
         <source>Transaction Error</source>
         <translation>交易错误</translation>
@@ -1424,33 +1505,33 @@ Please set the host/port and user/password in the Edit-&gt;Settings menu.</sourc
         <translation>发送交易时出错。 错误是：</translation>
     </message>
     <message>
-        <location filename="../src/controller.cpp" line="619"/>
+        <location filename="../src/controller.cpp" line="732"/>
         <location filename="../src/recurring.cpp" line="598"/>
         <location filename="../src/sendtab.cpp" line="871"/>
         <source> Tx </source>
         <translation> 交易 </translation>
     </message>
     <message>
-        <location filename="../src/controller.cpp" line="619"/>
+        <location filename="../src/controller.cpp" line="732"/>
         <location filename="../src/recurring.cpp" line="598"/>
         <location filename="../src/sendtab.cpp" line="871"/>
         <source> failed</source>
         <translation> 失败</translation>
     </message>
     <message>
-        <location filename="../src/controller.cpp" line="622"/>
+        <location filename="../src/controller.cpp" line="735"/>
         <location filename="../src/sendtab.cpp" line="879"/>
         <source>The transaction with id </source>
         <translation>交易 </translation>
     </message>
     <message>
-        <location filename="../src/controller.cpp" line="622"/>
+        <location filename="../src/controller.cpp" line="735"/>
         <location filename="../src/sendtab.cpp" line="879"/>
         <source> failed. The error was</source>
         <translation> 失败。 错误是</translation>
     </message>
     <message>
-        <location filename="../src/controller.cpp" line="891"/>
+        <location filename="../src/controller.cpp" line="1201"/>
         <source>Please wait for SilentDragonLite to exit</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1524,7 +1605,7 @@ Please set the host/port and user/password in the Edit-&gt;Settings menu.</sourc
         <translation type="vanished">hushd没有节点可连接</translation>
     </message>
     <message>
-        <location filename="../src/controller.cpp" line="236"/>
+        <location filename="../src/controller.cpp" line="345"/>
         <source>There was an error connecting to hushd. The error was</source>
         <translation>连接到hushd时出错。 错误是</translation>
     </message>
@@ -1533,12 +1614,12 @@ Please set the host/port and user/password in the Edit-&gt;Settings menu.</sourc
         <translation type="vanished"> 交易计算中。 这可能需要几分钟。</translation>
     </message>
     <message>
-        <location filename="../src/controller.cpp" line="703"/>
+        <location filename="../src/controller.cpp" line="816"/>
         <source>Update Available</source>
         <translation>可用更新</translation>
     </message>
     <message>
-        <location filename="../src/controller.cpp" line="704"/>
+        <location filename="../src/controller.cpp" line="817"/>
         <source>A new release v%1 is available! You have v%2.
 
 Would you like to visit the releases page?</source>
@@ -1547,12 +1628,12 @@ Would you like to visit the releases page?</source>
 您想访问发布页面吗？</translation>
     </message>
     <message>
-        <location filename="../src/controller.cpp" line="716"/>
+        <location filename="../src/controller.cpp" line="829"/>
         <source>No updates available</source>
         <translation>没有可用的更新</translation>
     </message>
     <message>
-        <location filename="../src/controller.cpp" line="717"/>
+        <location filename="../src/controller.cpp" line="830"/>
         <source>You already have the latest release v%1</source>
         <translation>您已拥有最新版本 v%1</translation>
     </message>
@@ -1561,12 +1642,12 @@ Would you like to visit the releases page?</source>
         <translation type="vanished">请等待silentdragon退出</translation>
     </message>
     <message>
-        <location filename="../src/controller.cpp" line="892"/>
+        <location filename="../src/controller.cpp" line="1202"/>
         <source>Waiting for hushd to exit</source>
         <translation>等待hushd退出</translation>
     </message>
     <message>
-        <location filename="../src/settings.cpp" line="225"/>
+        <location filename="../src/settings.cpp" line="292"/>
         <source>Tx submitted (right click to copy) txid:</source>
         <translation>交易提交（右键单击复制）交易ID:</translation>
     </message>
@@ -1610,22 +1691,22 @@ You either have unconfirmed funds or the balance is too low for an automatic mig
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/websockets.cpp" line="355"/>
+        <location filename="../src/websockets.cpp" line="387"/>
         <source>Connected directly</source>
         <translation>直接连接</translation>
     </message>
     <message>
-        <location filename="../src/websockets.cpp" line="358"/>
+        <location filename="../src/websockets.cpp" line="390"/>
         <source>Connected over the internet via silentdragon wormhole service</source>
         <translation>通过silentdragon虫洞服务连接互联网</translation>
     </message>
     <message>
-        <location filename="../src/websockets.cpp" line="651"/>
+        <location filename="../src/websockets.cpp" line="688"/>
         <source>Node is still syncing.</source>
         <translation>节点仍在同步。</translation>
     </message>
     <message>
-        <location filename="../src/websockets.cpp" line="675"/>
+        <location filename="../src/websockets.cpp" line="712"/>
         <source>No sapling or transparent addresses with enough balance to spend.</source>
         <translation>没有sapling或透明地址有足够的余额可以花费。</translation>
     </message>
@@ -2145,6 +2226,11 @@ You either have unconfirmed funds or the balance is too low for an automatic mig
     </message>
     <message>
         <location filename="../src/settings.ui" line="291"/>
+        <source>RUB</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/settings.ui" line="296"/>
         <source>USD</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2353,17 +2439,16 @@ You either have unconfirmed funds or the balance is too low for an automatic mig
         <translation>配置 hush.conf</translation>
     </message>
     <message>
-        <location filename="../src/createhushconfdialog.ui" line="20"/>
+        <location filename="../src/createhushconfdialog.ui" line="146"/>
         <source>Your hush node will be configured for you automatically</source>
         <translation>您的hush节点将自动为您配置</translation>
     </message>
     <message>
-        <location filename="../src/createhushconfdialog.ui" line="30"/>
         <source>Enable Fast Sync</source>
-        <translation>启用快速同步</translation>
+        <translation type="vanished">启用快速同步</translation>
     </message>
     <message>
-        <location filename="../src/createhushconfdialog.ui" line="42"/>
+        <location filename="../src/createhushconfdialog.ui" line="22"/>
         <source>Show Advanced Configuration</source>
         <translation>显示高级配置</translation>
     </message>
@@ -2372,44 +2457,43 @@ You either have unconfirmed funds or the balance is too low for an automatic mig
         <translation type="vanished">允许连接到互联网检查更新，获得hush/USD价格等…</translation>
     </message>
     <message>
-        <location filename="../src/createhushconfdialog.ui" line="112"/>
+        <location filename="../src/createhushconfdialog.ui" line="60"/>
         <source>Allow connections to the internet to check for updates, get hush prices etc...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/createhushconfdialog.ui" line="119"/>
+        <location filename="../src/createhushconfdialog.ui" line="67"/>
         <source>Use custom datadir</source>
         <translation>使用自定义datadir</translation>
     </message>
     <message>
-        <location filename="../src/createhushconfdialog.ui" line="128"/>
+        <location filename="../src/createhushconfdialog.ui" line="76"/>
         <source>Choose directory</source>
         <translation>选择目录</translation>
     </message>
     <message>
-        <location filename="../src/createhushconfdialog.ui" line="157"/>
+        <location filename="../src/createhushconfdialog.ui" line="105"/>
         <source>Please note that you&apos;ll need to already have a Tor service configured on port 9050</source>
         <translation>请注意，您需要在端口9050上已经配置了Tor服务</translation>
     </message>
     <message>
-        <location filename="../src/createhushconfdialog.ui" line="164"/>
+        <location filename="../src/createhushconfdialog.ui" line="112"/>
         <source>Connect to the internet for updates and price feeds</source>
         <translation>连接到internet获取更新和价格数据</translation>
     </message>
     <message>
-        <location filename="../src/createhushconfdialog.ui" line="174"/>
+        <location filename="../src/createhushconfdialog.ui" line="122"/>
         <source>Please choose a directory to store your wallet.dat and blockchain</source>
         <translation>请选择一个目录来存储您的wallet.dat和区块链数据</translation>
     </message>
     <message>
-        <location filename="../src/createhushconfdialog.ui" line="181"/>
+        <location filename="../src/createhushconfdialog.ui" line="129"/>
         <source>Connect over Tor</source>
         <translation>连接到Tor</translation>
     </message>
     <message>
-        <location filename="../src/createhushconfdialog.ui" line="205"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Skips the most expensive checks during the initial block download. &lt;a href=&quot;https://docs.silentdragon.co/using-silentdragon/#fastsync&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Learn More&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;在初始块下载期间跳过了最费时的检查。 &lt;a href=&quot;https://docs.silentdragon.co/using-silentdragon/#fastsync&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;了解更多&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;在初始块下载期间跳过了最费时的检查。 &lt;a href=&quot;https://docs.silentdragon.co/using-silentdragon/#fastsync&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;了解更多&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>

@@ -17,12 +17,12 @@
 <context>
     <name>BalancesTableModel</name>
     <message>
-        <location filename="../src/balancestablemodel.cpp" line="136"/>
+        <location filename="../src/balancestablemodel.cpp" line="141"/>
         <source>Address</source>
         <translation>Adresa</translation>
     </message>
     <message>
-        <location filename="../src/balancestablemodel.cpp" line="137"/>
+        <location filename="../src/balancestablemodel.cpp" line="142"/>
         <source>Amount</source>
         <translation>Količina</translation>
     </message>
@@ -43,30 +43,30 @@
 <context>
     <name>Controller</name>
     <message>
-        <location filename="../src/controller.cpp" line="577"/>
+        <location filename="../src/controller.cpp" line="690"/>
         <source>Wallet Password</source>
         <translation>Lozinka novčanika</translation>
     </message>
     <message>
-        <location filename="../src/controller.cpp" line="578"/>
+        <location filename="../src/controller.cpp" line="691"/>
         <source>Your wallet is encrypted.
 Please enter your wallet password</source>
         <translation>Vaš novčanik je šifriran.
 Molimo unesite vašu lozinku</translation>
     </message>
     <message>
-        <location filename="../src/controller.cpp" line="581"/>
-        <location filename="../src/controller.cpp" line="596"/>
+        <location filename="../src/controller.cpp" line="694"/>
+        <location filename="../src/controller.cpp" line="709"/>
         <source>Wallet Decryption Failed</source>
         <translation>Dešifriranje novčanika neuspjelo</translation>
     </message>
     <message>
-        <location filename="../src/controller.cpp" line="582"/>
+        <location filename="../src/controller.cpp" line="695"/>
         <source>Please enter a valid password</source>
         <translation>Molimo unesite valjanu lozinku</translation>
     </message>
     <message>
-        <location filename="../src/controller.cpp" line="652"/>
+        <location filename="../src/controller.cpp" line="765"/>
         <source>Failed to unlock wallet</source>
         <translation>Neuspjeh prilikom otključavanja novčanika</translation>
     </message>
@@ -203,7 +203,7 @@ Molimo unesite vašu lozinku</translation>
     <message>
         <location filename="../src/mainwindow.ui" line="499"/>
         <location filename="../src/mainwindow.cpp" line="888"/>
-        <location filename="../src/mainwindow.cpp" line="936"/>
+        <location filename="../src/mainwindow.cpp" line="937"/>
         <location filename="../src/sendtab.cpp" line="291"/>
         <source>Memo</source>
         <translation>Poruka (memo)</translation>
@@ -266,8 +266,98 @@ Molimo unesite vašu lozinku</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="773"/>
+        <source>Next Address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.ui" line="951"/>
+        <source>Information about Hush</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.ui" line="1009"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Hush Blockchain Information&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.ui" line="1025"/>
+        <location filename="../src/mainwindow.ui" line="1039"/>
+        <location filename="../src/mainwindow.ui" line="1060"/>
+        <location filename="../src/mainwindow.ui" line="1109"/>
+        <location filename="../src/mainwindow.ui" line="1116"/>
+        <location filename="../src/mainwindow.ui" line="1130"/>
+        <location filename="../src/mainwindow.ui" line="1151"/>
+        <location filename="../src/mainwindow.ui" line="1165"/>
+        <location filename="../src/mainwindow.ui" line="1179"/>
+        <location filename="../src/mainwindow.ui" line="1207"/>
+        <location filename="../src/mainwindow.ui" line="1279"/>
+        <location filename="../src/mainwindow.ui" line="1300"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;|&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.ui" line="1046"/>
+        <source>Next Halving</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.ui" line="1123"/>
+        <source>Difficulty</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.ui" line="1137"/>
+        <source>Last Notarized Block</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.ui" line="1158"/>
+        <source>Total Supply</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.ui" line="1172"/>
+        <source>Longestchain</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.ui" line="1193"/>
+        <source>BlockHeight</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.ui" line="1200"/>
+        <source>Supply zAddr</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.ui" line="1228"/>
+        <source>Supply tAddr</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.ui" line="1249"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Hush Market Information&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.ui" line="1272"/>
+        <source>Market Cap</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.ui" line="1293"/>
+        <source>Volume on Exchanges</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.ui" line="1316"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;This is a Lightwallet, you cant mine with it!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>New Address</source>
-        <translation>Nova adresa</translation>
+        <translation type="vanished">Nova adresa</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="780"/>
@@ -296,7 +386,7 @@ Molimo unesite vašu lozinku</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="851"/>
-        <location filename="../src/mainwindow.cpp" line="1080"/>
+        <location filename="../src/mainwindow.cpp" line="1088"/>
         <source>Export Private Key</source>
         <translation>Izvoz privatnog ključa</translation>
     </message>
@@ -311,172 +401,175 @@ Molimo unesite vašu lozinku</translation>
         <translation>Transakcije</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="951"/>
         <source>Hush Daemon</source>
-        <translation>Hush Daemon</translation>
+        <translation type="vanished">Hush Daemon</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="981"/>
         <source>This is a Lightwallet, you cant mine with it!</source>
-        <translation>Ovo je LaganiNovčanik, s njim ne možete rudariti!</translation>
+        <translation type="vanished">Ovo je LaganiNovčanik, s njim ne možete rudariti!</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1001"/>
-        <location filename="../src/mainwindow.ui" line="1015"/>
-        <location filename="../src/mainwindow.ui" line="1036"/>
+        <location filename="../src/mainwindow.ui" line="1032"/>
+        <location filename="../src/mainwindow.ui" line="1053"/>
+        <location filename="../src/mainwindow.ui" line="1067"/>
+        <location filename="../src/mainwindow.ui" line="1081"/>
+        <location filename="../src/mainwindow.ui" line="1088"/>
+        <location filename="../src/mainwindow.ui" line="1095"/>
+        <location filename="../src/mainwindow.ui" line="1102"/>
+        <location filename="../src/mainwindow.ui" line="1144"/>
+        <location filename="../src/mainwindow.ui" line="1214"/>
+        <location filename="../src/mainwindow.ui" line="1221"/>
+        <location filename="../src/mainwindow.ui" line="1265"/>
+        <location filename="../src/mainwindow.ui" line="1286"/>
         <source>Loading...</source>
         <translation>Učitavanje...</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1008"/>
         <source>blockHeight</source>
-        <translation>visinaBloka</translation>
+        <translation type="vanished">visinaBloka</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1022"/>
+        <location filename="../src/mainwindow.ui" line="1186"/>
         <source>Version hushlightd</source>
         <translation>Verzija hushlightd</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1029"/>
+        <location filename="../src/mainwindow.ui" line="1074"/>
         <source>Vendor</source>
         <translation>Prodavač</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1063"/>
-        <location filename="../src/mainwindow.ui" line="1070"/>
-        <location filename="../src/mainwindow.ui" line="1077"/>
         <source>|</source>
-        <translation>|</translation>
+        <translation type="vanished">|</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1103"/>
+        <location filename="../src/mainwindow.ui" line="1353"/>
         <source>&amp;File</source>
         <translation>&amp;Datoteka</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1117"/>
+        <location filename="../src/mainwindow.ui" line="1367"/>
         <source>&amp;Help</source>
         <translation>&amp;Pomoć</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1128"/>
+        <location filename="../src/mainwindow.ui" line="1378"/>
         <source>&amp;Apps</source>
         <translation>&amp;Apps</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1134"/>
+        <location filename="../src/mainwindow.ui" line="1384"/>
         <source>&amp;Edit</source>
         <translation>&amp;Uredi</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1153"/>
+        <location filename="../src/mainwindow.ui" line="1403"/>
         <source>E&amp;xit</source>
         <translation>&amp;Izlaz</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1158"/>
+        <location filename="../src/mainwindow.ui" line="1408"/>
         <source>&amp;About</source>
         <translation>&amp;O</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1163"/>
+        <location filename="../src/mainwindow.ui" line="1413"/>
         <source>&amp;Settings</source>
         <translation>&amp;Postavke</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1166"/>
+        <location filename="../src/mainwindow.ui" line="1416"/>
         <source>Ctrl+P</source>
         <translation>Ctrl+P</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1171"/>
+        <location filename="../src/mainwindow.ui" line="1421"/>
         <source>&amp;Send DenioD Feedback</source>
         <translation>&amp;Pošalji DenioD povratne informacije</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1176"/>
+        <location filename="../src/mainwindow.ui" line="1426"/>
         <source>&amp;Hush Discord</source>
         <translation>&amp;Hush Discord</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1181"/>
+        <location filename="../src/mainwindow.ui" line="1431"/>
         <source>&amp;Hush Website</source>
         <translation>&amp;Hush Web stranica</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1186"/>
+        <location filename="../src/mainwindow.ui" line="1436"/>
         <source>Check github.com for &amp;updates</source>
         <translation>Provjeri na github.com &amp;dopune</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1191"/>
+        <location filename="../src/mainwindow.ui" line="1441"/>
         <source>&amp;Export all private keys</source>
         <translation>&amp;Izvoz svih privatnih ključeva</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1196"/>
+        <location filename="../src/mainwindow.ui" line="1446"/>
         <source>Address &amp;book</source>
         <translation>Adresna &amp;knjiga</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1199"/>
+        <location filename="../src/mainwindow.ui" line="1449"/>
         <source>Ctrl+B</source>
         <translation>Ctrl+B</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1204"/>
+        <location filename="../src/mainwindow.ui" line="1454"/>
         <source>&amp;Export seed phrase</source>
         <translation>&amp;Izvoz seed fraze</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1209"/>
+        <location filename="../src/mainwindow.ui" line="1459"/>
         <location filename="../src/mainwindow.cpp" line="703"/>
         <source>Export transactions</source>
         <translation>Izvoz transakcija</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1214"/>
+        <location filename="../src/mainwindow.ui" line="1464"/>
         <source>Pay hush &amp;URI...</source>
         <translation>Plati hush &amp;URI...</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1219"/>
+        <location filename="../src/mainwindow.ui" line="1469"/>
         <source>Connect mobile &amp;app</source>
         <translation>Spoji mobilnu &amp;app</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1222"/>
+        <location filename="../src/mainwindow.ui" line="1472"/>
         <source>Ctrl+M</source>
         <translation>Ctrl+M</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1227"/>
+        <location filename="../src/mainwindow.ui" line="1477"/>
         <source>&amp;Recurring Payments</source>
         <translation>&amp;Ponavljajuća plaćanja</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1232"/>
+        <location filename="../src/mainwindow.ui" line="1482"/>
         <source>Request hush...</source>
         <translation>Zatraži hush...</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1237"/>
+        <location filename="../src/mainwindow.ui" line="1487"/>
         <source>File a bug...</source>
         <translation>Prijavi grešku...</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1242"/>
+        <location filename="../src/mainwindow.ui" line="1492"/>
         <source>Encrypt Wallet</source>
         <translation>Šifriraj novčanik</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1247"/>
+        <location filename="../src/mainwindow.ui" line="1497"/>
         <source>Remove Wallet Encryption</source>
         <translation>Uklonite šifriranje novčanika</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="1252"/>
+        <location filename="../src/mainwindow.ui" line="1502"/>
         <source>Rescan</source>
         <translation>Rescan</translation>
     </message>
@@ -564,7 +657,7 @@ Molimo koristite &apos;Uklonite šifriranje novčanika&apos; ako želite uklonit
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="383"/>
-        <location filename="../src/mainwindow.cpp" line="910"/>
+        <location filename="../src/mainwindow.cpp" line="911"/>
         <source>Copy txid</source>
         <translation>Kopitajte txid</translation>
     </message>
@@ -608,14 +701,18 @@ Molimo koristite &apos;Uklonite šifriranje novčanika&apos; ako želite uklonit
         <translation>Neke povratne informaciej o SilentDragonLite ili Hush...</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="532"/>
         <source>Send Duke some private and shielded feedback about</source>
-        <translation>Pošaljite Duke neku privatnu i zaštićenu povratnu informaciju</translation>
+        <translation type="vanished">Pošaljite Duke neku privatnu i zaštićenu povratnu informaciju</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="532"/>
         <source> or SilentDragonLite</source>
         <translation> ili SilentDragonLite</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="532"/>
+        <source>Send DenioD some private and shielded feedback about</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="613"/>
@@ -681,14 +778,14 @@ Molimo koristite &apos;Uklonite šifriranje novčanika&apos; ako želite uklonit
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="856"/>
-        <location filename="../src/mainwindow.cpp" line="916"/>
+        <location filename="../src/mainwindow.cpp" line="917"/>
         <source>Copy address</source>
         <translation>Kopirajte adresu</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="859"/>
-        <location filename="../src/mainwindow.cpp" line="912"/>
-        <location filename="../src/mainwindow.cpp" line="918"/>
+        <location filename="../src/mainwindow.cpp" line="913"/>
+        <location filename="../src/mainwindow.cpp" line="919"/>
         <source>Copied to clipboard</source>
         <translation>Kopirano u mađuspremnik</translation>
     </message>
@@ -699,42 +796,42 @@ Molimo koristite &apos;Uklonite šifriranje novčanika&apos; ako želite uklonit
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="868"/>
-        <location filename="../src/mainwindow.cpp" line="922"/>
+        <location filename="../src/mainwindow.cpp" line="923"/>
         <source>View on block explorer</source>
         <translation>Pogledaj na blok pregledniku</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="928"/>
+        <location filename="../src/mainwindow.cpp" line="929"/>
         <source>View Payment Request</source>
         <translation>Pogledajte zahtjev o plaćanju</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="935"/>
+        <location filename="../src/mainwindow.cpp" line="936"/>
         <source>View Memo</source>
         <translation>Pogledajte poruku (memo)</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="949"/>
+        <location filename="../src/mainwindow.cpp" line="951"/>
         <source>Reply to </source>
         <translation>Odgovorite </translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1036"/>
+        <location filename="../src/mainwindow.cpp" line="1038"/>
         <source>Created new t-Addr</source>
         <translation>Napravljena je nova transparentna adresa</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1086"/>
+        <location filename="../src/mainwindow.cpp" line="1094"/>
         <source>Copy Address</source>
         <translation>Kopirajte adresu</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1175"/>
+        <location filename="../src/mainwindow.cpp" line="1197"/>
         <source>Address has been previously used</source>
         <translation>Adresa je već korištena</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1177"/>
+        <location filename="../src/mainwindow.cpp" line="1199"/>
         <source>Address is unused</source>
         <translation>Adresa nije korištena</translation>
     </message>
@@ -1070,13 +1167,13 @@ Opaska: Za trošenje sredstava potrebno je 5 konfirmacija</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="153"/>
-        <location filename="../src/controller.cpp" line="236"/>
+        <location filename="../src/controller.cpp" line="345"/>
         <source>Connection Error</source>
         <translation>Greška sa vezom</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="251"/>
-        <location filename="../src/controller.cpp" line="624"/>
+        <location filename="../src/controller.cpp" line="737"/>
         <location filename="../src/sendtab.cpp" line="888"/>
         <source>Transaction Error</source>
         <translation>Greška u transakciji</translation>
@@ -1093,43 +1190,43 @@ Opaska: Za trošenje sredstava potrebno je 5 konfirmacija</translation>
         <translation>Nema veze</translation>
     </message>
     <message>
-        <location filename="../src/controller.cpp" line="236"/>
+        <location filename="../src/controller.cpp" line="345"/>
         <source>There was an error connecting to hushd. The error was</source>
         <translation>Pojavila se greška prilikom spajanja na hushd. Greška je</translation>
     </message>
     <message>
-        <location filename="../src/controller.cpp" line="619"/>
+        <location filename="../src/controller.cpp" line="732"/>
         <location filename="../src/recurring.cpp" line="598"/>
         <location filename="../src/sendtab.cpp" line="871"/>
         <source> Tx </source>
         <translation> Tx </translation>
     </message>
     <message>
-        <location filename="../src/controller.cpp" line="619"/>
+        <location filename="../src/controller.cpp" line="732"/>
         <location filename="../src/recurring.cpp" line="598"/>
         <location filename="../src/sendtab.cpp" line="871"/>
         <source> failed</source>
         <translation> neuspjelo</translation>
     </message>
     <message>
-        <location filename="../src/controller.cpp" line="622"/>
+        <location filename="../src/controller.cpp" line="735"/>
         <location filename="../src/sendtab.cpp" line="879"/>
         <source>The transaction with id </source>
         <translation>Transakcija sa ID </translation>
     </message>
     <message>
-        <location filename="../src/controller.cpp" line="622"/>
+        <location filename="../src/controller.cpp" line="735"/>
         <location filename="../src/sendtab.cpp" line="879"/>
         <source> failed. The error was</source>
         <translation> nesupjela. Greška je</translation>
     </message>
     <message>
-        <location filename="../src/controller.cpp" line="703"/>
+        <location filename="../src/controller.cpp" line="816"/>
         <source>Update Available</source>
         <translation>Dostupno ažuriranje</translation>
     </message>
     <message>
-        <location filename="../src/controller.cpp" line="704"/>
+        <location filename="../src/controller.cpp" line="817"/>
         <source>A new release v%1 is available! You have v%2.
 
 Would you like to visit the releases page?</source>
@@ -1138,22 +1235,22 @@ Would you like to visit the releases page?</source>
 Želite li posjetiti stranicu sa izadnjima?</translation>
     </message>
     <message>
-        <location filename="../src/controller.cpp" line="716"/>
+        <location filename="../src/controller.cpp" line="829"/>
         <source>No updates available</source>
         <translation>Nema dostupnih ažuriranja</translation>
     </message>
     <message>
-        <location filename="../src/controller.cpp" line="717"/>
+        <location filename="../src/controller.cpp" line="830"/>
         <source>You already have the latest release v%1</source>
         <translation>Već imate najnovije izdanje v%1</translation>
     </message>
     <message>
-        <location filename="../src/controller.cpp" line="891"/>
+        <location filename="../src/controller.cpp" line="1201"/>
         <source>Please wait for SilentDragonLite to exit</source>
         <translation>Molimo pričekajte da se SilentDragonLite zatvori</translation>
     </message>
     <message>
-        <location filename="../src/controller.cpp" line="892"/>
+        <location filename="../src/controller.cpp" line="1202"/>
         <source>Waiting for hushd to exit</source>
         <translation>Čekam da hushd završi</translation>
     </message>
@@ -1189,7 +1286,7 @@ Would you like to visit the releases page?</source>
         <translation>Sva buduća plaćanja će biti otkazana.</translation>
     </message>
     <message>
-        <location filename="../src/settings.cpp" line="225"/>
+        <location filename="../src/settings.cpp" line="292"/>
         <source>Tx submitted (right click to copy) txid:</source>
         <translation>Tx poslan (desni klik za kopiranje) txid:</translation>
     </message>
@@ -1694,6 +1791,11 @@ Would you like to visit the releases page?</source>
     </message>
     <message>
         <location filename="../src/settings.ui" line="291"/>
+        <source>RUB</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/settings.ui" line="296"/>
         <source>USD</source>
         <translation>USD</translation>
     </message>
@@ -1801,59 +1903,57 @@ Would you like to visit the releases page?</source>
         <translation>Konfigurirajte hush.conf</translation>
     </message>
     <message>
-        <location filename="../src/createhushconfdialog.ui" line="20"/>
+        <location filename="../src/createhushconfdialog.ui" line="146"/>
         <source>Your hush node will be configured for you automatically</source>
         <translation>Vaš hush čvor će se automatski konfigurirati</translation>
     </message>
     <message>
-        <location filename="../src/createhushconfdialog.ui" line="30"/>
         <source>Enable Fast Sync</source>
-        <translation>Omogući brzi sync</translation>
+        <translation type="vanished">Omogući brzi sync</translation>
     </message>
     <message>
-        <location filename="../src/createhushconfdialog.ui" line="42"/>
+        <location filename="../src/createhushconfdialog.ui" line="22"/>
         <source>Show Advanced Configuration</source>
         <translation>Prikaži naprednu konfiguraciju</translation>
     </message>
     <message>
-        <location filename="../src/createhushconfdialog.ui" line="112"/>
+        <location filename="../src/createhushconfdialog.ui" line="60"/>
         <source>Allow connections to the internet to check for updates, get hush prices etc...</source>
         <translation>Dopusti vezu na Internet za provjeru ažuriranja, hush cijana itd...</translation>
     </message>
     <message>
-        <location filename="../src/createhushconfdialog.ui" line="119"/>
+        <location filename="../src/createhushconfdialog.ui" line="67"/>
         <source>Use custom datadir</source>
         <translation>Koristi prilagođeni datadir</translation>
     </message>
     <message>
-        <location filename="../src/createhushconfdialog.ui" line="128"/>
+        <location filename="../src/createhushconfdialog.ui" line="76"/>
         <source>Choose directory</source>
         <translation>Izaberi direktorij</translation>
     </message>
     <message>
-        <location filename="../src/createhushconfdialog.ui" line="157"/>
+        <location filename="../src/createhushconfdialog.ui" line="105"/>
         <source>Please note that you&apos;ll need to already have a Tor service configured on port 9050</source>
         <translation>Uzmite u obzir da ćete već morati imati konfiguriranu Tor uslugu na portu 9050</translation>
     </message>
     <message>
-        <location filename="../src/createhushconfdialog.ui" line="164"/>
+        <location filename="../src/createhushconfdialog.ui" line="112"/>
         <source>Connect to the internet for updates and price feeds</source>
         <translation>Za ažuriranja i info spojite se na Internet</translation>
     </message>
     <message>
-        <location filename="../src/createhushconfdialog.ui" line="174"/>
+        <location filename="../src/createhushconfdialog.ui" line="122"/>
         <source>Please choose a directory to store your wallet.dat and blockchain</source>
         <translation>Molimo odaberite direktorij u koji ćete spremiti wallet.dat i blockchain</translation>
     </message>
     <message>
-        <location filename="../src/createhushconfdialog.ui" line="181"/>
+        <location filename="../src/createhushconfdialog.ui" line="129"/>
         <source>Connect over Tor</source>
         <translation>Veza preko Tora</translation>
     </message>
     <message>
-        <location filename="../src/createhushconfdialog.ui" line="205"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Skips the most expensive checks during the initial block download. &lt;a href=&quot;https://docs.silentdragon.co/using-silentdragon/#fastsync&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Learn More&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Preskače najskuplje provjere tokom početnog preuzimanja bloka. &lt;a href=&quot;https://docs.silentdragon.co/using-silentdragon/#fastsync&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Saznaj više&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Preskače najskuplje provjere tokom početnog preuzimanja bloka. &lt;a href=&quot;https://docs.silentdragon.co/using-silentdragon/#fastsync&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Saznaj više&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
