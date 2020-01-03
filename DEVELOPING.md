@@ -29,7 +29,7 @@ apt-get -y update && apt-get install -y \
 wget https://www.openssl.org/source/openssl-1.0.2t.tar.gz
 tar zxvpf openssl-1.0.2t.tar.gz
 cd openssl-1.0.2t
-./config linux-x86_64
+./config # linux-x86_64
 make -j$(nproc)
 ```
 ## Static build of Qt5
