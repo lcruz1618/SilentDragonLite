@@ -28,7 +28,7 @@ apt-get -y update && apt-get install -y \
 
 wget https://www.openssl.org/source/openssl-1.0.2t.tar.gz
 tar zxvpf openssl-1.0.2t.tar.gz
-cd openssl openssl-1.0.2t
+cd openssl-1.0.2t
 ./configure linux-x86_64
 make -j$(nproc)
 ```
