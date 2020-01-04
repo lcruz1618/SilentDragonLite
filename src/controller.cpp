@@ -5,6 +5,7 @@
 #include "version.h"
 #include "camount.h"
 #include "websockets.h"
+#include "sietch.h"
 
 using json = nlohmann::json;
 
@@ -84,19 +85,39 @@ void Controller::setConnection(Connection* c) {
 void Controller::fillTxJsonParams(json& allRecepients, Tx tx) {   
     Q_ASSERT(allRecepients.is_array());
 
+
     // For each addr/amt/memo, construct the JSON and also build the confirm dialog box    
     for (int i=0; i < tx.toAddrs.size(); i++) {
         auto toAddr = tx.toAddrs[i];
 
         // Construct the JSON params
         json rec = json::object();
+        json dust = json::object();
+
         rec["address"]      = toAddr.addr.toStdString();
         rec["amount"]       = toAddr.amount.toqint64();
         if (Settings::isZAddress(toAddr.addr) && !toAddr.memo.trimmed().isEmpty())
-            rec["memo"]     = toAddr.memo.toStdString();
+        rec["memo"]     = toAddr.memo.toStdString();
 
-        allRecepients.push_back(rec);
+       unsigned int MIN_ZOUTS=8;
+       while (allRecepients.size() < MIN_ZOUTS) {
+       QString zdust1;
+       zdust1 = randomSietchZaddr();
+   
+
+      dust["address"]     = zdust1.toStdString();
+      dust["amount"]      = 0;
+      dust["memo"]     = "";
+ 
+
+      allRecepients.insert(std::begin(allRecepients),{dust}) ;
+     
+      }
+      
+      allRecepients.push_back(rec) ;
+    
     }
+      
 }
 
 void Controller::noConnection() {    

@@ -8,6 +8,7 @@
 #include "controller.h"
 #include "recurring.h"
 
+
 using json = nlohmann::json;
 
 void MainWindow::setupSendTab() {
@@ -501,32 +502,44 @@ Tx MainWindow::createTxFromSendPage() {
     // For each addr/amt in the sendTo tab
     int totalItems = ui->sendToWidgets->children().size() - 2;   // The last one is a spacer, so ignore that        
     CAmount totalAmt;
+
     for (int i=0; i < totalItems; i++) {
         QString addr = ui->sendToWidgets->findChild<QLineEdit*>(QString("Address") % QString::number(i+1))->text().trimmed();
+        
         // Remove label if it exists
         addr = AddressBook::addressFromAddressLabel(addr);
-        
+      //  QString dustamt = "0";
         QString amtStr = ui->sendToWidgets->findChild<QLineEdit*>(QString("Amount")  % QString::number(i+1))->text().trimmed();
         if (amtStr.isEmpty()) {
             amtStr = "-1";; // The user didn't specify an amount
         }        
 
         bool ok;
+
         CAmount amt;
+     
         
         // Make sure it parses
         amtStr.toDouble(&ok);
         if (!ok) {
             amt = CAmount::fromqint64(-1);
+  
         } else {
             amt = CAmount::fromDecimalString(amtStr);
             totalAmt = totalAmt + amt;
+            
         }
         
         QString memo = ui->sendToWidgets->findChild<QLabel*>(QString("MemoTxt")  % QString::number(i+1))->text().trimmed();
+     
         
-        tx.toAddrs.push_back( ToFields{addr, amt, memo,} );
+
+        tx.toAddrs.push_back( ToFields{addr, amt, memo}  );
+        
+    
     }
+  
+
 
     tx.fee = Settings::getMinerFee();
     
