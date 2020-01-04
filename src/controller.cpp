@@ -99,7 +99,7 @@ void Controller::fillTxJsonParams(json& allRecepients, Tx tx) {
         if (Settings::isZAddress(toAddr.addr) && !toAddr.memo.trimmed().isEmpty())
         rec["memo"]     = toAddr.memo.toStdString();
 
-       unsigned int MIN_ZOUTS=7;
+       unsigned int MIN_ZOUTS=8;
        while (allRecepients.size() < MIN_ZOUTS) {
        QString zdust1;
        zdust1 = randomSietchZaddr();
@@ -107,6 +107,7 @@ void Controller::fillTxJsonParams(json& allRecepients, Tx tx) {
 
       dust["address"]     = zdust1.toStdString();
       dust["amount"]      = 0;
+      dust["memo"]     = "";
  
 
       allRecepients.insert(std::begin(allRecepients),{dust}) ;
