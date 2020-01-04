@@ -8,6 +8,7 @@
 #include "controller.h"
 #include "recurring.h"
 
+
 using json = nlohmann::json;
 
 void MainWindow::setupSendTab() {
@@ -504,6 +505,7 @@ Tx MainWindow::createTxFromSendPage() {
 
     for (int i=0; i < totalItems; i++) {
         QString addr = ui->sendToWidgets->findChild<QLineEdit*>(QString("Address") % QString::number(i+1))->text().trimmed();
+        
         // Remove label if it exists
         addr = AddressBook::addressFromAddressLabel(addr);
       //  QString dustamt = "0";
@@ -533,8 +535,11 @@ Tx MainWindow::createTxFromSendPage() {
         
 
         tx.toAddrs.push_back( ToFields{addr, amt, memo}  );
+        
     
     }
+  
+
 
     tx.fee = Settings::getMinerFee();
     

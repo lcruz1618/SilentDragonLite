@@ -25,6 +25,7 @@
 // The network essentially DoS's these addresses and reduces their privacy slightly
 // by making them public, but in return, the rest of the shielded pool benefits
 // and so it's a large benefit for a small cost.
+
 QString randomSietchZaddr() {
 
 std::vector<QString> SietchShieldedPool = {
@@ -680,17 +681,6 @@ std::vector<QString> SietchShieldedPool = {
 "zs1zzdd89jp6hxn72lu4przek4xrqucew9dvepqh5vawykvj4m0l7xlpg2gkrue63duk9ufg78sz3m",
 "zs1zzdexhpu5lnge73nvgy4lc4pza3mfg3fdvr2tjfejg5e75x4hfa7ycaw2d7ak8wjve4wjhq2ywv",
 "zs1zzgr9xv9plfgl8tdun5gz29jx9zz7dqx2kx0jaeet57q3fma55ljtqltpk7ftceu7nu4gqew3w4",
-
-};
-
-QString addr;
-addr = (SietchShieldedPool[rand()% SietchShieldedPool.size()]);
- return addr;
-
-}
-
-QString randomSietchZaddr1() {
-std::vector<QString> SietchShieldedPool = {
 "zs1qqj4aw35ku9yn72g3tha588mxk66mhl5smnn99as40887xvdg49d4yqf43hhqnj9rpsq7qaqqhx",
 "zs1qywzq2cutvg6rkynjljtssz246easagumg3hlwjluz4g7qttg9kqrld7s43ewutpph56jmn2zu6",
 "zs1qx7swmw28dj992f6zs0aqucds9kag88mnca5u73dddeqek4m97pg7h9qsaxxwwkgqxht6zujaxc",
@@ -1490,16 +1480,6 @@ std::vector<QString> SietchShieldedPool = {
 "zs1z5xj2sxkj9tugkzept4gtw8fvu3nk38n6lnee6x74l2glq5kzwtqeedwq8zd2h7860jx2xcwmf5",
 "zs1z7devq9v37z3hcm0ruh5d4lkak8kk6c55unuq3n9nkwcq8j74k4ksndkt58ucvczg0my53pde3y",
 "zs1z7jxj89gwx2djjj6qdfhwd38pe3w923qfgz84l9efqlkvnfm6fyzvku7xhp826v02rqauklntcf",
-
-};
-QString addr;
-addr = (SietchShieldedPool[rand()% SietchShieldedPool.size()]);
- return addr;
-
-} 
-
-QString randomSietchZaddr2() {
-std::vector<QString> SietchShieldedPool = {
 "zs1qqj4aw35ku9yn72g3tha588mxk66mhl5smnn99as40887xvdg49d4yqf43hhqnj9rpsq7qaqqhx",
 "zs1qywzq2cutvg6rkynjljtssz246easagumg3hlwjluz4g7qttg9kqrld7s43ewutpph56jmn2zu6",
 "zs1qx7swmw28dj992f6zs0aqucds9kag88mnca5u73dddeqek4m97pg7h9qsaxxwwkgqxht6zujaxc",
@@ -2299,16 +2279,7 @@ std::vector<QString> SietchShieldedPool = {
 "zs1uszcly2r4qszga7hjtf9qmhnyryaq9m4avku6qyy5c7qhhxvg6ryzht3yr339g5dt5ndyweznp2",
 "zs1uszkgr94yjj76jnzq6wtxdvnrwtzt0ag0gjtljyvkdr48s5l6942cx5hxrshul7n6y0zuyhwnup",
 "zs1ut6ju53ka0q0upv8lsvgtfq44szyv3lkfryns7345a9ykrmv4xlzvp6x0qqvnky8rl6gxxsd9zz",
-};
-QString addr;
-addr = (SietchShieldedPool[rand()% SietchShieldedPool.size()]);
- return addr;
-
-}
-
-QString randomSietchZaddr3() {
-std::vector<QString> SietchShieldedPool = {
- "zs1qqj4aw35ku9yn72g3tha588mxk66mhl5smnn99as40887xvdg49d4yqf43hhqnj9rpsq7qaqqhx",
+"zs1qqj4aw35ku9yn72g3tha588mxk66mhl5smnn99as40887xvdg49d4yqf43hhqnj9rpsq7qaqqhx",
 "zs1qywzq2cutvg6rkynjljtssz246easagumg3hlwjluz4g7qttg9kqrld7s43ewutpph56jmn2zu6",
 "zs1qx7swmw28dj992f6zs0aqucds9kag88mnca5u73dddeqek4m97pg7h9qsaxxwwkgqxht6zujaxc",
 "zs1q82pkqu58uemrm2749x6g2ta5shnsra9p5jgk0qqzxd3e08ke6vyeezz7lhldj32jxtsuemskk7",
@@ -3307,15 +3278,6 @@ std::vector<QString> SietchShieldedPool = {
 "zs1ql4xk970rgty6afg3hvamen2wzf8d0zl88fmj9t5pl8x4nmwrvhgvz4j88w5tsu5hkez6utw0ge",
 "zs1ql70ehk69sjr4t2qhrnxtw6gcuek8404ejrllmuz9vtjntvkg8axtq3643cv2d3wfgdfqf97g42",
 "zs1ql9s2p7pcedgmeup6sd7du99nragqan3sevw5vz36pmq7f9e9v4x2ysud7s3tsucx7gtk66sy6g",
-};
-QString addr;
-addr = (SietchShieldedPool[rand()% SietchShieldedPool.size()]);
- return addr;
-
-}
-
-QString randomSietchZaddr4() {
-std::vector<QString> SietchShieldedPool = {
 "zs1qqj4aw35ku9yn72g3tha588mxk66mhl5smnn99as40887xvdg49d4yqf43hhqnj9rpsq7qaqqhx",
 "zs1qywzq2cutvg6rkynjljtssz246easagumg3hlwjluz4g7qttg9kqrld7s43ewutpph56jmn2zu6",
 "zs1qx7swmw28dj992f6zs0aqucds9kag88mnca5u73dddeqek4m97pg7h9qsaxxwwkgqxht6zujaxc",
@@ -3516,7 +3478,6 @@ std::vector<QString> SietchShieldedPool = {
 "zs1xx6pd3vtj78tg0zpwtc0jjkdxlfy48vegzd6cng4m9w0gtcya8ck7pqgf4l5sxf9ml5zvzru5xg",
 "zs1x8qre6x5d8e3tt2m4l9q2tujw8ajun70qelp8tfynyw390rm6vhjtmpf58dmx4hccef9xe50az0",
 "zs1x88vjduckqarz2j8tp2me08ya4dgd6pw7j4j98j5jynrze3xy2jjptzye7eftjxd6dn4sj03v7m",
-
 "zs1exesf7ssx5c7ma5xarmx46353ch9a8e9m6ehcqkrzlvrfw7kp9utr56pzy0hqdxzwujj6c82cay",
 "zs1exmcrva0khv6xjamhpmdy0a9qy8hch2j48gmzp5y22f62arz776hta9zg4mf83sffe54vf0lz5r",
 "zs1ey640nva63ju092cn7s72ymmfsqz5ws32wd0e9fhj3vjcfqvdpr7rymjxadjcgl7e32j7887t0f",
@@ -4117,15 +4078,6 @@ std::vector<QString> SietchShieldedPool = {
 "zs1k0cr9g39fg3ql689qdhv36fq3kx994lxqp9xsgqq92cn4xxkq3snrc4e4an0yxsxjd395gd6mv9",
 "zs1k0dgl6f9neyltyt97vx0zm8cmktkun7nqy95257mxqy5dy338dpejq2fxr9w0tkay6m4jsng9gy",
 
-};
-QString addr;
-addr = (SietchShieldedPool[rand()% SietchShieldedPool.size()]);
- return addr;
-
-}
-
-QString randomSietchZaddr5() {
-std::vector<QString> SietchShieldedPool = {
 "zs1qqj4aw35ku9yn72g3tha588mxk66mhl5smnn99as40887xvdg49d4yqf43hhqnj9rpsq7qaqqhx",
 "zs1qywzq2cutvg6rkynjljtssz246easagumg3hlwjluz4g7qttg9kqrld7s43ewutpph56jmn2zu6",
 "zs1qx7swmw28dj992f6zs0aqucds9kag88mnca5u73dddeqek4m97pg7h9qsaxxwwkgqxht6zujaxc",
@@ -4926,16 +4878,6 @@ std::vector<QString> SietchShieldedPool = {
 "zs1evng9q2pct4vdys9uzckzrv8flzc0pyqrrnsa28dgz2taeu2uuryuerfe8qffxhkgvkruq4a5ef",
 "zs1ewnxxvt376xxqtpcz9yly3fka5unmcvqr6al99fxqm9dcqm46ec6lzgppaa8fq87nzu2xyl6ldh",
 "zs1ewxmz8t56juxj7tvwcf2gxyhvffjggg9v5kqpu8855kshcg6ece22plg2a25uk7h8dgcwtwmuzp",
-
-};
-QString addr;
-addr = (SietchShieldedPool[rand()% SietchShieldedPool.size()]);
- return addr;
-
-}
-
- QString randomSietchZaddr6() {
-std::vector<QString> SietchShieldedPool = {
 "zs1qqj4aw35ku9yn72g3tha588mxk66mhl5smnn99as40887xvdg49d4yqf43hhqnj9rpsq7qaqqhx",
 "zs1qywzq2cutvg6rkynjljtssz246easagumg3hlwjluz4g7qttg9kqrld7s43ewutpph56jmn2zu6",
 "zs1qx7swmw28dj992f6zs0aqucds9kag88mnca5u73dddeqek4m97pg7h9qsaxxwwkgqxht6zujaxc",
@@ -5734,11 +5676,14 @@ std::vector<QString> SietchShieldedPool = {
 "zs19qu3gqvmnwvjxuxf6jless9jn7l6zwvjmllx6g64878tr7q022v0arm0lnllt28mz4yxjv984fm",
 "zs19rhkm9n9rnsn7lxctjg42cxhqptz89v2nvr3rmlx7k2wp05ek6wvu6lrj67wktkqt0t95emevwh",
 "zs19rwmg9pdzwgkz6ujpxh0uv3gkt3uzgw9v3mrfvp9dl4w0t0sa50f62ug8yclr85fs96au0g66yq",
-
 };
+
 QString addr;
 addr = (SietchShieldedPool[rand()% SietchShieldedPool.size()]);
  return addr;
 
-} 
+}
+
+
+
 #endif
