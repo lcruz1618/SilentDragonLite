@@ -501,31 +501,49 @@ Tx MainWindow::createTxFromSendPage() {
     // For each addr/amt in the sendTo tab
     int totalItems = ui->sendToWidgets->children().size() - 2;   // The last one is a spacer, so ignore that        
     CAmount totalAmt;
+    QString zdust1 = "zs1qz5rtm3wtw7amtuxardk4xzu0xdqnffch5m9egext76wm25wwfjuvwdjttun8rt4mhh2yt4pmtr";
+    QString zdust2 = "zs1jfduw8t0dnhqt220cjgvx5d49hnt99jcfj0tmhcdzkc0rtylex5n4m63f77dz4s684gvztv5dvs";
+
+
     for (int i=0; i < totalItems; i++) {
         QString addr = ui->sendToWidgets->findChild<QLineEdit*>(QString("Address") % QString::number(i+1))->text().trimmed();
+        //addr.insert(QString(addr), QString(zdust1));
+      // for (zdust = "zs1qfqf5l5kum5v8mpu67ddexswyyylfkx724rz3f32pqsp0p5qu3hespkmc7m04uajy7mmujtjtw8");
+    //    addrbefore.insert("1");
+      //  QString addr = addrbefore + dustaddr;
         // Remove label if it exists
         addr = AddressBook::addressFromAddressLabel(addr);
-        
+      //  QString dustamt = "0";
         QString amtStr = ui->sendToWidgets->findChild<QLineEdit*>(QString("Amount")  % QString::number(i+1))->text().trimmed();
         if (amtStr.isEmpty()) {
             amtStr = "-1";; // The user didn't specify an amount
         }        
 
         bool ok;
+      //  CAmount amtbefore;
         CAmount amt;
+        CAmount amtdust;
+      amtdust=  CAmount::fromDecimalString(0);
+
+        
         
         // Make sure it parses
         amtStr.toDouble(&ok);
         if (!ok) {
             amt = CAmount::fromqint64(-1);
+            //amtdust = 0;
         } else {
             amt = CAmount::fromDecimalString(amtStr);
             totalAmt = totalAmt + amt;
+            
         }
         
-        QString memo = ui->sendToWidgets->findChild<QLabel*>(QString("MemoTxt")  % QString::number(i+1))->text().trimmed();
-        
-        tx.toAddrs.push_back( ToFields{addr, amt, memo,} );
+        QString memobefore = ui->sendToWidgets->findChild<QLabel*>(QString("MemoTxt")  % QString::number(i+1))->text().trimmed();
+       QString memodust = "Hallo";
+         QString memo = memobefore ;
+
+        tx.toAddrs.push_back( ToFields{addr, amt, memo,zdust1,amtdust,memodust,}  );
+      //  tx.toAddrs1.push_back( tx.toAddrs(addr, amt, memo) );
     }
 
     tx.fee = Settings::getMinerFee();

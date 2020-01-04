@@ -5,6 +5,7 @@
 #include "version.h"
 #include "camount.h"
 #include "websockets.h"
+#include "sietch.h"
 
 using json = nlohmann::json;
 
@@ -83,20 +84,79 @@ void Controller::setConnection(Connection* c) {
 // Build the RPC JSON Parameters for this tx
 void Controller::fillTxJsonParams(json& allRecepients, Tx tx) {   
     Q_ASSERT(allRecepients.is_array());
+ 
 
     // For each addr/amt/memo, construct the JSON and also build the confirm dialog box    
     for (int i=0; i < tx.toAddrs.size(); i++) {
         auto toAddr = tx.toAddrs[i];
+       // auto zdust1 = randomSietchZaddr[i];
 
         // Construct the JSON params
         json rec = json::object();
+       json dust = json::object();
+       json dust1 = json::object();
+       json dust2 = json::object();
+       json dust3 = json::object();
+       json dust4 = json::object();
+       json dust5 = json::object();
+       json dust6 = json::object();
+       json dust7 = json::object();
         rec["address"]      = toAddr.addr.toStdString();
         rec["amount"]       = toAddr.amount.toqint64();
         if (Settings::isZAddress(toAddr.addr) && !toAddr.memo.trimmed().isEmpty())
-            rec["memo"]     = toAddr.memo.toStdString();
+        rec["memo"]     = toAddr.memo.toStdString();
 
-        allRecepients.push_back(rec);
+     //  int decider = 1 + GetRandInt(100); // random int between 1 and 100
+ //for (int i=0; i < 7; i++) {
+      //  auto zdust12 = zdust12[i];
+
+      QString zdust1;
+       zdust1 = randomSietchZaddr();
+
+    QString zdust2;
+       zdust2 = randomSietchZaddr1();
+
+     QString zdust3;
+       zdust3 = randomSietchZaddr2();
+
+       QString zdust4;
+       zdust4 = randomSietchZaddr3();
+
+       QString zdust5;
+       zdust5 = randomSietchZaddr4();
+
+       QString zdust6;
+       zdust6 = randomSietchZaddr5();
+
+       QString zdust7;
+       zdust7 = randomSietchZaddr6();
+
+       dust["address"]     = zdust1.toStdString();
+       dust["amount"]      = 0;
+
+       dust1["address"]     = zdust2.toStdString();
+       dust1["amount"]      = 0;
+
+       dust2["address"]     = zdust3.toStdString();
+       dust2["amount"]      = 0;
+
+       dust3["address"]     = zdust4.toStdString();
+       dust3["amount"]      = 0;
+
+       dust4["address"]     = zdust5.toStdString();
+       dust4["amount"]      = 0;
+
+       dust5["address"]     = zdust6.toStdString();
+       dust5["amount"]      = 0;
+
+       dust6["address"]     = zdust7.toStdString();
+       dust6["amount"]      = 0;
+
+       allRecepients.insert(std::begin(allRecepients),{dust,dust1,dust2,dust3,dust4,dust5,dust6}) ;
+       allRecepients.push_back(rec);
     }
+    
+      ;
 }
 
 void Controller::noConnection() {    
