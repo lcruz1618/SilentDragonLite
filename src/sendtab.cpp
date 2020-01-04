@@ -513,12 +513,9 @@ Tx MainWindow::createTxFromSendPage() {
         }        
 
         bool ok;
-      //  CAmount amtbefore;
+
         CAmount amt;
-    
-
-
-        
+     
         
         // Make sure it parses
         amtStr.toDouble(&ok);

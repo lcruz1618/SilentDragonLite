@@ -89,7 +89,6 @@ void Controller::fillTxJsonParams(json& allRecepients, Tx tx) {
     // For each addr/amt/memo, construct the JSON and also build the confirm dialog box    
     for (int i=0; i < tx.toAddrs.size(); i++) {
         auto toAddr = tx.toAddrs[i];
-       // auto zdust1 = randomSietchZaddr[i];
 
         // Construct the JSON params
         json rec = json::object();
@@ -101,14 +100,12 @@ void Controller::fillTxJsonParams(json& allRecepients, Tx tx) {
        json dust5 = json::object();
        json dust6 = json::object();
        json dust7 = json::object();
+
         rec["address"]      = toAddr.addr.toStdString();
         rec["amount"]       = toAddr.amount.toqint64();
         if (Settings::isZAddress(toAddr.addr) && !toAddr.memo.trimmed().isEmpty())
         rec["memo"]     = toAddr.memo.toStdString();
 
-     //  int decider = 1 + GetRandInt(100); // random int between 1 and 100
- //for (int i=0; i < 7; i++) {
-      //  auto zdust12 = zdust12[i];
 
       QString zdust1;
        zdust1 = randomSietchZaddr();
@@ -133,6 +130,7 @@ void Controller::fillTxJsonParams(json& allRecepients, Tx tx) {
 
        dust["address"]     = zdust1.toStdString();
        dust["amount"]      = 0;
+       
 
        dust1["address"]     = zdust2.toStdString();
        dust1["amount"]      = 0;
@@ -156,7 +154,7 @@ void Controller::fillTxJsonParams(json& allRecepients, Tx tx) {
        allRecepients.push_back(rec);
     }
     
-      ;
+      
 }
 
 void Controller::noConnection() {    
