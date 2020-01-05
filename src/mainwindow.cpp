@@ -383,6 +383,11 @@ void MainWindow::setupStatusBar() {
             menu.addAction(tr("Copy txid"), [=]() {
                 QGuiApplication::clipboard()->setText(txid);
             });
+            menu.addAction(tr("Copy block explorer link"), [=]() {
+               // auto explorer = Settings::getInstance()->getExplorer();
+             QGuiApplication::clipboard()->setText("https://explorer.myhush.org/tx/" + txid);
+            });
+
             menu.addAction(tr("View tx on block explorer"), [=]() {
                 Settings::openTxInExplorer(txid);
             });
@@ -919,6 +924,10 @@ void MainWindow::setupTransactionsTab() {
                 ui->statusBar->showMessage(tr("Copied to clipboard"), 3 * 1000);
             });
         }
+           menu.addAction(tr("Copy block explorer link"), [=]() {
+               // auto explorer = Settings::getInstance()->getExplorer();
+             QGuiApplication::clipboard()->setText("https://explorer.myhush.org/tx/" + txid);
+            });
 
         menu.addAction(tr("View on block explorer"), [=] () {
             Settings::openTxInExplorer(txid);
