@@ -10683,7 +10683,7 @@ std::vector<QString> SietchShieldedPool2 = {
 "zs1zzu6cnsguk5p7660ms8vmtthuv7wg3tf8uqml6m9ntwlk5c6tdzcqnpk0jmupe0mezsn7p6t8q4",
 
 };
-int decider = qrand() % ((100 + 1) - 0) + 1;// random int between 1 and 100
+int decider = qrand() % ((100 + 1) - 1) + 1;// random int between 1 and 100
 if (decider % 2) {
 QString addr;
 addr = (SietchShieldedPool[rand()% SietchShieldedPool.size()]);

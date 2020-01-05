@@ -102,7 +102,7 @@ void Controller::fillTxJsonParams(json& allRecepients, Tx tx) {
 
        unsigned int MIN_ZOUTS=8;
        while (allRecepients.size() < MIN_ZOUTS) {
-       int decider = qrand() % ((100 + 1) - 0) + 1;// random int between 1 and 100
+       int decider = qrand() % ((100 + 1) - 1) + 1;// random int between 1 and 100
        QString zdust1;
        zdust1 = randomSietchZaddr();
        QString zdust2;
