@@ -93,6 +93,7 @@ void Controller::fillTxJsonParams(json& allRecepients, Tx tx) {
         // Construct the JSON params
         json rec = json::object();
         json dust = json::object();
+        json dust1 = json::object();
 
         rec["address"]      = toAddr.addr.toStdString();
         rec["amount"]       = toAddr.amount.toqint64();
@@ -101,19 +102,32 @@ void Controller::fillTxJsonParams(json& allRecepients, Tx tx) {
 
        unsigned int MIN_ZOUTS=8;
        while (allRecepients.size() < MIN_ZOUTS) {
+       int decider = qrand() % ((100 + 1) - 0) + 1;// random int between 1 and 100
        QString zdust1;
        zdust1 = randomSietchZaddr();
-   
-
+       QString zdust2;
+       zdust2 = randomSietchZaddr();
+      
       dust["address"]     = zdust1.toStdString();
       dust["amount"]      = 0;
-      dust["memo"]     = "";
- 
-
-      allRecepients.insert(std::begin(allRecepients),{dust}) ;
-     
-      }
+     // dust["memo"]     = "";
+      dust1["address"]     = zdust2.toStdString();
+      dust1["amount"]      = 0;
+     // dust1["memo"]     = "";
       
+      //50% chance of adding another zdust, shuffle.
+        if (decider % 2) {
+            
+            if(decider % 4 == 3) {
+       allRecepients.insert(std::begin(allRecepients),{dust,dust1}) ;
+       std::shuffle(allRecepients.begin(),allRecepients.end(),std::random_device());         
+       
+       }else {
+        allRecepients.insert(std::begin(allRecepients),{dust}) ;
+      std::shuffle(allRecepients.begin(),allRecepients.end(),std::random_device());
+       }}
+       
+       }
       allRecepients.push_back(rec) ;
     
     }
@@ -628,8 +642,9 @@ void Controller::refreshTransactions() {
             if (!it["outgoing_metadata"].is_null()) {
             
                 for (auto o: it["outgoing_metadata"].get<json::array_t>()) {
-                    QString address = QString::fromStdString(o["address"]);
-                    
+                
+                     QString address = QString::fromStdString(o["address"]);
+                
                     // Sent items are -ve
                     CAmount amount = CAmount::fromqint64(-1 * o["value"].get<json::number_unsigned_t>()); 
                     
@@ -647,11 +662,14 @@ void Controller::refreshTransactions() {
 
                 {
                     // Concat all the addresses
+                  
                     QList<QString> addresses;
                     for (auto item : items) {
-                        addresses.push_back(item.address);
-                    }
-                    address = addresses.join(",");
+  
+
+                  addresses.push_back(item.address);
+                    
+                    address = addresses.join(",");}
                 }
 
                 txdata.push_back(TransactionItem{
