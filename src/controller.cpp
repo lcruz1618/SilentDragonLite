@@ -642,8 +642,11 @@ void Controller::refreshTransactions() {
             if (!it["outgoing_metadata"].is_null()) {
             
                 for (auto o: it["outgoing_metadata"].get<json::array_t>()) {
-                
-                     QString address = QString::fromStdString(o["address"]);
+                    
+                     QString address;
+                      if (CAmount::fromqint64(!o["value"].get<json::number_unsigned_t>())==0 ) {
+                      address = QString::fromStdString(o["address"]);
+                }else{ address = "";}
                 
                     // Sent items are -ve
                     CAmount amount = CAmount::fromqint64(-1 * o["value"].get<json::number_unsigned_t>()); 
@@ -666,12 +669,14 @@ void Controller::refreshTransactions() {
                     QList<QString> addresses;
                     for (auto item : items) {
   
-
+                 
                   addresses.push_back(item.address);
-                    
-                    address = addresses.join(",");}
-                }
-
+               
+                    address = addresses.join(",");
+              
+                
+                }}
+ 
                 txdata.push_back(TransactionItem{
                    "send", datetime, address, txid,confirmations, items
                 });
