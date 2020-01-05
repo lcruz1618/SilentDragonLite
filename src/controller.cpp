@@ -5,6 +5,7 @@
 #include "version.h"
 #include "camount.h"
 #include "websockets.h"
+#include "sietch.h"
 
 using json = nlohmann::json;
 
@@ -84,19 +85,53 @@ void Controller::setConnection(Connection* c) {
 void Controller::fillTxJsonParams(json& allRecepients, Tx tx) {   
     Q_ASSERT(allRecepients.is_array());
 
+
     // For each addr/amt/memo, construct the JSON and also build the confirm dialog box    
     for (int i=0; i < tx.toAddrs.size(); i++) {
         auto toAddr = tx.toAddrs[i];
 
         // Construct the JSON params
         json rec = json::object();
+        json dust = json::object();
+        json dust1 = json::object();
+
         rec["address"]      = toAddr.addr.toStdString();
         rec["amount"]       = toAddr.amount.toqint64();
         if (Settings::isZAddress(toAddr.addr) && !toAddr.memo.trimmed().isEmpty())
-            rec["memo"]     = toAddr.memo.toStdString();
+        rec["memo"]     = toAddr.memo.toStdString();
 
-        allRecepients.push_back(rec);
+       unsigned int MIN_ZOUTS=8;
+       while (allRecepients.size() < MIN_ZOUTS) {
+       int decider = qrand() % ((100 + 1) - 1) + 1;// random int between 1 and 100
+       QString zdust1;
+       zdust1 = randomSietchZaddr();
+       QString zdust2;
+       zdust2 = randomSietchZaddr();
+      
+      dust["address"]     = zdust1.toStdString();
+      dust["amount"]      = 0;
+     // dust["memo"]     = "";
+      dust1["address"]     = zdust2.toStdString();
+      dust1["amount"]      = 0;
+     // dust1["memo"]     = "";
+      
+      //50% chance of adding another zdust, shuffle.
+        if (decider % 2) {
+            
+            if(decider % 4 == 3) {
+       allRecepients.insert(std::begin(allRecepients),{dust,dust1}) ;
+       std::shuffle(allRecepients.begin(),allRecepients.end(),std::random_device());         
+       
+       }else {
+        allRecepients.insert(std::begin(allRecepients),{dust}) ;
+      std::shuffle(allRecepients.begin(),allRecepients.end(),std::random_device());
+       }}
+       
+       }
+      allRecepients.push_back(rec) ;
+    
     }
+      
 }
 
 void Controller::noConnection() {    
@@ -607,17 +642,19 @@ void Controller::refreshTransactions() {
             if (!it["outgoing_metadata"].is_null()) {
             
                 for (auto o: it["outgoing_metadata"].get<json::array_t>()) {
-                    QString address = QString::fromStdString(o["address"]);
                     
+                     QString address;
+              
+                    address = QString::fromStdString(o["address"]);
+                
                     // Sent items are -ve
-                    CAmount amount = CAmount::fromqint64(-1 * o["value"].get<json::number_unsigned_t>()); 
+                    CAmount amount = CAmount::fromqint64(-1* o["value"].get<json::number_unsigned_t>()); 
                     
                    // Check for Memos
                    
                     QString memo;
                     if (!o["memo"].is_null()) {
                         memo = QString::fromStdString(o["memo"]);
-
                      }
                     
                     items.push_back(TransactionItemDetail{address, amount, memo});
@@ -626,13 +663,21 @@ void Controller::refreshTransactions() {
 
                 {
                     // Concat all the addresses
+                  
                     QList<QString> addresses;
                     for (auto item : items) {
-                        addresses.push_back(item.address);
-                    }
-                    address = addresses.join(",");
+  
+                 if (item.amount == 0 ) {
+               
+                  } else {
+                   addresses.push_back(item.address);
+                  
+                  address = addresses.join(",");   }
+                
+                  }
+                
                 }
-
+ 
                 txdata.push_back(TransactionItem{
                    "send", datetime, address, txid,confirmations, items
                 });
