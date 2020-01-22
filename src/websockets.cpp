@@ -665,6 +665,9 @@ void AppDataServer::processDecryptedMessage(QString message, MainWindow* mainWin
     else if (msg.object()["command"] == "sendTx") {
         processSendTx(msg.object()["tx"].toObject(), mainWindow, pClient);
     }
+     else if (msg.object()["command"] == "sendmanyTx") {
+        processSendManyTx(msg.object()["tx"].toObject(), mainWindow, pClient);
+    }
     else {
         auto r = QJsonDocument(QJsonObject{
             {"errorCode", -1},
@@ -764,6 +767,99 @@ void AppDataServer::processSendTx(QJsonObject sendTx, MainWindow* mainwindow, st
         }).toJson();
     pClient->sendTextMessage(encryptOutgoing(r));
 }
+
+// "sendmanyTx" command. This method will actually send money, so be careful with everything
+void AppDataServer::processSendManyTx(QJsonObject sendmanyTx, MainWindow* mainwindow, std::shared_ptr<ClientWebSocket> pClient) {
+    qDebug() << "processSendManyTx with to=" << sendmanyTx["to"].toString();
+    auto error = [=](QString reason) {
+        auto r = QJsonDocument(QJsonObject{
+           {"errorCode", -1},
+           {"errorMessage", "Couldn't send Tx:" + reason}
+        }).toJson();
+        pClient->sendTextMessage(encryptOutgoing(r));
+        return;
+    };
+
+    // Refuse to send if the node is still syncing
+    if (Settings::getInstance()->isSyncing()) {
+        error(QObject::tr("Node is still syncing."));
+        return;
+    }
+
+    // Create a Tx Object
+    Tx tx;
+    tx.fee = Settings::getMinerFee();
+
+    // Find a from address that has at least the sending amout
+    CAmount amt = CAmount::fromDecimalString(sendmanyTx["amount"].toString()); 
+    auto allBalances = mainwindow->getRPC()->getModel()->getAllBalances();
+    QList<QPair<QString, CAmount>> bals;
+    for (auto i : allBalances.keys()) {
+        // Filter out sprout addresses
+        if (Settings::getInstance()->isSproutAddress(i))
+            continue;
+        // Filter out balances that don't have the requisite amount
+        if (allBalances.value(i) < amt)
+            continue;
+
+        bals.append(QPair<QString, CAmount>(i, allBalances.value(i)));
+    }
+
+    if (bals.isEmpty()) {
+        error(QObject::tr("No sapling or transparent addresses with enough balance to spend."));
+        return;
+    }
+
+    std::sort(bals.begin(), bals.end(), [=](const QPair<QString, CAmount>a, const QPair<QString, CAmount> b) -> bool {
+        // Sort z addresses first
+        return a.first > b.first;
+    });
+  int totalSendManyItems = sendmanyTx.size();
+for (int i=0; i < totalSendManyItems; i++) {
+   tx.fromAddr = bals[0].first;
+    tx.toAddrs = { ToFields{ sendmanyTx["to"].toString() % QString::number(i+1), amt , sendmanyTx["memo"].toString() % QString::number(i+1)} }; //send to more then one
+}
+    // TODO: Respect the autoshield change setting
+
+    QString validation = mainwindow->doSendTxValidations(tx);
+    if (!validation.isEmpty()) {
+        error(validation);
+        return;
+    }
+
+    json params = json::array();
+    mainwindow->getRPC()->fillTxJsonParams(params, tx);
+    std::cout << std::setw(2) << params << std::endl;
+
+    // And send the Tx
+    mainwindow->getRPC()->executeTransaction(tx,
+        [=] (QString txid) {
+            auto r = QJsonDocument(QJsonObject{
+               {"version", 1.0},
+               {"command", "sendTxSubmitted"},
+               {"txid",  txid}
+            }).toJson();
+            pClient->sendTextMessage(encryptOutgoing(r));
+        },
+        // Errored while submitting Tx
+        [=] (QString, QString errStr) {
+            auto r = QJsonDocument(QJsonObject{
+               {"version", 1.0},
+               {"command", "sendTxFailed"},
+               {"err",  errStr}
+            }).toJson();
+            pClient->sendTextMessage(encryptOutgoing(r));
+        }   
+    );
+
+    auto r = QJsonDocument(QJsonObject{
+            {"version", 1.0},
+            {"command", "sendTx"},
+            {"result",  "success"}
+        }).toJson();
+    pClient->sendTextMessage(encryptOutgoing(r));
+}
+
 
 // "getInfo" command
 void AppDataServer::processGetInfo(QJsonObject jobj, MainWindow* mainWindow, std::shared_ptr<ClientWebSocket> pClient) {
