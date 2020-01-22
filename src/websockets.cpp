@@ -814,10 +814,13 @@ void AppDataServer::processSendManyTx(QJsonObject sendmanyTx, MainWindow* mainwi
         // Sort z addresses first
         return a.first > b.first;
     });
-  int totalSendManyItems = sendmanyTx.size();
-for (int i=0; i < totalSendManyItems; i++) {
-   tx.fromAddr = bals[0].first;
-    tx.toAddrs = { ToFields{ sendmanyTx["to"].toString() % QString::number(i+1), amt , sendmanyTx["memo"].toString() % QString::number(i+1)} }; //send to more then one
+    int totalSendManyItems = sendmanyTx.size();
+    for (int i=0; i < totalSendManyItems; i++) {
+
+    amt = CAmount::fromDecimalString(sendmanyTx["amount"].toString() % QString::number(i+1));
+
+    tx.fromAddr = bals[0].first;
+    tx.toAddrs = { ToFields{ sendmanyTx["to"].toString() % QString::number(i+1), amt, sendmanyTx["memo"].toString() % QString::number(i+1)} }; //send to more then one
 }
     // TODO: Respect the autoshield change setting
 
