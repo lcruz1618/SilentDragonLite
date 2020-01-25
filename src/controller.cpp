@@ -92,7 +92,7 @@ void Controller::fillTxJsonParams(json& allRecepients, Tx tx) {
            
       QString zdust = QString::fromStdString(reply[0].get<json::string_t>());   
 
-      sietch.push_back(zdust);
+      sietch = zdust;
       qDebug()<<sietch;
 
    
