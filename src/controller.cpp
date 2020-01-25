@@ -1,5 +1,5 @@
 #include "controller.h"
-
+#include "mainwindow.h"
 #include "addressbook.h"
 #include "settings.h"
 #include "version.h"
@@ -59,7 +59,8 @@ Controller::~Controller() {
     delete model;
     delete zrpc;
 }
-
+ 
+   
 // Called when a connection to hushd is available. 
 void Controller::setConnection(Connection* c) {
     if (c == nullptr) return;
@@ -86,9 +87,28 @@ void Controller::fillTxJsonParams(json& allRecepients, Tx tx) {
     Q_ASSERT(allRecepients.is_array());
 
 
+  
+    zrpc->createNewSietchZaddr( [=] (json reply)  {
+           
+      QString zdust = QString::fromStdString(reply[0].get<json::string_t>());   
+
+      sietch.push_back(zdust);
+      qDebug()<<sietch;
+
+   
+    });
+ 
+     qDebug()<<sietch;
+
+
+
+    // auto zdust1 = tozdust.addr.toStdString();
+ 
+
     // For each addr/amt/memo, construct the JSON and also build the confirm dialog box    
     for (int i=0; i < tx.toAddrs.size(); i++) {
         auto toAddr = tx.toAddrs[i];
+      ///  auto tozdust = tx.toZdust;
 
         // Construct the JSON params
         json rec = json::object();
@@ -103,16 +123,21 @@ void Controller::fillTxJsonParams(json& allRecepients, Tx tx) {
        unsigned int MIN_ZOUTS=8;
        while (allRecepients.size() < MIN_ZOUTS) {
        int decider = qrand() % ((100 + 1) - 1) + 1;// random int between 1 and 100
-       QString zdust1;
-       zdust1 = randomSietchZaddr();
-       QString zdust2;
-       zdust2 = randomSietchZaddr();
-      
-      dust["address"]     = zdust1.toStdString();
-      dust["amount"]      = 0;
+       
+     //  zdust1 = randomSietchZaddr();
+       
+    //   zdust2 = randomSietchZaddr();
+        
+  //  QString addr = zrpc->createNewSietchZaddr(cb);
+
+//}
+
+
+     // dust["address"] = sietch->toStdString();
+     // dust["amount"]      = 0;
      // dust["memo"]     = "";
-      dust1["address"]     = zdust2.toStdString();
-      dust1["amount"]      = 0;
+      //dust1["address"]     = zdust2.toStdString();
+     // dust1["amount"]      = 0;
      // dust1["memo"]     = "";
       
       //50% chance of adding another zdust, shuffle.
@@ -129,9 +154,11 @@ void Controller::fillTxJsonParams(json& allRecepients, Tx tx) {
        
        }
       allRecepients.push_back(rec) ;
-    
+
+   
+
     }
-      
+
 }
 
 void Controller::noConnection() {    
@@ -392,6 +419,7 @@ void Controller::refreshAddresses() {
     
     auto newzaddresses = new QList<QString>();
     auto newtaddresses = new QList<QString>();
+
 
     zrpc->fetchAddresses([=] (json reply) {
         auto zaddrs = reply["z_addresses"].get<json::array_t>();
@@ -1277,3 +1305,4 @@ QString Controller::getDefaultTAddress() {
     else 
         return QString();
 }
+
