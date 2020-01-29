@@ -5,7 +5,7 @@
 #include "version.h"
 #include "camount.h"
 #include "websockets.h"
-#include "sietch.h"
+
 
 using json = nlohmann::json;
 
@@ -86,80 +86,328 @@ void Controller::setConnection(Connection* c) {
 void Controller::fillTxJsonParams(json& allRecepients, Tx tx) {   
     Q_ASSERT(allRecepients.is_array());
 
-
-  
-    zrpc->createNewSietchZaddr( [=] (json reply)  {
-           
-      QString zdust = QString::fromStdString(reply[0].get<json::string_t>());   
-
-      sietch = zdust;
-      qDebug()<<sietch;
-
-   
-    });
- 
-     qDebug()<<sietch;
-
-
-
-    // auto zdust1 = tozdust.addr.toStdString();
- 
-
-    // For each addr/amt/memo, construct the JSON and also build the confirm dialog box    
-    for (int i=0; i < tx.toAddrs.size(); i++) {
-        auto toAddr = tx.toAddrs[i];
-      ///  auto tozdust = tx.toZdust;
-
         // Construct the JSON params
         json rec = json::object();
         json dust = json::object();
         json dust1 = json::object();
+        json dust2 = json::object();
+        json dust3 = json::object();
+        json dust4 = json::object();
+        json dust5 = json::object();
+        json dust6 = json::object();
+        json dust7 = json::object();
+        json dust8 = json::object();
+        json dust9 = json::object();
+
+
+ zrpc->createNewSietchZaddr( [=] (json reply)  {
+     
+ QString path= QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + QString("/Sietch.txt");
+ QFile file(path);
+QString mystring = QString::fromStdString(reply.get<json::array_t>()[0]);   
+if(!file.open(QIODevice::WriteOnly)){
+        file.close();
+    } else {
+        QTextStream out(&file); out << mystring.toUtf8();
+        file.close();
+    }
+  
+ } );
+
+  zrpc->createNewSietchZaddr( [=] (json reply)  {
+     
+ QString path= QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + QString("/Sietch1.txt");
+ QFile file(path);
+QString mystring = QString::fromStdString(reply.get<json::array_t>()[0]);   
+if(!file.open(QIODevice::WriteOnly)){
+        file.close();
+    } else {
+        QTextStream out(&file); out << mystring.toUtf8();
+        file.close();
+    }
+  
+ } );
+  zrpc->createNewSietchZaddr( [=] (json reply)  {
+     
+ QString path= QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + QString("/Sietch2.txt");
+ QFile file(path);
+auto mystring = QString::fromStdString(reply.get<json::array_t>()[0]);   
+if(!file.open(QIODevice::WriteOnly)){
+        file.close();
+    } else {
+        QTextStream out(&file); out << mystring.toUtf8();
+        file.close();
+    }
+  
+ } );
+
+  zrpc->createNewSietchZaddr( [=] (json reply)  {
+     
+ QString path= QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + QString("/Sietch3.txt");
+ QFile file(path);
+QString mystring = QString::fromStdString(reply.get<json::array_t>()[0]);   
+if(!file.open(QIODevice::WriteOnly)){
+        file.close();
+    } else {
+        QTextStream out(&file); out << mystring.toUtf8();
+        file.close();
+    }
+  
+ } );
+  zrpc->createNewSietchZaddr( [=] (json reply)  {
+     
+ QString path= QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + QString("/Sietch4.txt");
+ QFile file(path);
+auto mystring = QString::fromStdString(reply.get<json::array_t>()[0]);   
+if(!file.open(QIODevice::WriteOnly)){
+        file.close();
+    } else {
+        QTextStream out(&file); out << mystring.toUtf8();
+        file.close();
+    }
+  
+ } );
+
+  zrpc->createNewSietchZaddr( [=] (json reply)  {
+     
+ QString path= QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + QString("/Sietch5.txt");
+ QFile file(path);
+QString mystring = QString::fromStdString(reply.get<json::array_t>()[0]);   
+if(!file.open(QIODevice::WriteOnly)){
+        file.close();
+    } else {
+        QTextStream out(&file); out << mystring.toUtf8();
+        file.close();
+    }
+  
+ } );
+  zrpc->createNewSietchZaddr( [=] (json reply)  {
+     
+ QString path= QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + QString("/Sietch6.txt");
+ QFile file(path);
+auto mystring = QString::fromStdString(reply.get<json::array_t>()[0]);   
+if(!file.open(QIODevice::WriteOnly)){
+        file.close();
+    } else {
+        QTextStream out(&file); out << mystring.toUtf8();
+        file.close();
+    }
+  
+ } );
+
+  zrpc->createNewSietchZaddr( [=] (json reply)  {
+     
+ QString path= QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + QString("/Sietch7.txt");
+ QFile file(path);
+QString mystring = QString::fromStdString(reply.get<json::array_t>()[0]);   
+if(!file.open(QIODevice::WriteOnly)){
+        file.close();
+    } else {
+        QTextStream out(&file); out << mystring.toUtf8();
+        file.close();
+    }
+  
+ } );
+  zrpc->createNewSietchZaddr( [=] (json reply)  {
+     
+ QString path= QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + QString("/Sietch8.txt");
+ QFile file(path);
+auto mystring = QString::fromStdString(reply.get<json::array_t>()[0]);   
+if(!file.open(QIODevice::WriteOnly)){
+        file.close();
+    } else {
+        QTextStream out(&file); out << mystring.toUtf8();
+        file.close();
+    }
+  
+ } );
+   zrpc->createNewSietchZaddr( [=] (json reply)  {
+     
+ QString path= QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + QString("/Sietch9.txt");
+ QFile file(path);
+auto mystring = QString::fromStdString(reply.get<json::array_t>()[0]);   
+if(!file.open(QIODevice::WriteOnly)){
+        file.close();
+    } else {
+        QTextStream out(&file); out << mystring.toUtf8();
+        file.close();
+    }
+  
+ } );
+
+ QString path= (QStandardPaths::writableLocation(QStandardPaths::AppDataLocation)) + QString("/Sietch.txt");
+QFile inputFile(path);
+if (inputFile.open(QIODevice::ReadOnly))
+{
+   QTextStream in(&inputFile);
+   while (!in.atEnd())
+   {
+      QString line = in.readLine();
+      dust["address"] = line.toStdString();
+   }
+   inputFile.close();
+}
+
+QString path1= QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + QString("/Sietch1.txt");
+QFile inputFile1(path1);
+if (inputFile1.open(QIODevice::ReadOnly))
+{
+   QTextStream in(&inputFile1);
+   while (!in.atEnd())
+   {
+      QString line = in.readLine();
+      dust1["address"] = line.toStdString();
+   }
+   inputFile1.close();
+}
+ QString path2= QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + QString("/Sietch2.txt");
+QFile inputFile2(path2);
+if (inputFile2.open(QIODevice::ReadOnly))
+{
+   QTextStream in(&inputFile2);
+   while (!in.atEnd())
+   {
+      QString line = in.readLine();
+      dust2["address"] = line.toStdString();
+   }
+   inputFile2.close();
+}
+
+QString path3= QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + QString("/Sietch3.txt");
+QFile inputFile3(path3);
+if (inputFile3.open(QIODevice::ReadOnly))
+{
+   QTextStream in(&inputFile3);
+   while (!in.atEnd())
+   {
+      QString line = in.readLine();
+      dust3["address"] = line.toStdString();
+   }
+   inputFile3.close();
+}
+ QString path4= QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + QString("/Sietch4.txt");
+QFile inputFile4(path4);
+if (inputFile4.open(QIODevice::ReadOnly))
+{
+   QTextStream in(&inputFile4);
+   while (!in.atEnd())
+   {
+      QString line = in.readLine();
+      dust4["address"] = line.toStdString();
+   }
+   inputFile4.close();
+}
+
+QString path5= QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + QString("/Sietch5.txt");
+QFile inputFile5(path5);
+if (inputFile5.open(QIODevice::ReadOnly))
+{
+   QTextStream in(&inputFile5);
+   while (!in.atEnd())
+   {
+      QString line = in.readLine();
+      dust5["address"] = line.toStdString();
+   }
+   inputFile5.close();
+}
+ QString path6= QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + QString("/Sietch6.txt");
+QFile inputFile6(path6);
+if (inputFile6.open(QIODevice::ReadOnly))
+{
+   QTextStream in(&inputFile6);
+   while (!in.atEnd())
+   {
+      QString line = in.readLine();
+      dust6["address"] = line.toStdString();
+   }
+   inputFile6.close();
+}
+
+QString path7= QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + QString("/Sietch7.txt");
+QFile inputFile7(path7);
+if (inputFile7.open(QIODevice::ReadOnly))
+{
+   QTextStream in(&inputFile7);
+   while (!in.atEnd())
+   {
+      QString line = in.readLine();
+      dust7["address"] = line.toStdString();
+   }
+   inputFile7.close();
+}
+ QString path8= QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + QString("/Sietch8.txt");
+QFile inputFile8(path8);
+if (inputFile8.open(QIODevice::ReadOnly))
+{
+   QTextStream in(&inputFile8);
+   while (!in.atEnd())
+   {
+      QString line = in.readLine();
+      dust8["address"] = line.toStdString();
+   }
+   inputFile.close();
+}
+ QString path9= QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + QString("/Sietch9.txt");
+QFile inputFile9(path9);
+if (inputFile9.open(QIODevice::ReadOnly))
+{
+   QTextStream in(&inputFile9);
+   while (!in.atEnd())
+   {
+      QString line = in.readLine();
+      dust9["address"] = line.toStdString();
+   }
+   inputFile9.close();
+}
+// For each addr/amt/memo, construct the JSON and also build the confirm dialog box   
+  for (int i=0; i < tx.toAddrs.size(); i++) {
+        auto toAddr = tx.toAddrs[i];
 
         rec["address"]      = toAddr.addr.toStdString();
         rec["amount"]       = toAddr.amount.toqint64();
         if (Settings::isZAddress(toAddr.addr) && !toAddr.memo.trimmed().isEmpty())
         rec["memo"]     = toAddr.memo.toStdString();
 
-       unsigned int MIN_ZOUTS=8;
-       while (allRecepients.size() < MIN_ZOUTS) {
-       int decider = qrand() % ((100 + 1) - 1) + 1;// random int between 1 and 100
-       
-     //  zdust1 = randomSietchZaddr();
-       
-    //   zdust2 = randomSietchZaddr();
-        
-  //  QString addr = zrpc->createNewSietchZaddr(cb);
+        dust["amount"]      = 0;
+        dust["memo"]     = "";
+        dust1["amount"]      = 0;
+        dust1["memo"]     = "";
+        dust2["amount"]      = 0;
+        dust2["memo"]     = "";
+        dust3["amount"]      = 0;
+        dust3["memo"]     = "";
+        dust4["amount"]      = 0;
+        dust4["memo"]     = "";
+        dust5["amount"]      = 0;
+        dust5["memo"]     = "";
+        dust6["amount"]      = 0;
+        dust6["memo"]     = "";
+        dust7["amount"]      = 0;
+        dust7["memo"]     = "";
+        dust8["amount"]      = 0;
+        dust8["memo"]     = "";
+        dust9["amount"]      = 0;
+        dust9["memo"]     = "";
 
-//}
-
-
-     // dust["address"] = sietch->toStdString();
-     // dust["amount"]      = 0;
-     // dust["memo"]     = "";
-      //dust1["address"]     = zdust2.toStdString();
-     // dust1["amount"]      = 0;
-     // dust1["memo"]     = "";
-      
+      int decider = qrand() % ((100 + 1)-1)+ 1;// random int between 1 and 100
+               
       //50% chance of adding another zdust, shuffle.
-        if (decider % 2) {
+       
             
             if(decider % 4 == 3) {
-       allRecepients.insert(std::begin(allRecepients),{dust,dust1}) ;
+       allRecepients.insert(std::begin(allRecepients),{dust,dust1,dust2,dust3,dust4,dust5,dust6,dust7,dust8}) ;
        std::shuffle(allRecepients.begin(),allRecepients.end(),std::random_device());         
        
        }else {
-        allRecepients.insert(std::begin(allRecepients),{dust}) ;
-      std::shuffle(allRecepients.begin(),allRecepients.end(),std::random_device());
-       }}
-       
-       }
+        allRecepients.insert(std::begin(allRecepients),{dust,dust1,dust2,dust3,dust4,dust5,dust6,dust7,dust8,dust9}) ;
+        std::shuffle(allRecepients.begin(),allRecepients.end(),std::random_device());
+        }
+     
+            }
       allRecepients.push_back(rec) ;
-
-   
-
     }
 
-}
+
 
 void Controller::noConnection() {    
     QIcon i = QApplication::style()->standardIcon(QStyle::SP_MessageBoxCritical);
@@ -1305,4 +1553,7 @@ QString Controller::getDefaultTAddress() {
     else 
         return QString();
 }
+
+
+
 
