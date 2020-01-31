@@ -106,6 +106,7 @@ QString RecurringPaymentInfo::getAmountPretty() const {
   } else if (Settings::getInstance()->get_currency_name() == "AUD") {
     return currency == "AUD" ? amount.toDecimalAUDString() : amount.toDecimalhushString();
 }
+else return currency == "USD" ? amount.toDecimalUSDString() : amount.toDecimalhushString();
 }
 
 QString RecurringPaymentInfo::getScheduleDescription() const {
