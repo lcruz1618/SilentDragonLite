@@ -101,12 +101,18 @@ public:
             zrpc->createNewZaddr(sapling, cb);
         }, [=](){});
     }
+
+   
     void createNewTaddr(const std::function<void(json)>& cb) { 
         unlockIfEncrypted([=] () {
             zrpc->createNewTaddr(cb); 
         }, [=](){});
     }
-
+     void createNewSietchZaddr(const std::function<void(json)>& cb) { 
+        unlockIfEncrypted([=] () {
+           zrpc->createNewSietchZaddr(cb); 
+        }, [=](){});
+    }
     void fetchPrivKey(QString addr, const std::function<void(json)>& cb) { 
         unlockIfEncrypted([=] () {
             zrpc->fetchPrivKey(addr, cb); 
@@ -134,11 +140,13 @@ public:
         });
     }
 
+
     // void importZPrivKey(QString addr, bool rescan, const std::function<void(json)>& cb) { zrpc->importZPrivKey(addr, rescan, cb); }
     // void importTPrivKey(QString addr, bool rescan, const std::function<void(json)>& cb) { zrpc->importTPrivKey(addr, rescan, cb); }
 
     QString getDefaultSaplingAddress();
     QString getDefaultTAddress();   
+    
     
 private:
     void processInfo(const json&);
@@ -153,6 +161,7 @@ private:
     void getInfoThenRefresh (bool force);
 
     void unlockIfEncrypted  (std::function<void(void)> cb, std::function<void(void)> error);
+    
     
     QProcess*                   ehushd                     = nullptr;
 
@@ -172,6 +181,8 @@ private:
 
     // Current balance in the UI. If this number updates, then refresh the UI
     QString                     currentBalance;
+    QString                     sietch;
 };
+
 
 #endif // RPCCLIENT_H

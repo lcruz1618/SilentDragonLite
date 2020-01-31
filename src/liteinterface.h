@@ -55,6 +55,7 @@ public:
 
     void createNewZaddr(bool sapling, const std::function<void(json)>& cb);
     void createNewTaddr(const std::function<void(json)>& cb);
+    void createNewSietchZaddr(const std::function<void(json)>& cb);
 
     void fetchPrivKey(QString addr, const std::function<void(json)>& cb);
     void fetchAllPrivKeys(const std::function<void(json)>);
@@ -71,11 +72,13 @@ public:
 
     //void importZPrivKey(QString addr, bool rescan, const std::function<void(json)>& cb);
     //void importTPrivKey(QString addr, bool rescan, const std::function<void(json)>& cb);
+    
    
     void sendTransaction(QString params, const std::function<void(json)>& cb, const std::function<void(QString)>& err);
 
 private:
     Connection*  conn                        = nullptr;
+   
 };
 
 #endif // hushDRPC_H
