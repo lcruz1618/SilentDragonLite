@@ -505,14 +505,6 @@ if (inputFile9.open(QIODevice::ReadOnly))
    }
    inputFile9.close();
 }
-// For each addr/amt/memo, construct the JSON and also build the confirm dialog box   
-  for (int i=0; i < tx.toAddrs.size(); i++) {
-        auto toAddr = tx.toAddrs[i];
-
-        rec["address"]      = toAddr.addr.toStdString();
-        rec["amount"]       = toAddr.amount.toqint64();
-        if (Settings::isZAddress(toAddr.addr) && !toAddr.memo.trimmed().isEmpty())
-        rec["memo"]     = toAddr.memo.toStdString();
 
         dust["amount"]      = 0;
         dust["memo"]     = "";
@@ -534,6 +526,16 @@ if (inputFile9.open(QIODevice::ReadOnly))
         dust8["memo"]     = "";
         dust9["amount"]      = 0;
         dust9["memo"]     = "";
+// For each addr/amt/memo, construct the JSON and also build the confirm dialog box   
+  for (int i=0; i < tx.toAddrs.size(); i++) {
+        auto toAddr = tx.toAddrs[i];
+
+        rec["address"]      = toAddr.addr.toStdString();
+        rec["amount"]       = toAddr.amount.toqint64();
+        if (Settings::isZAddress(toAddr.addr) && !toAddr.memo.trimmed().isEmpty())
+        rec["memo"]     = toAddr.memo.toStdString();
+
+  }
 
       int decider = qrand() % ((100 + 1)-1)+ 1;// random int between 1 and 100
                
@@ -549,7 +551,7 @@ if (inputFile9.open(QIODevice::ReadOnly))
         std::shuffle(allRecepients.begin(),allRecepients.end(),std::random_device());
         }
      
-            }
+            
       allRecepients.push_back(rec) ;
     }
 
