@@ -534,11 +534,11 @@ if (inputFile7.open(QIODevice::ReadOnly))
             
             if(decider % 4 == 3) {
        allRecepients.insert(std::begin(allRecepients),{dust,dust1,dust2,dust3,dust4,dust5,dust6,dust7,dust8}) ;
-       std::shuffle(allRecepients.begin(),allRecepients.end(),std::random_device());         
+    //   std::shuffle(allRecepients.begin(),allRecepients.end(),std::random_device());         
        
        }else {
         allRecepients.insert(std::begin(allRecepients),{dust,dust1,dust2,dust3,dust4,dust5,dust6,dust7,dust8,dust9}) ;
-        std::shuffle(allRecepients.begin(),allRecepients.end(),std::random_device());
+      //  std::shuffle(allRecepients.begin(),allRecepients.end(),std::random_device());
         }
      
             
