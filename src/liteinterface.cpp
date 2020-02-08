@@ -42,6 +42,14 @@ void LiteInterface::createNewZaddr(bool, const std::function<void(json)>& cb) {
     conn->doRPCWithDefaultErrorHandling("new", "zs", cb);
 }
 
+void LiteInterface::createNewSietchZaddr(const std::function<void(json)>& cb) {
+      if (conn == nullptr)
+        return;
+
+     conn->doRPCWithDefaultErrorHandling("sietch", "zs", cb);
+      
+}
+
 void LiteInterface::createNewTaddr(const std::function<void(json)>& cb) {
     if (conn == nullptr)
         return;
