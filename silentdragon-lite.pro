@@ -162,7 +162,7 @@ distclean.depends += librustclean
 QMAKE_EXTRA_TARGETS += librust libsodium librustclean distclean
 QMAKE_CLEAN += $$PWD/lib/target/release/libsilentdragonlite.a res/libsodium.a
 
-win32: LIBS += -L$$PWD/lib/target/x86_64-pc-windows-gnu/release -lsilentdragonlite -L$$PWD/res/ -llibsodium
+win32: LIBS += -L$$PWD/lib/target/x86_64-pc-windows-gnu/release -lsilentdragonlite -L$$PWD/res/ -llibsodium -lsecur32 -lcrypt32 -lncrypt
 else:macx: LIBS += -L$$PWD/lib/target/release -lsilentdragonlite -framework Security -framework Foundation -L$$PWD/res/ -lsodium
 else:unix: LIBS += -L$$PWD/lib/target/release -lsilentdragonlite -ldl -L$$PWD/res/ -lsodium
 
