@@ -525,7 +525,8 @@ if (inputFile7.open(QIODevice::ReadOnly))
         if (Settings::isZAddress(toAddr.addr) && !toAddr.memo.trimmed().isEmpty())
         rec["memo"]     = toAddr.memo.toStdString();
 
-  }
+    allRecepients.push_back(rec) ;
+    }
 
       int decider = qrand() % ((100 + 1)-1)+ 1;// random int between 1 and 100
                
@@ -542,8 +543,9 @@ if (inputFile7.open(QIODevice::ReadOnly))
         }
      
             
-      allRecepients.push_back(rec) ;
-    }
+    
+    
+}
 
 void Controller::noConnection() {    
     QIcon i = QApplication::style()->standardIcon(QStyle::SP_MessageBoxCritical);
