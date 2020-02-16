@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="hr_HR" sourcelanguage="en">
+<TS version="2.1" language="fa_IR" sourcelanguage="en">
 <context>
     <name>AddressBookModel</name>
     <message>
         <location filename="../src/addressbook.cpp" line="11"/>
         <source>Label</source>
-        <translation>Oznaka</translation>
+        <translation>برچسب</translation>
     </message>
     <message>
         <location filename="../src/addressbook.cpp" line="11"/>
         <source>Address</source>
-        <translation>Adresa</translation>
+        <translation>آدرس</translation>
     </message>
 </context>
 <context>
@@ -19,12 +19,12 @@
     <message>
         <location filename="../src/balancestablemodel.cpp" line="141"/>
         <source>Address</source>
-        <translation>Adresa</translation>
+        <translation>آدرس</translation>
     </message>
     <message>
         <location filename="../src/balancestablemodel.cpp" line="142"/>
         <source>Amount</source>
-        <translation>Količina</translation>
+        <translation>مقدار</translation>
     </message>
 </context>
 <context>
@@ -32,12 +32,12 @@
     <message>
         <location filename="../src/connection.ui" line="17"/>
         <source>SilentDragonLite</source>
-        <translation>SilentDragonLite</translation>
+        <translation>سایلنت دراگون سبک</translation>
     </message>
     <message>
         <location filename="../src/connection.ui" line="58"/>
         <source>Starting Up</source>
-        <translation>Početak</translation>
+        <translation>درحال راه‌اندازی</translation>
     </message>
 </context>
 <context>
@@ -45,30 +45,29 @@
     <message>
         <location filename="../src/controller.cpp" line="1149"/>
         <source>Wallet Password</source>
-        <translation>Lozinka novčanika</translation>
+        <translation>رمزعبور کیف پول</translation>
     </message>
     <message>
         <location filename="../src/controller.cpp" line="1150"/>
         <source>Your wallet is encrypted.
 Please enter your wallet password</source>
-        <translation>Vaš novčanik je šifriran.
-Molimo unesite vašu lozinku</translation>
+        <translation>کیف پول شما رمزنگاری شده است. لطفا رمزعبور کیف پول خود را وارد کنید</translation>
     </message>
     <message>
         <location filename="../src/controller.cpp" line="1153"/>
         <location filename="../src/controller.cpp" line="1168"/>
         <source>Wallet Decryption Failed</source>
-        <translation>Dešifriranje novčanika neuspjelo</translation>
+        <translation>رمزگشایی کیف پول ناموفق بود</translation>
     </message>
     <message>
         <location filename="../src/controller.cpp" line="1154"/>
         <source>Please enter a valid password</source>
-        <translation>Molimo unesite valjanu lozinku</translation>
+        <translation>لطفاً رمزعبور صحیحی وارد کنید</translation>
     </message>
     <message>
         <location filename="../src/controller.cpp" line="1224"/>
         <source>Failed to unlock wallet</source>
-        <translation>Neuspjeh prilikom otključavanja novčanika</translation>
+        <translation>باز کردن کیف پول ناموفق بود</translation>
     </message>
 </context>
 <context>
@@ -76,27 +75,27 @@ Molimo unesite vašu lozinku</translation>
     <message>
         <location filename="../src/newwallet.ui" line="14"/>
         <source>Form</source>
-        <translation>Od</translation>
+        <translation>ساخت/بازیابی کیف پول</translation>
     </message>
     <message>
         <location filename="../src/newwallet.ui" line="32"/>
         <source>Restore wallet from seed</source>
-        <translation>Vraćanje novčanika u početno stanje iz seed riječi</translation>
+        <translation>بازیابی کیف پول با عبارت بازیابی </translation>
     </message>
     <message>
         <location filename="../src/newwallet.ui" line="39"/>
         <source>Restore an existing wallet, using the 24-word seed. </source>
-        <translation>Vratite postojeći novčanik u početno stanje koristeći seed od 24 riječi. </translation>
+        <translation>بازیابی کیف پول موجود با عبارت بازیابی 24 کلمه ای</translation>
     </message>
     <message>
         <location filename="../src/newwallet.ui" line="64"/>
         <source>Create a new Wallet</source>
-        <translation>Napravite novi novčanik</translation>
+        <translation>ساخت کیف پول جدید</translation>
     </message>
     <message>
         <location filename="../src/newwallet.ui" line="71"/>
         <source>Create a new wallet with a randomly generated seed.</source>
-        <translation>Napravite novi novčanik sa nasumice odabranim seed riječima.</translation>
+        <translation>ساخت کیف پول جدید با عبارت بازیابی تصادفی</translation>
     </message>
 </context>
 <context>
@@ -104,73 +103,73 @@ Molimo unesite vašu lozinku</translation>
     <message>
         <location filename="../src/mainwindow.ui" line="14"/>
         <source>SilentDragonLite</source>
-        <translation>SilentDragonLite</translation>
+        <translation>سایلنت دراگون سبک</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="29"/>
         <source>Balance</source>
-        <translation>Saldo</translation>
+        <translation>اعتبار</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="43"/>
         <source>Summary</source>
-        <translation>Sažetak</translation>
+        <translation>خلاصه</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="62"/>
         <source>Shielded</source>
-        <translation>Zaštićeno</translation>
+        <translation>حفاظت شده</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="89"/>
         <source>Notarized</source>
-        <translation>Potvrđeno</translation>
+        <translation>محضری</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="116"/>
         <source>Transparent</source>
-        <translation>Transparentno</translation>
+        <translation>عمومی</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="156"/>
         <source>Total</source>
-        <translation>Ukupno</translation>
+        <translation>جمع کل</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="184"/>
         <source>Your node is still syncing, balances may not be updated.</source>
-        <translation>Vaš čvor se još uvijek sinkronizira, saldo neće biti ažuriran.</translation>
+        <translation>نود شما در حال همگام سازی است، اعتبارات ممکن است بروز نباشند</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="203"/>
         <source>Some transactions are not yet confirmed. Balances may change.</source>
-        <translation>Neke transakcije još nisu potvrđene. Saldo se može promijeniti.</translation>
+        <translation>برخی تراکنش ها تاکنون تأیید نشده اند. اعتبارات ممکن است تغییر کنند</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="237"/>
         <source>Address Balances</source>
-        <translation>Saldo adrese</translation>
+        <translation>اعتبارات آدرس ها</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="286"/>
         <location filename="../src/mainwindow.ui" line="677"/>
         <source>Send</source>
-        <translation>Šalji</translation>
+        <translation>ارسال</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="323"/>
         <source>Total notarized funds available:</source>
-        <translation>Ukopna dostupna potvrđena sredstva:</translation>
+        <translation>کل اعتبارات محضری دردسترس</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="360"/>
         <source>Send To</source>
-        <translation>Pošalji</translation>
+        <translation>ارسال به</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="399"/>
         <source>Recipient</source>
-        <translation>Primatelj</translation>
+        <translation>دریافت کننده</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="407"/>
@@ -179,13 +178,13 @@ Molimo unesite vašu lozinku</translation>
         <location filename="../src/sendtab.cpp" line="238"/>
         <location filename="../src/sendtab.cpp" line="243"/>
         <source>Address</source>
-        <translation>Adresa</translation>
+        <translation>آدرس</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="421"/>
         <location filename="../src/sendtab.cpp" line="253"/>
         <source>Address Book</source>
-        <translation>Adresar</translation>
+        <translation>دفترچه آدرس</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="432"/>
@@ -193,12 +192,12 @@ Molimo unesite vašu lozinku</translation>
         <location filename="../src/sendtab.cpp" line="266"/>
         <location filename="../src/sendtab.cpp" line="270"/>
         <source>Amount</source>
-        <translation>Količina</translation>
+        <translation>مقدار</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="462"/>
         <source>Max Available</source>
-        <translation>Max dostupno</translation>
+        <translation>حداکثر دردسترس</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="488"/>
@@ -206,33 +205,33 @@ Molimo unesite vašu lozinku</translation>
         <location filename="../src/mainwindow.cpp" line="946"/>
         <location filename="../src/sendtab.cpp" line="292"/>
         <source>Memo</source>
-        <translation>Poruka (memo)</translation>
+        <translation>یادداشت</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="536"/>
         <source>Add Recipient</source>
-        <translation>Dodaj primatelja</translation>
+        <translation>اضافه کردن دریافت کننده</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="580"/>
         <source>Recurring payment</source>
-        <translation>Ponavljajuće plaćanje</translation>
+        <translation>تکرار پرداخت</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="587"/>
         <source>Every month, starting 12-May-2012, for 6 payments</source>
-        <translation>Svaki mjesec s početkom 12-Svibnja-2012, u 6 rata</translation>
+        <translation>12-May-20برای 6 پرداخت، هر ماه شروع می‌شود از 12 </translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="594"/>
         <source>Edit Schedule</source>
-        <translation>Uredi raspored</translation>
+        <translation>ویرایش برنامه زمانی</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="624"/>
         <location filename="../src/sendtab.cpp" line="747"/>
         <source>Miner Fee</source>
-        <translation>Naknada za rudarenje</translation>
+        <translation>کارمزد استخراج کننده</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="637"/>
@@ -242,42 +241,42 @@ Molimo unesite vašu lozinku</translation>
     <message>
         <location filename="../src/mainwindow.ui" line="693"/>
         <source>Cancel</source>
-        <translation>Odustani</translation>
+        <translation>انصراف</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="703"/>
         <source>Receive</source>
-        <translation>Primiti</translation>
+        <translation>دریافت</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="711"/>
         <source>Address Type</source>
-        <translation>Vrsta adrese</translation>
+        <translation>نوع آدرس</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="725"/>
         <source>z-Addr</source>
-        <translation>z-Adr</translation>
+        <translation>آدرس حفاظت شده</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="738"/>
         <source>t-Addr</source>
-        <translation>t-adr</translation>
+        <translation>آدرس عمومی</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="762"/>
         <source>Next Address</source>
-        <translation type="unfinished"></translation>
+        <translation>آدرس بعدی</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="940"/>
         <source>Information about Hush</source>
-        <translation type="unfinished"></translation>
+        <translation>Hush اطلاعات مربوط به</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="998"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Hush Blockchain Information&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>Hush اطلاعات زنجیره بلوک</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1014"/>
@@ -293,120 +292,120 @@ Molimo unesite vašu lozinku</translation>
         <location filename="../src/mainwindow.ui" line="1268"/>
         <location filename="../src/mainwindow.ui" line="1289"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;|&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1035"/>
         <source>Next Halving</source>
-        <translation type="unfinished"></translation>
+        <translation>نصف شدن پاداش بلوک بعدی</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1112"/>
         <source>Difficulty</source>
-        <translation type="unfinished"></translation>
+        <translation>سختی</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1126"/>
         <source>Last Notarized Block</source>
-        <translation type="unfinished"></translation>
+        <translation>آخرین بلوک محضری</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1147"/>
         <source>Total Supply</source>
-        <translation type="unfinished"></translation>
+        <translation>کل عرضه</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1161"/>
         <source>Longestchain</source>
-        <translation type="unfinished"></translation>
+        <translation>بلندترین زنجیره</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1182"/>
         <source>BlockHeight</source>
-        <translation type="unfinished"></translation>
+        <translation>ارتفاع بلوک</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1189"/>
         <source>Supply zAddr</source>
-        <translation type="unfinished"></translation>
+        <translation>تعداد سکه های حفاظت شده</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1217"/>
         <source>Supply tAddr</source>
-        <translation type="unfinished"></translation>
+        <translation>تعداد سکه های عمومی</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1238"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Hush Market Information&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Hush اطلاعات &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1261"/>
         <source>Market Cap</source>
-        <translation type="unfinished"></translation>
+        <translation>حجم معاملات در بازار</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1282"/>
         <source>Volume on Exchanges</source>
-        <translation type="unfinished"></translation>
+        <translation>حجم معاملات در صرافی ها</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1305"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;This is a Lightwallet, you cant mine with it!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;این کیف پول سبک است. شما نمی توانید با آن استخراج کنید&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>New Address</source>
-        <translation type="vanished">Nova adresa</translation>
+        <translation type="vanished">آدرس جدید</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="769"/>
         <source>View All Addresses</source>
-        <translation>Pogledaj sve adrese</translation>
+        <translation>مشاهده تمام آدرس ها</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="787"/>
         <source>Label</source>
-        <translation>Oznaka</translation>
+        <translation>برچسب</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="794"/>
         <source>Update Label</source>
-        <translation>Ažuriraj oznaku</translation>
+        <translation>بروزرسانی برچسب</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="808"/>
         <source>Address balance</source>
-        <translation>Saldo na adresi</translation>
+        <translation>اعتبار آدرس</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="818"/>
         <source>Optional</source>
-        <translation>Opcionalno</translation>
+        <translation>اختیاری</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="840"/>
         <location filename="../src/mainwindow.cpp" line="1097"/>
         <source>Export Private Key</source>
-        <translation>Izvoz privatnog ključa</translation>
+        <translation>صدور کلید خصوصی</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="877"/>
         <source>Your node is still syncing, balances may not be updated</source>
-        <translation>Vaš čvor se još uvijek sinkronizira, saldo neće biti ažuriran</translation>
+        <translation>نود شما درحال همگام سازی است، اعتبارات ممکن است بروز نباشند</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="920"/>
         <source>Transactions</source>
-        <translation>Transakcije</translation>
+        <translation>تراکنش ها</translation>
     </message>
     <message>
         <source>Hush Daemon</source>
-        <translation type="vanished">Hush Daemon</translation>
+        <translation type="vanished">‌Hushدیمن</translation>
     </message>
     <message>
         <source>This is a Lightwallet, you cant mine with it!</source>
-        <translation type="vanished">Ovo je LaganiNovčanik, s njim ne možete rudariti!</translation>
+        <translation type="vanished">این یک کیف پول سبک است و شما نمی توانید با آن استخراج کنید</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1021"/>
@@ -422,21 +421,21 @@ Molimo unesite vašu lozinku</translation>
         <location filename="../src/mainwindow.ui" line="1254"/>
         <location filename="../src/mainwindow.ui" line="1275"/>
         <source>Loading...</source>
-        <translation>Učitavanje...</translation>
+        <translation>...درحال بارگذاری</translation>
     </message>
     <message>
         <source>blockHeight</source>
-        <translation type="vanished">visinaBloka</translation>
+        <translation type="vanished">ارتفاع بلوک</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1175"/>
         <source>Version hushlightd</source>
-        <translation>Verzija hushlightd</translation>
+        <translation>Hushنسخه کیف پول سبک</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1063"/>
         <source>Vendor</source>
-        <translation>Prodavač</translation>
+        <translation>فروشنده</translation>
     </message>
     <message>
         <source>|</source>
@@ -445,37 +444,37 @@ Molimo unesite vašu lozinku</translation>
     <message>
         <location filename="../src/mainwindow.ui" line="1342"/>
         <source>&amp;File</source>
-        <translation>&amp;Datoteka</translation>
+        <translation>پرونده</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1356"/>
         <source>&amp;Help</source>
-        <translation>&amp;Pomoć</translation>
+        <translation>امداد</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1367"/>
         <source>&amp;Apps</source>
-        <translation>&amp;Apps</translation>
+        <translation>برنامه ها</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1373"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Uredi</translation>
+        <translation>ویرایش</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1392"/>
         <source>E&amp;xit</source>
-        <translation>&amp;Izlaz</translation>
+        <translation>خروج</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1397"/>
         <source>&amp;About</source>
-        <translation>&amp;O</translation>
+        <translation>درباره</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1402"/>
         <source>&amp;Settings</source>
-        <translation>&amp;Postavke</translation>
+        <translation>تنظیمات</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1405"/>
@@ -485,32 +484,32 @@ Molimo unesite vašu lozinku</translation>
     <message>
         <location filename="../src/mainwindow.ui" line="1410"/>
         <source>&amp;Send DenioD Feedback</source>
-        <translation>&amp;Pošalji DenioD povratne informacije</translation>
+        <translation>DenioDارسال بازخورد به </translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1415"/>
         <source>&amp;Hush Discord</source>
-        <translation>&amp;Hush Discord</translation>
+        <translation>Hushدیسکورد</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1420"/>
         <source>&amp;Hush Website</source>
-        <translation>&amp;Hush Web stranica</translation>
+        <translation>Hushوبسایت</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1425"/>
         <source>Check github.com for &amp;updates</source>
-        <translation>Provjeri na github.com &amp;dopune</translation>
+        <translation>بررسی گیت هاب ما برای بروزرسانی</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1430"/>
         <source>&amp;Export all private keys</source>
-        <translation>&amp;Izvoz svih privatnih ključeva</translation>
+        <translation>صدور تمام کلید های خصوصی</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1435"/>
         <source>Address &amp;book</source>
-        <translation>Adresna &amp;knjiga</translation>
+        <translation>دفترچه آدرس</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1438"/>
@@ -520,23 +519,23 @@ Molimo unesite vašu lozinku</translation>
     <message>
         <location filename="../src/mainwindow.ui" line="1443"/>
         <source>&amp;Export seed phrase</source>
-        <translation>&amp;Izvoz seed fraze</translation>
+        <translation>صدور عبارت بازیابی</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1448"/>
         <location filename="../src/mainwindow.cpp" line="708"/>
         <source>Export transactions</source>
-        <translation>Izvoz transakcija</translation>
+        <translation>صدور تراکنش‌ها</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1453"/>
         <source>Pay hush &amp;URI...</source>
-        <translation>Plati hush &amp;URI...</translation>
+        <translation>URI پرداخت هاش با</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1458"/>
         <source>Connect mobile &amp;app</source>
-        <translation>Spoji mobilnu &amp;app</translation>
+        <translation>اتصال برنامه تلفن همراه</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1461"/>
@@ -546,374 +545,372 @@ Molimo unesite vašu lozinku</translation>
     <message>
         <location filename="../src/mainwindow.ui" line="1466"/>
         <source>&amp;Recurring Payments</source>
-        <translation>&amp;Ponavljajuća plaćanja</translation>
+        <translation>تکرار پرداخت ها</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1471"/>
         <source>Request hush...</source>
-        <translation>Zatraži hush...</translation>
+        <translation>Hushدرخواست</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1476"/>
         <source>File a bug...</source>
-        <translation>Prijavi grešku...</translation>
+        <translation>گزارش اشکال</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1481"/>
         <source>Encrypt Wallet</source>
-        <translation>Šifriraj novčanik</translation>
+        <translation>رمزنگاری کیف پول</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1486"/>
         <source>Remove Wallet Encryption</source>
-        <translation>Uklonite šifriranje novčanika</translation>
+        <translation>حذف رمزنگاری کیف پول</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1491"/>
         <source>Rescan</source>
-        <translation>Rescan</translation>
+        <translation>بررسی دوباره</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="246"/>
         <source>Wallet is already encrypted</source>
-        <translation>Novčanik je već šifriran</translation>
+        <translation>کیف پول در حال حاضر رمزنگاری شده است</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="247"/>
         <source>Your wallet is already encrypted with a password.
 Please use &apos;Remove Wallet Encryption&apos; if you want to remove the wallet encryption.</source>
-        <translation>Vaš novčanik je već šifriran lozinkom.
-Molimo koristite &apos;Uklonite šifriranje novčanika&apos; ako želite ukloniti šifriranje novčanika.</translation>
+        <translation>کیف پول شما درحال حاضر توسط رمزعبور، رمزنگاری شده است
+لطفا از حذف رمزنگاری کیف پول استفاده کنید اگر می خواهید رمزنگاری کیف پولتان را حذف کنید.
+</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="265"/>
         <source>Passwords don&apos;t match</source>
-        <translation>Lozinke se ne podudaraju</translation>
+        <translation>رمزعبور همخوانی ندارد</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="278"/>
         <source>Error was:
 </source>
-        <translation>Greška je :
-</translation>
+        <translation>خطا:</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="289"/>
         <source>Wallet Encrypted</source>
-        <translation>Novčanik šifriran</translation>
+        <translation>کیف پول رمزنگاری شده است</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="290"/>
         <source>Your wallet was successfully encrypted! The password will be needed to send funds or export private keys.</source>
-        <translation>Vaš novčanik je uspješno šifriran! Lozinka će vam trebati za slanje sredstava ili za izvoz privatnih ključeva.</translation>
+        <translation>کیف پول شما با موفقیت رمزنگاری شد! این رمز عبور برای ارسال اعتبار و صدور کلید های خصوصی ضروری است</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="294"/>
         <location filename="../src/mainwindow.cpp" line="301"/>
         <source>Wallet Encryption Failed</source>
-        <translation>Šifriranje novčanika neuspjelo</translation>
+        <translation>رمزنگاری کیف پول ناموفق بود</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="311"/>
         <source>Wallet is not encrypted</source>
-        <translation>Novčanik nije šifriran</translation>
+        <translation>کیف پول، رمزنگاری نشده است</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="312"/>
         <source>Your wallet is not encrypted with a password.</source>
-        <translation>Vaš novčanik nije šifriran sa lozinkom.</translation>
+        <translation>کیف پول شما با رمزعبور، رمزنگاری نشده است</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="319"/>
         <source>Wallet Password</source>
-        <translation>Lozinka novčanika</translation>
+        <translation>رمزعبور کیف پول</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="320"/>
         <source>Please enter your wallet password</source>
-        <translation>Molimo unesite lozinku novčanika</translation>
+        <translation>لطفاً رمزعبور کیف پول خود را وارد کنید</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="328"/>
         <location filename="../src/mainwindow.cpp" line="345"/>
         <location filename="../src/mainwindow.cpp" line="355"/>
         <source>Wallet Decryption Failed</source>
-        <translation>Dešifriranje novčanika neuspjelo</translation>
+        <translation>رمزگشایی کیف پول ناموفق بود</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="329"/>
         <source>Please enter a password to decrypt your wallet!</source>
-        <translation>Molimo unesite lozinku za dešifriranje novčanika!</translation>
+        <translation>لطفاً رمزعبور خود را وارد کنید تا کیف پول شما رمزگشایی شود</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="340"/>
         <source>Wallet Encryption Removed</source>
-        <translation>Šifriranje novčanika uklonjeno</translation>
+        <translation>رمزنگاری کیف پول حذف شد</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="341"/>
         <source>Your wallet was successfully decrypted! You will no longer need a password to send funds or export private keys.</source>
-        <translation>Vaš novčanik je uspješno dešifriran! Lozinka vam više neće trebati za slanje sredstava ili za izvoz privatnih ključeva.</translation>
+        <translation>کیف پول شما با موفقیت رمزگشایی شد! شما دیگر برای ارسال اعتبار و صدور کلید های خصوصی به رمز عبور نیازی ندارید</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="383"/>
         <location filename="../src/mainwindow.cpp" line="916"/>
         <source>Copy txid</source>
-        <translation>Kopitajte txid</translation>
+        <translation>کپی شناسه تراکنش</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="386"/>
         <location filename="../src/mainwindow.cpp" line="927"/>
         <source>Copy block explorer link</source>
-        <translation type="unfinished"></translation>
+        <translation>کپی لینک وبسایت مشاهده تراکنش</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="391"/>
         <source>View tx on block explorer</source>
-        <translation>Pogledaj tx na blok pregledniku</translation>
+        <translation>مشاهده تراکنش در وبسایت</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="396"/>
         <source>Refresh</source>
-        <translation>Osvježi</translation>
+        <translation>تازه سازی</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="442"/>
         <source>Restart</source>
-        <translation>Ponovno pokreni</translation>
+        <translation>اجرای مجدد</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="442"/>
         <source>Please restart Silentdragonlite to have the theme apply</source>
-        <translation>Molimo ponovno pokrenite SilentDragonLite ako želite primjeniti temu</translation>
+        <translation>لطفا برای اعمال پوسته، سایلنت دراگون سبک خود را مجدداً اجرا کنید</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="455"/>
         <source>Currency Change</source>
-        <translation>Razmjena valuta</translation>
+        <translation>تغییر واحد پول</translation>
     </message>
     <message>
         <source>Please restart SilentDragonLite to have new currencies apply</source>
-        <translation type="vanished">Molimo ponovno pokrenite SilentDragonLite ako želite primjeniti novu valutu</translation>
-    </message>
-    <message>
-        <location filename="../src/mainwindow.cpp" line="455"/>
-        <source>This change can take a few seconds.</source>
-        <translation type="unfinished"></translation>
+        <translation type="vanished">لطفا برای اعمال واحد پول جدید، سایلنت دراگون سبک خود را مجدداً اجرا کنید</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="535"/>
         <source>Some feedback about SilentDragonlite or Hush...</source>
-        <translation>Neke povratne informaciej o SilentDragonLite ili Hush...</translation>
+        <translation> Hushبرخی بازخوردها درباره سایلنت دراگون سبک یا </translation>
     </message>
     <message>
         <source>Send Duke some private and shielded feedback about</source>
-        <translation type="vanished">Pošaljite Duke neku privatnu i zaštićenu povratnu informaciju</translation>
+        <translation type="vanished">بفرستید Duke تعدادی بازخورد به صورت خصوصی و حفاظت شده برای </translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="455"/>
+        <source>This change can take a few seconds.</source>
+        <translation></translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="537"/>
         <source> or SilentDragonLite</source>
-        <translation> ili SilentDragonLite</translation>
+        <translation>یا سایلنت دراگون سبک</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="537"/>
         <source>Send DenioD some private and shielded feedback about</source>
-        <translation type="unfinished"></translation>
+        <translation>بفرستید DenioD تعدادی بازخورد به صورت خصوصی و حفاظت شده به</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="618"/>
         <source>Paste HUSH URI</source>
-        <translation>Zalijepi HUSH URI</translation>
+        <translation>Hush URI چسبانیدن </translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="630"/>
         <source>Error paying HUSH URI</source>
-        <translation>Greška u plaćanju HUSH URI</translation>
+        <translation>HUSH URI خطا در پرداخت</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="631"/>
         <source>URI should be of the form &apos;hush:&lt;addr&gt;?amt=x&amp;memo=y</source>
-        <translation>URI treba biti formata &apos;hush:&lt;addr&gt;?amt=x&amp;memo=y</translation>
+        <translation>یو-آر-آی باید از این قالب باشد&apos;hush:&lt;addr&gt;?amt=x&amp;memo=y </translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="714"/>
         <source>Error</source>
-        <translation>Greška</translation>
+        <translation>خطا</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="715"/>
         <source>Error exporting transactions, file was not saved</source>
-        <translation>Greška prilikom izvoza transakcija, datoteka nije spremljena</translation>
+        <translation>خطا در صدور تراکنش ها، پرونده ذخیره نشد</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="748"/>
         <source>This is your wallet seed. Please back it up carefully and safely.</source>
-        <translation>Ovo je vaš seed novčanika. Molimo izradite sigurnosnu kopiju.</translation>
+        <translation>این، عبارت بازیابی کیف پول شما است. لطفا با دقت و اطمینان از آن نسخه پشتیبان تهیه کنید</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="752"/>
         <location filename="../src/mainwindow.cpp" line="813"/>
         <source>Save File</source>
-        <translation>Spremi datoteku</translation>
+        <translation>ذخیره پرونده</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="756"/>
         <location filename="../src/mainwindow.cpp" line="817"/>
         <source>Unable to open file</source>
-        <translation>Nije moguće otvoriti datoteku</translation>
+        <translation>خطا در بازکردن پرونده</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="785"/>
         <source>Error getting private keys</source>
-        <translation>Greška u dohvaćanju privatnih ključeva</translation>
+        <translation>خطا در دریافت کلید های خصوصی</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="786"/>
         <source>Error loading private keys: </source>
-        <translation>Greška prilikom učitavanja privatnog ključa: </translation>
+        <translation>خطا در بارگذاری کلید های خصوصی</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="806"/>
         <source>These are all the private keys for all the addresses in your wallet</source>
-        <translation>Ovo su svi privatni ključevi svih adresa u vašem novčaniku</translation>
+        <translation>این ها تمام کلید های خصوصی برای تمام آدرس های کیف پول های شما است</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="808"/>
         <source>Private key for </source>
-        <translation>Privatni ključ za </translation>
+        <translation>کلید خصوصی برای</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="861"/>
         <location filename="../src/mainwindow.cpp" line="922"/>
         <source>Copy address</source>
-        <translation>Kopirajte adresu</translation>
+        <translation>کپی آدرس</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="864"/>
         <location filename="../src/mainwindow.cpp" line="918"/>
         <location filename="../src/mainwindow.cpp" line="924"/>
         <source>Copied to clipboard</source>
-        <translation>Kopirano u mađuspremnik</translation>
+        <translation>در کلیپ بورد کپی شد</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="867"/>
         <source>Get private key</source>
-        <translation>Dobavi privatni ključ</translation>
+        <translation>دریافت کلید خصوصی</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="873"/>
         <location filename="../src/mainwindow.cpp" line="932"/>
         <source>View on block explorer</source>
-        <translation>Pogledaj na blok pregledniku</translation>
+        <translation>مشاهده در وبسایت</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="938"/>
         <source>View Payment Request</source>
-        <translation>Pogledajte zahtjev o plaćanju</translation>
+        <translation>مشاهده درخواست پرداخت</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="945"/>
         <source>View Memo</source>
-        <translation>Pogledajte poruku (memo)</translation>
+        <translation>مشاهده یادداشت</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="960"/>
         <source>Reply to </source>
-        <translation>Odgovorite </translation>
+        <translation>پاسخ به</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="1047"/>
         <source>Created new t-Addr</source>
-        <translation>Napravljena je nova transparentna adresa</translation>
+        <translation>آدرس عمومی جدید، ساخته شد</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="1103"/>
         <source>Copy Address</source>
-        <translation>Kopirajte adresu</translation>
+        <translation>کپی آدرس</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="1206"/>
         <source>Address has been previously used</source>
-        <translation>Adresa je već korištena</translation>
+        <translation>آدرس، قبلا هم استفاده شده بود</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="1208"/>
         <source>Address is unused</source>
-        <translation>Adresa nije korištena</translation>
+        <translation>آدرس استفاده نشده</translation>
     </message>
     <message>
         <location filename="../src/sendtab.cpp" line="182"/>
         <source>Cannot support multiple addresses</source>
-        <translation>Nije moguće podržati višestruke adrese</translation>
+        <translation>قادر به پشتیبانی آدرس های متعدد نمی باشد</translation>
     </message>
     <message>
         <location filename="../src/sendtab.cpp" line="183"/>
         <source>Recurring payments doesn&apos;t currently support multiple addresses</source>
-        <translation>Ponavljajuće plaćanje trenutno ne podržava višestruke adrese</translation>
+        <translation>پرداخت مجدد، فعلا از آدرس های متعدد پشتیبانی نمی کند</translation>
     </message>
     <message>
         <location filename="../src/sendtab.cpp" line="229"/>
         <source>Recipient </source>
-        <translation>Primatelj </translation>
+        <translation>دریافت کننده</translation>
     </message>
     <message>
         <location filename="../src/sendtab.cpp" line="374"/>
         <source>Only z-addresses can have memos</source>
-        <translation>Samo z-adrese mogu imati poruke</translation>
+        <translation>فقط آدرس های حفاظت شده می توانند یادداشت داشته باشند</translation>
     </message>
     <message>
         <location filename="../src/sendtab.cpp" line="382"/>
         <source>Memos can only be used with z-addresses</source>
-        <translation>Poruke se mogu koristiti samo sa z-adresama</translation>
+        <translation>یادداشت ها تنها می توانند توسط آدرس های حفاظت شده، مورد استفاده قرار گیرند</translation>
     </message>
     <message>
         <location filename="../src/sendtab.cpp" line="383"/>
         <source>The memo field can only be used with a z-address.
 </source>
-        <translation>Prostor za poruku se može koristiti samo sa z-adresom.
-</translation>
+        <translation>یادداشت ها تنها می توانند توسط آدرس های حفاظت شده، مورد استفاده قرار گیرند</translation>
     </message>
     <message>
         <location filename="../src/sendtab.cpp" line="383"/>
         <source>
 doesn&apos;t look like a z-address</source>
-        <translation>
-ne izgleda kao z-adresa</translation>
+        <translation>به نظر نمی رسد این یک آدرس حفاظت شده باشد</translation>
     </message>
     <message>
         <location filename="../src/sendtab.cpp" line="817"/>
         <source>Transaction Error</source>
-        <translation>Greška u transakciji</translation>
+        <translation>خطای تراکنش</translation>
     </message>
     <message>
         <location filename="../src/sendtab.cpp" line="849"/>
         <source>Please wait...</source>
-        <translation>Molimo pričekajte...</translation>
+        <translation>...لطفا منتظر بمانید</translation>
     </message>
     <message>
         <location filename="../src/sendtab.cpp" line="850"/>
         <source>Computing your transaction</source>
-        <translation>Računamo vašu transakciju</translation>
+        <translation>درحال محاسبه تراکنش شما</translation>
     </message>
     <message>
         <location filename="../src/sendtab.cpp" line="859"/>
         <source>Done!</source>
-        <translation>Gotovo!</translation>
+        <translation>!انجام شد</translation>
     </message>
     <message>
         <location filename="../src/sendtab.cpp" line="914"/>
         <source>Recipient Address </source>
-        <translation>Adresa primatelja </translation>
+        <translation>آدرس دریافت کننده</translation>
     </message>
     <message>
         <location filename="../src/sendtab.cpp" line="914"/>
         <source> is Invalid</source>
-        <translation> je neispravna</translation>
+        <translation>صحیح نیست</translation>
     </message>
     <message>
         <location filename="../src/sendtab.cpp" line="920"/>
         <source>Amount for address &apos;%1&apos; is invalid!</source>
-        <translation>Količina za adresu &apos;%1&apos; je nevaljala!</translation>
+        <translation>صحیح نمی باشد &apos;%1&apos; این مقدار برای آدرس</translation>
     </message>
     <message>
         <location filename="../src/sendtab.cpp" line="930"/>
@@ -923,12 +920,13 @@ Have: %1
 Need: %2
 
 Note: Funds need 5 confirmations before they can be spent</source>
-        <translation>Nema dovoljno dostupnih sredstava za slanje transakcije
-
-Imate: %1
-Trebate: %2
-
-Opaska: Za trošenje sredstava potrebno je 5 konfirmacija</translation>
+        <translation>اعتبار برای ارسال این تراکنش کافی نیست
+        
+  %1 :دارای
+ %2 :نیازمند
+ 
+ توجه: اعتبارات قبل از اینکه بتوانند خرج شوند، نیاز به 5 تاییدیه دارند
+</translation>
     </message>
 </context>
 <context>
@@ -937,12 +935,12 @@ Opaska: Za trošenje sredstava potrebno je 5 konfirmacija</translation>
         <location filename="../src/memodialog.ui" line="14"/>
         <location filename="../src/memodialog.ui" line="43"/>
         <source>Memo</source>
-        <translation>Poruka (memo)</translation>
+        <translation>یادداشت</translation>
     </message>
     <message>
         <location filename="../src/memodialog.ui" line="52"/>
         <source>Include Reply Address</source>
-        <translation>Uključite adresu odgovora</translation>
+        <translation>شامل آدرس پاسخ</translation>
     </message>
 </context>
 <context>
@@ -950,7 +948,7 @@ Opaska: Za trošenje sredstava potrebno je 5 konfirmacija</translation>
     <message>
         <location filename="../src/memoedit.cpp" line="51"/>
         <source>Reply to</source>
-        <translation>Odgovorite</translation>
+        <translation>پاسخ به</translation>
     </message>
 </context>
 <context>
@@ -958,32 +956,32 @@ Opaska: Za trošenje sredstava potrebno je 5 konfirmacija</translation>
     <message>
         <location filename="../src/migration.ui" line="14"/>
         <source>Migration Turnstile</source>
-        <translation>Čvor migracije</translation>
+        <translation>ورودی مهاجرت</translation>
     </message>
     <message>
         <location filename="../src/migration.ui" line="30"/>
         <source>Migration History</source>
-        <translation>Povijest migracije</translation>
+        <translation>تاریخچه مهاجرت</translation>
     </message>
     <message>
         <location filename="../src/migration.ui" line="36"/>
         <source>Migrated Amount</source>
-        <translation>Migrirana količina</translation>
+        <translation>مقدار مهاجرت یافته</translation>
     </message>
     <message>
         <location filename="../src/migration.ui" line="50"/>
         <source>Unmigrated Amount</source>
-        <translation>Nemigrirana količina</translation>
+        <translation>مقدار مهاجرت نیافته</translation>
     </message>
     <message>
         <location filename="../src/migration.ui" line="74"/>
         <source>Sprout -&gt; Sapling migration enabled</source>
-        <translation>Sprout -&gt; Sapling omogućena migracija</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../src/migration.ui" line="81"/>
         <source>If enabled, hushd will slowly migrate your Sprout shielded funds to your Sapling address. </source>
-        <translation>Ako se omogući, hushd će polako migrirati vaše Sprout zaštićena sredstva u vašu Sapling adresu. </translation>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -991,53 +989,53 @@ Opaska: Za trošenje sredstava potrebno je 5 konfirmacija</translation>
     <message>
         <location filename="../src/mobileappconnector.ui" line="14"/>
         <source>Connect Mobile App</source>
-        <translation>Spojite mobilnu applikaciju</translation>
+        <translation>اتصال به برنامه تلفن همراه</translation>
     </message>
     <message>
         <location filename="../src/mobileappconnector.ui" line="36"/>
         <source>Scan this QRCode from your silentdragon companion app to connect your phone</source>
-        <translation>Skenirajte ovaj QR kod sa silentdragon aplikacijom i spojite vaš telefon</translation>
+        <translation>برای متصل شدن تلفن همراهتان، این کد کیو-آر را از طریق برنامه سایلنت دراگون تلفن همراهتان اسکن کنید</translation>
     </message>
     <message>
         <location filename="../src/mobileappconnector.ui" line="43"/>
         <source>QR Code</source>
-        <translation>QR kod</translation>
+        <translation>QRکد</translation>
     </message>
     <message>
         <location filename="../src/mobileappconnector.ui" line="49"/>
         <source>Connection String</source>
-        <translation>Povezani niz</translation>
+        <translation>رشته اتصال</translation>
     </message>
     <message>
         <location filename="../src/mobileappconnector.ui" line="84"/>
         <source>Allow connections over the internet via silentdragon wormhole</source>
-        <translation>Dopusti vezu preko Interneta putem silentdragon crvotočine</translation>
+        <translation>پذیرفتن اتصال به اینترنت توسط سرویس کرمچاله سایلنت دراگون</translation>
     </message>
     <message>
         <location filename="../src/mobileappconnector.ui" line="94"/>
         <source>silentdragon Companion App</source>
-        <translation>silentdragon združena aplikacija</translation>
+        <translation>برنامه همراه سایلنت دراگون</translation>
     </message>
     <message>
         <location filename="../src/mobileappconnector.ui" line="106"/>
         <source>Disconnect</source>
-        <translation>Odspoji</translation>
+        <translation>قطع شدن</translation>
     </message>
     <message>
         <location filename="../src/mobileappconnector.ui" line="126"/>
         <location filename="../src/mobileappconnector.ui" line="160"/>
         <source>TextLabel</source>
-        <translation>TekstOznaka</translation>
+        <translation>برچسب متن</translation>
     </message>
     <message>
         <location filename="../src/mobileappconnector.ui" line="136"/>
         <source>Last seen:</source>
-        <translation>Zadnje viđeno:</translation>
+        <translation>:آخرین بازدید</translation>
     </message>
     <message>
         <location filename="../src/mobileappconnector.ui" line="153"/>
         <source>Connection type:</source>
-        <translation>Vrsta veze:</translation>
+        <translation>نوع اتصال</translation>
     </message>
 </context>
 <context>
@@ -1045,17 +1043,17 @@ Opaska: Za trošenje sredstava potrebno je 5 konfirmacija</translation>
     <message>
         <location filename="../src/newseed.ui" line="14"/>
         <source>Form</source>
-        <translation>Od</translation>
+        <translation>ساخت/بازیابی کیف پول</translation>
     </message>
     <message>
         <location filename="../src/newseed.ui" line="20"/>
         <source>This is your new wallet&apos;s seed phrase. PLEASE BACK IT UP SECURELY.</source>
-        <translation>Ovo je vaša nova seed fraza novčanika. MOLIMO SIGURNO JU SPREMITE.</translation>
+        <translation>این عبارت بازیابی کیف پول جدید شما است. لطفا با اطمینان از آن پشتیبانی بگیرید</translation>
     </message>
     <message>
         <location filename="../src/newseed.ui" line="30"/>
         <source>The seed phrase is the only way to restore the wallet. If you forget the seed phrase, THERE IS NO WAY TO RESTORE YOUR WALLET AND THE FUNDS in it</source>
-        <translation>Jedino je pomoću seed fraze moguće ponovno obnoviti novčanik. Ako zaboravite seed frazu, NE POSTOJI NAČIN DA PONOVNO OBNOVITE NOVČANIK I SREDSTVA unutra</translation>
+        <translation>این عبارت بازیابی، تنها راه بازگرداندن کیف پولتان است. اگر این عبارت بازیابی را فراموش کنید، دیگر هیچ راهی برای بازگرداندن کیف پول و اعتبارات درون آن وجود ندارد</translation>
     </message>
 </context>
 <context>
@@ -1063,17 +1061,17 @@ Opaska: Za trošenje sredstava potrebno je 5 konfirmacija</translation>
     <message>
         <location filename="../src/firsttimewizard.cpp" line="89"/>
         <source>Error creating a wallet</source>
-        <translation>Greška u kreiranju novčanika</translation>
+        <translation>خطا در ساختن کیف پول جدید</translation>
     </message>
     <message>
         <location filename="../src/firsttimewizard.cpp" line="104"/>
         <source>Failed to save wallet</source>
-        <translation>Neuspjelo spremanje novčanika</translation>
+        <translation>ذخیره کیف پول ناموفق بود</translation>
     </message>
     <message>
         <location filename="../src/firsttimewizard.cpp" line="105"/>
         <source>Couldn&apos;t save the wallet</source>
-        <translation>Ne mogu spremiti novčanik</translation>
+        <translation>ذخیره کیف پول مقدور نبود</translation>
     </message>
 </context>
 <context>
@@ -1081,7 +1079,7 @@ Opaska: Za trošenje sredstava potrebno je 5 konfirmacija</translation>
     <message>
         <location filename="../src/privkey.ui" line="14"/>
         <source>Private Keys</source>
-        <translation>Privatni ključevi</translation>
+        <translation>کلید های خصوصی</translation>
     </message>
 </context>
 <context>
@@ -1089,259 +1087,257 @@ Opaska: Za trošenje sredstava potrebno je 5 konfirmacija</translation>
     <message>
         <location filename="../src/addressbook.cpp" line="110"/>
         <source>Pick</source>
-        <translation>Odaberite</translation>
+        <translation>انتخاب</translation>
     </message>
     <message>
         <location filename="../src/addressbook.cpp" line="128"/>
         <source>Address or Label Error</source>
-        <translation>Greška u adresi ili oznaci</translation>
+        <translation>خطای آدرس یا برچسب</translation>
     </message>
     <message>
         <location filename="../src/addressbook.cpp" line="129"/>
         <source>Address or Label cannot be empty</source>
-        <translation>Adresa ili oznaka ne može biti prazno</translation>
+        <translation>آدرس یا برچسب، نمی تواند خالی باشد</translation>
     </message>
     <message>
         <location filename="../src/addressbook.cpp" line="134"/>
         <source>Address Format Error</source>
-        <translation>Greška u formatu adrese</translation>
+        <translation>خطای قالب آدرس</translation>
     </message>
     <message>
         <location filename="../src/addressbook.cpp" line="135"/>
         <source>%1 doesn&apos;t seem to be a valid hush address.</source>
-        <translation>%1 čini se da nije valjana hush adresa.</translation>
+        <translation>آدرس هاش صحیحی باشد &apos;%1&apos; به نظر نمی رسد</translation>
     </message>
     <message>
         <location filename="../src/addressbook.cpp" line="143"/>
         <source>Label Error</source>
-        <translation>Greška oznake</translation>
+        <translation>خطای برچسب</translation>
     </message>
     <message>
         <location filename="../src/addressbook.cpp" line="144"/>
         <source>The label &apos;%1&apos; already exists. Please remove the existing label.</source>
-        <translation>Oznaka %1 već postoji.Molimo uklonite postojeću adresu.</translation>
+        <translation>موجود بوده است. لطفا برچسب موجود را حذف کنید &apos;%1&apos; ِبرچسب</translation>
     </message>
     <message>
         <location filename="../src/addressbook.cpp" line="156"/>
         <source>Import Address Book</source>
-        <translation>Uvezite adresar</translation>
+        <translation>وارد کردن دفترچه آدرس</translation>
     </message>
     <message>
         <location filename="../src/addressbook.cpp" line="163"/>
         <source>Unable to open file</source>
-        <translation>Nije moguće otvoriti datoteku</translation>
+        <translation>قادر به بازکردن پرونده نیست</translation>
     </message>
     <message>
         <location filename="../src/addressbook.cpp" line="183"/>
         <source>Address Book Import Done</source>
-        <translation>Završen unos adresara</translation>
+        <translation>وارد کردن دفترچه آدرس انجام شد</translation>
     </message>
     <message>
         <location filename="../src/addressbook.cpp" line="184"/>
         <source>Imported %1 new Address book entries</source>
-        <translation>Uvezeno %1 novih adresa</translation>
+        <translation>به دفترچه آدرس، 1% آدرس جدید اضافه شد</translation>
     </message>
     <message>
         <location filename="../src/addressbook.cpp" line="224"/>
         <source>Copy address</source>
-        <translation>Kopirajte adresu</translation>
+        <translation>کپی آدرس</translation>
     </message>
     <message>
         <location filename="../src/addressbook.cpp" line="226"/>
         <source>Copied to clipboard</source>
-        <translation>Kopirano u mađuspremnik</translation>
+        <translation>در کلیپ بورد کپی شد</translation>
     </message>
     <message>
         <location filename="../src/addressbook.cpp" line="229"/>
         <source>Delete label</source>
-        <translation>Izbrišite oznaku</translation>
+        <translation>حذف برچسب</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="49"/>
         <source>Attempting to initialize library with </source>
-        <translation>Poušavam pokrenuti zbirku sa </translation>
+        <translation>درحال تلاش برای راه‌اندازی کتابخانه با:</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="53"/>
         <source>Using existing wallet.</source>
-        <translation>Koristim postojeći novčanik.</translation>
+        <translation>استفاده از کیف پول موجود</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="62"/>
         <source>Create/restore wallet.</source>
-        <translation>Napravi/obnovi novčanik.</translation>
+        <translation>ساخت/بازیابی کیف پول</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="153"/>
         <location filename="../src/controller.cpp" line="793"/>
         <source>Connection Error</source>
-        <translation>Greška sa vezom</translation>
+        <translation>خطا در برقراری اتصال</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="251"/>
         <location filename="../src/controller.cpp" line="1196"/>
         <location filename="../src/sendtab.cpp" line="901"/>
         <source>Transaction Error</source>
-        <translation>Greška u transakciji</translation>
+        <translation>خطا در تراکنش</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="251"/>
         <source>There was an error sending the transaction. The error was:</source>
-        <translation>Pojavila se greška prilikom slanja transakcije. Greška je:</translation>
+        <translation>خطایی در ارسال تراکنش رخ داد:</translation>
     </message>
     <message>
         <location filename="../src/controller.cpp" line="554"/>
         <location filename="../src/controller.cpp" line="556"/>
         <source>No Connection</source>
-        <translation>Nema veze</translation>
+        <translation>متصل نیست</translation>
     </message>
     <message>
         <location filename="../src/controller.cpp" line="793"/>
         <source>There was an error connecting to hushd. The error was</source>
-        <translation>Pojavila se greška prilikom spajanja na hushd. Greška je</translation>
+        <translation>خطایی در اتصال به سرویس هاشد رخ داد:</translation>
     </message>
     <message>
         <location filename="../src/controller.cpp" line="1191"/>
         <location filename="../src/recurring.cpp" line="599"/>
         <location filename="../src/sendtab.cpp" line="884"/>
         <source> Tx </source>
-        <translation> Tx </translation>
+        <translation>تراکنش</translation>
     </message>
     <message>
         <location filename="../src/controller.cpp" line="1191"/>
         <location filename="../src/recurring.cpp" line="599"/>
         <location filename="../src/sendtab.cpp" line="884"/>
         <source> failed</source>
-        <translation> neuspjelo</translation>
+        <translation>ناموفق بود</translation>
     </message>
     <message>
         <location filename="../src/controller.cpp" line="1194"/>
         <location filename="../src/sendtab.cpp" line="892"/>
         <source>The transaction with id </source>
-        <translation>Transakcija sa ID </translation>
+        <translation>تراکنش با شناسه</translation>
     </message>
     <message>
         <location filename="../src/controller.cpp" line="1194"/>
         <location filename="../src/sendtab.cpp" line="892"/>
         <source> failed. The error was</source>
-        <translation> nesupjela. Greška je</translation>
+        <translation>ناموفق بود</translation>
     </message>
     <message>
         <location filename="../src/controller.cpp" line="1275"/>
         <source>Update Available</source>
-        <translation>Dostupno ažuriranje</translation>
+        <translation>بروزرسانی دردسترس است</translation>
     </message>
     <message>
         <location filename="../src/controller.cpp" line="1276"/>
         <source>A new release v%1 is available! You have v%2.
 
 Would you like to visit the releases page?</source>
-        <translation>Nova verzija v%1 je dostupna! Vi imate v%2.
-
-Želite li posjetiti stranicu sa izadnjima?</translation>
+        <translation>آیا مایل به بازدید از صفحه انتشار نسخه ها هستید؟</translation>
     </message>
     <message>
         <location filename="../src/controller.cpp" line="1288"/>
         <source>No updates available</source>
-        <translation>Nema dostupnih ažuriranja</translation>
+        <translation>هیچ بروزرسانی ای دردسترس نیست</translation>
     </message>
     <message>
         <location filename="../src/controller.cpp" line="1289"/>
         <source>You already have the latest release v%1</source>
-        <translation>Već imate najnovije izdanje v%1</translation>
+        <translation>هستید v%1 شما هم‌اکنون دارای آخرین نسخه </translation>
     </message>
     <message>
         <location filename="../src/controller.cpp" line="1660"/>
         <source>Please wait for SilentDragonLite to exit</source>
-        <translation>Molimo pričekajte da se SilentDragonLite zatvori</translation>
+        <translation>لطفا تا خروج سایلنت دراگون سبک، منتظر بمانید</translation>
     </message>
     <message>
         <location filename="../src/controller.cpp" line="1661"/>
         <source>Waiting for hushd to exit</source>
-        <translation>Čekam da hushd završi</translation>
+        <translation>لطفا تا خروج سرویس هاشد، منتظر بمانید</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="543"/>
         <source>No hush price was available to convert from USD</source>
-        <translation>Nema hush cijene za pretvorbu iz USD</translation>
+        <translation>هیچ نرخی برای تبدیل هاش از دلارامریکا دردسترس نبود</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="649"/>
         <source>View on block explorer</source>
-        <translation>Pogledajte na blok pregledniku</translation>
+        <translation>مشاهده تراکنش در وبسایت</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="662"/>
         <source>View Error</source>
-        <translation>Pogledajte grešku</translation>
+        <translation>مشاهده خطا</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="663"/>
         <source>Reported Error</source>
-        <translation>Prijavljena greška</translation>
+        <translation>خطای گزارش شده</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="700"/>
         <location filename="../src/recurring.cpp" line="701"/>
         <source>Are you sure you want to delete the recurring payment?</source>
-        <translation>Da li ste sigurni da želite izbrisati ponavljajuće plačanje?</translation>
+        <translation>آیا برای حذف پرداخت مجدد مطمئنید؟</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="702"/>
         <source>All future payments will be cancelled.</source>
-        <translation>Sva buduća plaćanja će biti otkazana.</translation>
+        <translation>تمام پرداخت های آینده، لغو می‌شوند</translation>
     </message>
     <message>
         <location filename="../src/settings.cpp" line="292"/>
         <source>Tx submitted (right click to copy) txid:</source>
-        <translation>Tx poslan (desni klik za kopiranje) txid:</translation>
+        <translation>تراکنش ارسال شد. برای کپی شناسه تراکنش راست کلیک کنید</translation>
     </message>
     <message>
         <location filename="../src/txtablemodel.cpp" line="7"/>
         <source>Type</source>
-        <translation>Vrsta</translation>
+        <translation>نوع</translation>
     </message>
     <message>
         <location filename="../src/txtablemodel.cpp" line="7"/>
         <source>Address</source>
-        <translation>Adresa</translation>
+        <translation>آدرس</translation>
     </message>
     <message>
         <location filename="../src/txtablemodel.cpp" line="7"/>
         <source>Date/Time</source>
-        <translation>Datum/Vrijeme</translation>
+        <translation>تاریخ/زمان</translation>
     </message>
     <message>
         <location filename="../src/txtablemodel.cpp" line="7"/>
         <source>Confirmations</source>
-        <translation>Potvrde</translation>
+        <translation>تأییدیه ها</translation>
     </message>
     <message>
         <location filename="../src/txtablemodel.cpp" line="7"/>
         <source>Amount</source>
-        <translation>Količina</translation>
+        <translation>مقدار</translation>
     </message>
     <message>
         <location filename="../src/websockets.cpp" line="387"/>
         <source>Connected directly</source>
-        <translation>Direktno spojeno</translation>
+        <translation>مستقیماً متصل است</translation>
     </message>
     <message>
         <location filename="../src/websockets.cpp" line="390"/>
         <source>Connected over the internet via silentdragon wormhole service</source>
-        <translation>Spojeno preko Interneta putem silentdragon usluge crvotočine</translation>
+        <translation>متصل به اینترنت توسط سرویس کرمچاله سایلنت دراگون</translation>
     </message>
     <message>
         <location filename="../src/websockets.cpp" line="694"/>
         <location filename="../src/websockets.cpp" line="785"/>
         <source>Node is still syncing.</source>
-        <translation>Čvor se još uvijek sinkronizira.</translation>
+        <translation>نود هنوز درحال همگام سازی است</translation>
     </message>
     <message>
         <location filename="../src/websockets.cpp" line="718"/>
         <location filename="../src/websockets.cpp" line="809"/>
         <source>No sapling or transparent addresses with enough balance to spend.</source>
-        <translation>Nema sapling ili transparentne adrese sa dovoljnim saldom.</translation>
+        <translation>هیچ آدرس سپلینگ یا عمومی ای، اعتبار کافی برای خرج شدن ندارند</translation>
     </message>
 </context>
 <context>
@@ -1349,17 +1345,17 @@ Would you like to visit the releases page?</source>
     <message>
         <location filename="../src/recurringdialog.ui" line="14"/>
         <source>Dialog</source>
-        <translation>Dialog</translation>
+        <translation>گفتگو</translation>
     </message>
     <message>
         <location filename="../src/recurringdialog.ui" line="35"/>
         <source>View</source>
-        <translation>Pogled</translation>
+        <translation>مشاهده</translation>
     </message>
     <message>
         <location filename="../src/recurringdialog.ui" line="42"/>
         <source>Delete</source>
-        <translation>Izbriši</translation>
+        <translation>حذف</translation>
     </message>
 </context>
 <context>
@@ -1367,37 +1363,37 @@ Would you like to visit the releases page?</source>
     <message>
         <location filename="../src/recurring.cpp" line="724"/>
         <source>Amount</source>
-        <translation>Količina</translation>
+        <translation>مقدار</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="724"/>
         <source>Schedule</source>
-        <translation>Raspored</translation>
+        <translation>برنامه زمانی</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="724"/>
         <source>Payments Left</source>
-        <translation>Preostalo plaćanje</translation>
+        <translation>پرداخت های باقی مانده</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="725"/>
         <source>Next Payment</source>
-        <translation>Slijedeće plaćanje</translation>
+        <translation>پرداخت بعدی</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="725"/>
         <source>To</source>
-        <translation>Za</translation>
+        <translation>به</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="742"/>
         <source>Every </source>
-        <translation>Svaki </translation>
+        <translation>هر</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="746"/>
         <source>None</source>
-        <translation>Nijedan</translation>
+        <translation>هیچ</translation>
     </message>
 </context>
 <context>
@@ -1405,7 +1401,7 @@ Would you like to visit the releases page?</source>
     <message>
         <location filename="../src/recurringpayments.ui" line="14"/>
         <source>Payments</source>
-        <translation>Plaćanja</translation>
+        <translation>پرداخت ها</translation>
     </message>
 </context>
 <context>
@@ -1413,48 +1409,48 @@ Would you like to visit the releases page?</source>
     <message>
         <location filename="../src/recurring.cpp" line="775"/>
         <source>Date</source>
-        <translation>Datum</translation>
+        <translation>تاریخ</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="775"/>
         <source>Status</source>
-        <translation>Status</translation>
+        <translation>وضعیت</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="775"/>
         <source>Txid</source>
-        <translation>Txid</translation>
+        <translation>شناسه تراکنش</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="795"/>
         <source>Not due yet</source>
-        <translation>Još nije gotovo</translation>
+        <translation>هنوز موعدش نرسیده</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="796"/>
         <source>Pending</source>
-        <translation>u toku</translation>
+        <translation>درحال انجام</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="797"/>
         <source>Skipped</source>
-        <translation>Preskočeno</translation>
+        <translation>رد شده</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="798"/>
         <source>Paid</source>
-        <translation>Plaćeno</translation>
+        <translation>پرداخت شده</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="799"/>
         <source>Error</source>
-        <translation>Greška</translation>
+        <translation>خطا</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="800"/>
         <location filename="../src/recurring.cpp" line="801"/>
         <source>Unknown</source>
-        <translation>Nepotnato</translation>
+        <translation>ناشناخته</translation>
     </message>
 </context>
 <context>
@@ -1462,62 +1458,62 @@ Would you like to visit the releases page?</source>
     <message>
         <location filename="../src/recurringmultiple.ui" line="14"/>
         <source>Dialog</source>
-        <translation>Dialog</translation>
+        <translation>گفتگو</translation>
     </message>
     <message>
         <location filename="../src/recurringmultiple.ui" line="20"/>
         <source>No payments will be processed. You can manually pay them from the Recurring Payments Dialog box</source>
-        <translation>Plaćanja se neće procesuirati. Možete ih ručno platiti u polju dialoga Ponavljajućeg plaćanja</translation>
+        <translation>هیچ پرداختی انجام نخواهد شد. شما می توانید در قسمت گفتگوی پرداخت مجدد، به صورت دستی پرداخت کنید</translation>
     </message>
     <message>
         <location filename="../src/recurringmultiple.ui" line="37"/>
         <source>Schedule</source>
-        <translation>Raspored</translation>
+        <translation>برنامه زمانی</translation>
     </message>
     <message>
         <location filename="../src/recurringmultiple.ui" line="44"/>
         <source>How should silentdragon proceed?</source>
-        <translation>Kako da silentdragon nastavi?</translation>
+        <translation>سایلنت دراگون چگونه باید ادامه دهد؟</translation>
     </message>
     <message>
         <location filename="../src/recurringmultiple.ui" line="51"/>
         <source>Pay All in 1 Tx</source>
-        <translation>Plati sve u 1 Tx</translation>
+        <translation>پرداخت همه در یک تراکنش</translation>
     </message>
     <message>
         <location filename="../src/recurringmultiple.ui" line="58"/>
         <source>Only the latest pending payment will be processed. All previous pending payments will be skipped</source>
-        <translation>Procesuirati će se samo zadnje plaćanje u toku. Sva prijašnja plaćanja u toku će se preskočiti</translation>
+        <translation> تنها آخرین پرداخت درحال انجام، تکمیل می‌شود. تمام پرداخت های درحال انجام پیشین، رد خواهند شد&gt;</translation>
     </message>
     <message>
         <location filename="../src/recurringmultiple.ui" line="68"/>
         <source>Pay Latest Only</source>
-        <translation>Platite samo zadnje</translation>
+        <translation>فقط آخری را پرداخت کن</translation>
     </message>
     <message>
         <location filename="../src/recurringmultiple.ui" line="75"/>
         <source>Pay None</source>
-        <translation>Ne platite ništa</translation>
+        <translation>هیچکدام را پرداخت نکن</translation>
     </message>
     <message>
         <location filename="../src/recurringmultiple.ui" line="96"/>
         <source>All pending payments collected, added up and paid in a single transaction</source>
-        <translation>Sva plaćanja u toku su skupljena, zbrojena i plaćena u jednoj transakciji</translation>
+        <translation>تمام پرداخت های درحال انجام جمع‌آوری و در یک تراکنش پرداخت شدند</translation>
     </message>
     <message>
         <location filename="../src/recurringmultiple.ui" line="116"/>
         <source>Description</source>
-        <translation>Opis</translation>
+        <translation>توضیحات</translation>
     </message>
     <message>
         <location filename="../src/recurringmultiple.ui" line="123"/>
         <source>To</source>
-        <translation>Za</translation>
+        <translation>به</translation>
     </message>
     <message>
         <location filename="../src/recurringmultiple.ui" line="137"/>
         <source>The following recurring payment has multiple payments pending</source>
-        <translation>Slijedeće ponavljajuće plaćanje sadrži višestruka plaćanja u toku</translation>
+        <translation>پرداخت مجدد جاری، دارای چندین پرداخت درحال انجام است</translation>
     </message>
 </context>
 <context>
@@ -1525,92 +1521,92 @@ Would you like to visit the releases page?</source>
     <message>
         <location filename="../src/requestdialog.ui" line="14"/>
         <source>Payment Request</source>
-        <translation>Zahtjev o plaćanju</translation>
+        <translation>درخواست پرداخت</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.ui" line="38"/>
         <source>AddressBook</source>
-        <translation>Adresar</translation>
+        <translation>دفترچه آدرس</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.ui" line="54"/>
         <source>Request From</source>
-        <translation>Zatraži od</translation>
+        <translation>درخواست از</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.ui" line="61"/>
         <source>My Address</source>
-        <translation>Moja adresa</translation>
+        <translation>آدرس من</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.ui" line="78"/>
         <source>Amount in </source>
-        <translation>Količina u </translation>
+        <translation>مقدار</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.ui" line="118"/>
         <source>z address</source>
-        <translation>z adresa</translation>
+        <translation>آدرس حفاظت شده</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.ui" line="145"/>
         <source>Amount</source>
-        <translation>Količina</translation>
+        <translation>مقدار</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.ui" line="159"/>
         <source>The recipient will see this address in the &quot;to&quot; field when they pay your request.</source>
-        <translation>Primatelj će prilikom plaćanja vidjeti ovu adresu u &quot;za&quot; polju.</translation>
+        <translation>در هنگام پرداخت درخواست شما خواهد دید &quot;به&quot;دریافت کننده، این آدرس را در قسمت</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.ui" line="179"/>
         <source>Amount USD</source>
-        <translation>Količina USD</translation>
+        <translation>USD مقدار</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.ui" line="202"/>
         <source>Memo</source>
-        <translation>Poruka (memo)</translation>
+        <translation>یادداشت</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.ui" line="209"/>
         <source>TextLabel</source>
-        <translation>TekstOznaka</translation>
+        <translation>برچسب متن</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.ui" line="219"/>
         <source>Request payment from a Sapling address. You&apos;ll send a hush 0.0001 transaction to the address with a hush payment URI. The memo will be included in the transaction when the address pays you.</source>
-        <translation>Zatraži plaćanje iz sapling adrese. Poslat ćete 0.0001 husha transakciju na adresu sa hush URI nalogom. Poruka (memo) će biti uključena u transakciji kada vas adresa plati.</translation>
+        <translation>درخواست پرداخت از یک آدرس سپلینگ. شما 0.0001 هاش به آن آدرس با یو-آر-آی پرداخت هاش ارسال  خواهید کرد</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.cpp" line="50"/>
         <source>Error paying hush URI</source>
-        <translation>Greška prilikom plaćanja hush URI</translation>
+        <translation>خطا در پرداخت یو-آر-آی هاش</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.cpp" line="51"/>
         <source>URI should be of the form &apos;hush:&lt;addr&gt;?amt=x&amp;memo=y</source>
-        <translation>URI treba biti formata &apos;hush:&lt;addr&gt;?amt=x&amp;memo=y</translation>
+        <translation>یو-آر-آی باید به این قالب باشد&apos;hush:&lt;addr&gt;?amt=x&amp;memo=y</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.cpp" line="65"/>
         <source>Pay To</source>
-        <translation>Platiti</translation>
+        <translation>پرداخت به</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.cpp" line="85"/>
         <source>Pay</source>
-        <translation>Plati</translation>
+        <translation>پرداخت</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.cpp" line="87"/>
         <source>You are paying a payment request. Your address will not be visible to the person requesting this payment.</source>
-        <translation>Plaćate zahtjev za nalogom. Vaša adresa neće biti vidljiva osobi koja je zatražila ovaj nalog.</translation>
+        <translation>شما در حال پرداخت یک درخواست پرداخت هستید. آدرس شما برای فرد درخواست کننده این پرداخت، نمایان نخواهد شد.</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.cpp" line="106"/>
         <source>Can only request from Sapling addresses</source>
-        <translation>Može se jedino zatražiti sa Sapling adresama</translation>
+        <translation>تنها می توان از آدرس سپلینگ درخواست داد</translation>
     </message>
 </context>
 <context>
@@ -1618,22 +1614,22 @@ Would you like to visit the releases page?</source>
     <message>
         <location filename="../src/restoreseed.ui" line="14"/>
         <source>Form</source>
-        <translation>Od</translation>
+        <translation>ساخت/بازیابی کیف پول</translation>
     </message>
     <message>
         <location filename="../src/restoreseed.ui" line="20"/>
         <source>Please enter your 24-word seed below</source>
-        <translation>Molimo unesite ispod seed od 24 riječi</translation>
+        <translation>لطفا عبارت بازیابی 24 کلمه ای خود را در پایین وارد کنید</translation>
     </message>
     <message>
         <location filename="../src/restoreseed.ui" line="42"/>
         <source>Wallet Seed</source>
-        <translation>Seed novčanika</translation>
+        <translation>عبارت بازیابی کیف پول</translation>
     </message>
     <message>
         <location filename="../src/restoreseed.ui" line="56"/>
         <source>Wallet Birthday</source>
-        <translation>Rođendan novčanika</translation>
+        <translation>روز تولد کیف پول</translation>
     </message>
     <message>
         <location filename="../src/restoreseed.ui" line="63"/>
@@ -1643,7 +1639,7 @@ Would you like to visit the releases page?</source>
     <message>
         <location filename="../src/restoreseed.ui" line="75"/>
         <source>Wallet birthday is the block height at which the wallet had the first transaction. If you don&apos;t know this, you can leave it as &quot;0&quot; (It&apos;ll take longer to rescan)</source>
-        <translation>Rođendan novčanika je visina bloka u kojoj je bila prva transakcija u novčaniku. Ako niste upoznati s ovim, možete ostaviti &quot;0&quot; (Duže će raditi rescan)</translation>
+        <translation>روز تولد کیف پول، ارتفاع بلوکی است که کیف پول اولین تراکنش خود را در آن انجام داده است. اگر از آن خبر ندارید می توانید عدد 0 را در جای آن قرار دهید اما توجه داشته باشید که مقدار زمان طولانی تری برای پیداکردن آن صرف خواهد شد</translation>
     </message>
 </context>
 <context>
@@ -1652,37 +1648,37 @@ Would you like to visit the releases page?</source>
         <location filename="../src/firsttimewizard.cpp" line="132"/>
         <location filename="../src/firsttimewizard.cpp" line="156"/>
         <source>Failed to restore wallet</source>
-        <translation>Neuspjelo obnavljanje novčanika</translation>
+        <translation>بازیابی کیف پول ناموفق بود</translation>
     </message>
     <message>
         <location filename="../src/firsttimewizard.cpp" line="133"/>
         <source>SilentDragonLite needs 24 words to restore wallet</source>
-        <translation>SilentDragonLite treba 24 riječi za obnovu novčanika</translation>
+        <translation>سایلنت دراگون سبک برای بازیابی کیف پول، به 24 کلمه نیاز دارد</translation>
     </message>
     <message>
         <location filename="../src/firsttimewizard.cpp" line="143"/>
         <source>Failed to parse wallet birthday</source>
-        <translation>Neuspjelo očitanje rođendana novčanika</translation>
+        <translation>تجزیه روز تولد کیف پول ناموفق بود</translation>
     </message>
     <message>
         <location filename="../src/firsttimewizard.cpp" line="144"/>
         <source>Couldn&apos;t understand wallet birthday. This should be a block height from where to rescan the wallet. You can leave it as &apos;0&apos; if you don&apos;t know what it should be.</source>
-        <translation>Nisam u mogućnosti razumijeti rođendan novčanika. To bi trebala bi biti visina bloka od koje počinje rescan novčanika. Ako ne znate koja je, možete ostaviti &apos;0&apos;.</translation>
+        <translation>نمی توان این روز تولد کیف پول را فهمید. این باید ارتفاع بلوکی باشد که از آنجا شروع به بررسی شود. اگر نمی دانید، می توانید آن را 0 قرار دهید</translation>
     </message>
     <message>
         <location filename="../src/firsttimewizard.cpp" line="157"/>
         <source>Couldn&apos;t restore the wallet</source>
-        <translation>Nemoguće obnoviti novčanik</translation>
+        <translation>نتوانست کیف پول را بازیابی کند</translation>
     </message>
     <message>
         <location filename="../src/firsttimewizard.cpp" line="170"/>
         <source>Failed to save wallet</source>
-        <translation>Neuspjeh spremanja novčanika</translation>
+        <translation>ذخیره کیف پول ناموفق بود</translation>
     </message>
     <message>
         <location filename="../src/firsttimewizard.cpp" line="171"/>
         <source>Couldn&apos;t save the wallet</source>
-        <translation>Nemoguće spremiti novčanik</translation>
+        <translation>نتوانست کیف پول را ذخیره کند</translation>
     </message>
 </context>
 <context>
@@ -1690,72 +1686,72 @@ Would you like to visit the releases page?</source>
     <message>
         <location filename="../src/settings.ui" line="14"/>
         <source>Settings</source>
-        <translation>Postavke</translation>
+        <translation>تنظیمات</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="27"/>
         <source>Connection</source>
-        <translation>Veza</translation>
+        <translation>اتصال</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="49"/>
         <source>Lightwallet Server</source>
-        <translation>Server LaganiNovčanik</translation>
+        <translation>سرور کیف پول سبک</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="81"/>
         <source>Options</source>
-        <translation>Opcije</translation>
+        <translation>گزینه ها</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="100"/>
         <source>default</source>
-        <translation>početno</translation>
+        <translation>پیش فرض</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="105"/>
         <source>blue</source>
-        <translation>plavo</translation>
+        <translation>آبی</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="110"/>
         <source>light</source>
-        <translation>svijetlo</translation>
+        <translation>روشن</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="115"/>
         <source>dark</source>
-        <translation>tamno</translation>
+        <translation>تاریک</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="129"/>
         <source>Fetch hush prices</source>
-        <translation>Dohvati hush cijene</translation>
+        <translation>Hush جمع آوری نرخ های</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="142"/>
         <source>Check github for updates at startup</source>
-        <translation>Prilikom pokretanja provjetite ažuriranja na githubu</translation>
+        <translation>بررسی گیت هاب برای بروزرسانی ها در هنگام راه‌اندازی</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="155"/>
         <source>Connect to github on startup to check for updates</source>
-        <translation>Prilikom pokretanja provjetite ažuriranja na githubu</translation>
+        <translation>اتصال به گیت هاب در هنگام راه‌اندازی، برای بررسی بروزرسانی ها</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="174"/>
         <source>Theme</source>
-        <translation>Teme</translation>
+        <translation>پوسته</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="209"/>
         <source>Connect to the internet to fetch hush prices</source>
-        <translation>Spoji se na Internet i dohvati hush cijene</translation>
+        <translation>Hushاتصال به اینترنت برای جمع‌آوری نرخ های</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="228"/>
         <source>Currency</source>
-        <translation>Valuta</translation>
+        <translation>واحد پول</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="251"/>
@@ -1800,7 +1796,7 @@ Would you like to visit the releases page?</source>
     <message>
         <location filename="../src/settings.ui" line="291"/>
         <source>RUB</source>
-        <translation type="unfinished"></translation>
+        <translation>RUB</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="296"/>
@@ -1813,12 +1809,12 @@ Would you like to visit the releases page?</source>
     <message>
         <location filename="../src/viewalladdresses.ui" line="14"/>
         <source>All Addresses</source>
-        <translation>Sve adrese</translation>
+        <translation>تمام آدرس ها</translation>
     </message>
     <message>
         <location filename="../src/viewalladdresses.ui" line="30"/>
         <source>Export All Keys</source>
-        <translation>Izvezi sve ključeve</translation>
+        <translation>صدور تمام کلید های خصوصی</translation>
     </message>
 </context>
 <context>
@@ -1826,12 +1822,12 @@ Would you like to visit the releases page?</source>
     <message>
         <location filename="../src/viewalladdresses.cpp" line="7"/>
         <source>Address</source>
-        <translation>Adresa</translation>
+        <translation>آدرس</translation>
     </message>
     <message>
         <location filename="../src/viewalladdresses.cpp" line="7"/>
         <source>Balance (%1)</source>
-        <translation>Saldo (%1)</translation>
+        <translation>(%1)اعتبار</translation>
     </message>
 </context>
 <context>
@@ -1839,7 +1835,7 @@ Would you like to visit the releases page?</source>
     <message>
         <location filename="../src/about.ui" line="14"/>
         <source>About</source>
-        <translation>O</translation>
+        <translation>درباره</translation>
     </message>
 </context>
 <context>
@@ -1847,32 +1843,32 @@ Would you like to visit the releases page?</source>
     <message>
         <location filename="../src/addressbook.ui" line="14"/>
         <source>Address Book</source>
-        <translation>Adresar</translation>
+        <translation>دفترچه آدرس</translation>
     </message>
     <message>
         <location filename="../src/addressbook.ui" line="20"/>
         <source>Add New Address</source>
-        <translation>Dodaj novu adresu</translation>
+        <translation>اضافه کردن آدرس جدید</translation>
     </message>
     <message>
         <location filename="../src/addressbook.ui" line="26"/>
         <source>Address (z-Addr or t-Addr)</source>
-        <translation>Adresa (z-adresa ili t-adresa)</translation>
+        <translation>آدرس عمومی/حفاظت شده</translation>
     </message>
     <message>
         <location filename="../src/addressbook.ui" line="36"/>
         <source>Label</source>
-        <translation>Oznaka</translation>
+        <translation>برچسب</translation>
     </message>
     <message>
         <location filename="../src/addressbook.ui" line="65"/>
         <source>Add to Address Book</source>
-        <translation>Dodaj u adresar</translation>
+        <translation>اضافه به دفترچه آدرس</translation>
     </message>
     <message>
         <location filename="../src/addressbook.ui" line="95"/>
         <source>Import Address Book</source>
-        <translation>Uvezite adresar</translation>
+        <translation>وارد کردن دفترچه آدرس</translation>
     </message>
 </context>
 <context>
@@ -1880,27 +1876,27 @@ Would you like to visit the releases page?</source>
     <message>
         <location filename="../src/confirm.ui" line="14"/>
         <source>Confirm Transaction</source>
-        <translation>Potvrdite transakciju</translation>
+        <translation>تایید تراکنش</translation>
     </message>
     <message>
         <location filename="../src/confirm.ui" line="20"/>
         <source>To</source>
-        <translation>Za</translation>
+        <translation>به</translation>
     </message>
     <message>
         <location filename="../src/confirm.ui" line="132"/>
         <source>Recurring Payment</source>
-        <translation>Ponavljajuće plaćanje</translation>
+        <translation>تکرار پرداخت</translation>
     </message>
     <message>
         <location filename="../src/confirm.ui" line="138"/>
         <source>TextLabel</source>
-        <translation>TekstOznaka</translation>
+        <translation>برچسب متن</translation>
     </message>
     <message>
         <location filename="../src/confirm.ui" line="164"/>
         <source>You are sending a transaction while your node is still syncing. This may not work.</source>
-        <translation>Šaljete transakciju, a vaš čvor se još uvijek sinkronizira. To možda neće uspjeti.</translation>
+        <translation>شما در هنگام همگام سازی نود خود، درحال ارسال تراکنش هستید. ممکن است انجام نشود</translation>
     </message>
 </context>
 <context>
@@ -1908,60 +1904,63 @@ Would you like to visit the releases page?</source>
     <message>
         <location filename="../src/createhushconfdialog.ui" line="14"/>
         <source>Configure hush.conf</source>
-        <translation>Konfigurirajte hush.conf</translation>
+        <translation>hush.conf پیکربندی</translation>
     </message>
     <message>
         <location filename="../src/createhushconfdialog.ui" line="146"/>
         <source>Your hush node will be configured for you automatically</source>
-        <translation>Vaš hush čvor će se automatski konfigurirati</translation>
+        <translation>نود هاش شما به صورت خودکار، پیکربندی خواهد شد</translation>
     </message>
     <message>
         <source>Enable Fast Sync</source>
-        <translation type="vanished">Omogući brzi sync</translation>
+        <translation type="vanished">فعال کردن همگام سازی سریع</translation>
     </message>
     <message>
         <location filename="../src/createhushconfdialog.ui" line="22"/>
         <source>Show Advanced Configuration</source>
-        <translation>Prikaži naprednu konfiguraciju</translation>
+        <translation>نمایش پیکربندی پیشرفته</translation>
     </message>
     <message>
         <location filename="../src/createhushconfdialog.ui" line="60"/>
         <source>Allow connections to the internet to check for updates, get hush prices etc...</source>
-        <translation>Dopusti vezu na Internet za provjeru ažuriranja, hush cijana itd...</translation>
+        <translation>پذیرفتن اتصال به اینترنت برای بررسی بروزرسانی ها، دریافت نرخ هاش و  غیره</translation>
     </message>
     <message>
         <location filename="../src/createhushconfdialog.ui" line="67"/>
         <source>Use custom datadir</source>
-        <translation>Koristi prilagođeni datadir</translation>
+        <translation>سفارشی datadir استفاده از</translation>
     </message>
     <message>
         <location filename="../src/createhushconfdialog.ui" line="76"/>
         <source>Choose directory</source>
-        <translation>Izaberi direktorij</translation>
+        <translation>انتخاب مکان پرونده</translation>
     </message>
     <message>
         <location filename="../src/createhushconfdialog.ui" line="105"/>
         <source>Please note that you&apos;ll need to already have a Tor service configured on port 9050</source>
-        <translation>Uzmite u obzir da ćete već morati imati konfiguriranu Tor uslugu na portu 9050</translation>
+        <translation>لطفا توجه داشته باشید که شما نیاز به پیکربندی سرویس تی-او-آر بر روی درگاه 9050 خواهید داشت</translation>
     </message>
     <message>
         <location filename="../src/createhushconfdialog.ui" line="112"/>
         <source>Connect to the internet for updates and price feeds</source>
-        <translation>Za ažuriranja i info spojite se na Internet</translation>
+        <translation>اتصال به اینترنت برای بروزرسانی ها و نرخ ها</translation>
     </message>
     <message>
         <location filename="../src/createhushconfdialog.ui" line="122"/>
         <source>Please choose a directory to store your wallet.dat and blockchain</source>
-        <translation>Molimo odaberite direktorij u koji ćete spremiti wallet.dat i blockchain</translation>
+        <translation>انتخاب کنید wallet.datلطفا مکان پرونده را برای ذخیره زنجیره بلوک و</translation>
     </message>
     <message>
         <location filename="../src/createhushconfdialog.ui" line="129"/>
         <source>Connect over Tor</source>
-        <translation>Veza preko Tora</translation>
+        <translation>Tor اتصال با</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Skips the most expensive checks during the initial block download. &lt;a href=&quot;https://docs.silentdragon.co/using-silentdragon/#fastsync&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Learn More&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Preskače najskuplje provjere tokom početnog preuzimanja bloka. &lt;a href=&quot;https://docs.silentdragon.co/using-silentdragon/#fastsync&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Saznaj više&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation type="vanished">
+&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;از پرهزینه ترین بررسی ها در هنگام بارگیری ابتدایی بلوک رد می شود
+&lt;a href=&quot;https://docs.silentdragon.co/using-silentdragon/#fastsync&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Learn More&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</translation>
     </message>
 </context>
 <context>
@@ -1969,27 +1968,27 @@ Would you like to visit the releases page?</source>
     <message>
         <location filename="../src/encryption.ui" line="14"/>
         <source>Encrypt Your Wallet</source>
-        <translation>Šifrirajte vaš novčanik</translation>
+        <translation>رمزنگاری کیف پول شما</translation>
     </message>
     <message>
         <location filename="../src/encryption.ui" line="27"/>
         <source>Encryption Password:</source>
-        <translation>Lozinka šifriranja:</translation>
+        <translation>رمزعبور رمزنگاری:</translation>
     </message>
     <message>
         <location filename="../src/encryption.ui" line="34"/>
         <source>Confirm Password:</source>
-        <translation>Potvrdite lozinku:</translation>
+        <translation>تایید رمز عبور</translation>
     </message>
     <message>
         <location filename="../src/encryption.ui" line="51"/>
         <source>Passwords don&apos;t match</source>
-        <translation>Lozinke se ne podudaraju</translation>
+        <translation>رمزعبور همخوانی ندارد</translation>
     </message>
     <message>
         <location filename="../src/encryption.ui" line="75"/>
         <source>WARNING: If you forget your password, the only way to recover the wallet is from the seed phrase.</source>
-        <translation>UPOZORENJE: Ako zaboravite lozinku, jedini način da obnovite novčanik je iz seed fraze.</translation>
+        <translation>هشدار: اگر شما رمزعبورتان را فراموش کنید، تنها راه بازیابی کیف پول، استفاده از عبارت بازیابی است</translation>
     </message>
 </context>
 <context>
@@ -1997,48 +1996,47 @@ Would you like to visit the releases page?</source>
     <message>
         <location filename="../src/newrecurring.ui" line="14"/>
         <source>Edit Schedule</source>
-        <translation>Uredi raspored</translation>
+        <translation>ویرایش برنامه زمانی</translation>
     </message>
     <message>
         <location filename="../src/newrecurring.ui" line="20"/>
         <source>Payment Description</source>
-        <translation>Opis plaćanja</translation>
+        <translation>توضیحات پرداخت</translation>
     </message>
     <message>
         <location filename="../src/newrecurring.ui" line="54"/>
         <source>Schedule</source>
-        <translation>Raspored</translation>
+        <translation>برنامه زمانی</translation>
     </message>
     <message>
         <location filename="../src/newrecurring.ui" line="68"/>
         <source>Next Payment</source>
-        <translation>Slijedeće plaćanje</translation>
+        <translation>پرداخت بعدی</translation>
     </message>
     <message>
         <location filename="../src/newrecurring.ui" line="75"/>
         <source>Amount</source>
-        <translation>Količina</translation>
+        <translation>مقدار</translation>
     </message>
     <message>
         <location filename="../src/newrecurring.ui" line="121"/>
         <source>Memo</source>
-        <translation>Poruka (memo)</translation>
+        <translation>یادداشت</translation>
     </message>
     <message>
         <location filename="../src/newrecurring.ui" line="135"/>
         <source>To</source>
-        <translatorcomment>Za</translatorcomment>
-        <translation></translation>
+        <translation>به</translation>
     </message>
     <message>
         <location filename="../src/newrecurring.ui" line="142"/>
         <source>From</source>
-        <translation>Od</translation>
+        <translation>از</translation>
     </message>
     <message>
         <location filename="../src/newrecurring.ui" line="166"/>
         <source>Number of payments</source>
-        <translation>Broj uplata</translation>
+        <translation>تعداد پرداخت ها</translation>
     </message>
 </context>
 </TS>
