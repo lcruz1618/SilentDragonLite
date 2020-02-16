@@ -777,7 +777,7 @@ Please use &apos;Remove Wallet Encryption&apos; if you want to remove the wallet
         <location filename="../src/mainwindow.cpp" line="386"/>
         <location filename="../src/mainwindow.cpp" line="927"/>
         <source>Copy block explorer link</source>
-        <translation type="unfinished"></translation>
+        <translation>Blockexplorer Link kopieren</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="455"/>
